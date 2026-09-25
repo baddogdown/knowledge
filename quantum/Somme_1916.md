@@ -20,14 +20,16 @@ So progress was uneven. Tanks were applied within existing thinking, or isolated
 
 That understanding did not arrive with the technology. It took time to build. Experimentation. Failure. Iteration. And people capable of recognising patterns before they were obvious.
 
-<p><br><br></p>
+<p>
 <img src="./computer.png" alt="tank" width="200" align="right"/>
 And that is where we are now with Quantum Computing - albeit with an important difference. Unlike tanks, which we used imperfectly while learning, we have barely begun to use quantum at all. We are observing, discussing, and waiting for clarity. But the understanding we need will not arrive fully formed with mature systems - it has to be built ahead of them.
 
 
 Because this is not ultimately about quantum.
+</p>
 
-
+<p><br><br></p>
+<img src="./mindmap.png" alt="tank" width="200" align="left"/>
 It is about **algorithms as a technology domain in their own right**- the ability to model problems, structure them, and solve them independently of any single machine. To recognise which problems belong to which kind of computational approach -classical, quantum, probabilistic, neuromorphic - and how those choices change outcomes. AI was a clear signal of this shift. Quantum will accelerate it.
 
 That is a capability we do not currently have at the level required.
