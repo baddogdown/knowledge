@@ -54,7 +54,7 @@ If we do not build competence in this algorithmic domain now - alongside the mat
 
 We will struggle to exploit the new classes of algorithms that emerge around it. We will continue to see them arrive, talk about them, and still lack the doctrine to use them effectively.
 
-|  |
+|  TAKEAWAY |
 | --- |
 | Tanks did not just improve cavalry. They enabled entirely new forms of manoeuvre, coordination, and tempo that were invisible to a cavalry mindset. 
 Quantum computing will do the same - not by replacing existing approaches, but by opening problem spaces we are not yet equipped to recognise: making decisions under uncertainty, coordinating complex operations at scale, understanding how actions play out across a contested battlespace, and identifying options that would never be visible through current planning methods - **particularly to those who learn to see them first**.
