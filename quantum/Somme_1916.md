@@ -47,7 +47,7 @@ That is a capability we do not currently have at the level required.
 
 And it is exactly this capability that determines whether new computational approaches and algorithms are exploited early, misapplied and abandoned, or only understood after advantage has already been lost.
 
-
+<p><br><br></p>
 Recent conflict has made this clear. The advantage no longer sits with those who simply possess advanced systems, but with those who can adapt, combine, and reuse both technologies and the algorithms that run on them faster than their opponent.
 
 If we do not build competence in this algorithmic domain now - alongside the mathematics and problem-formulation skills that underpin it - we will not just struggle to adopt quantum computing.
