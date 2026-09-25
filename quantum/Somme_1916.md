@@ -10,6 +10,10 @@ We began in a world shaped entirely by cavalry. Range, speed, logistics, **even 
 
 Then tanks appeared.
 
+<p align="right">
+  <img src="./tank.png" alt="tank" width="300" />
+</p>
+
 They were used. Experimented with. Invested in. But early tanks were slow, unreliable, and unclear in purpose. Not obviously better. Not ready to replace anything. Which made them easy to misunderstand. Some dismissed them. Others spoke about them as if they would change everything. Both reactions came from the same place: **we did not yet understand what new kinds of problems they made possible**—including ones we would never have thought to consider before.
 
 So progress was uneven. Tanks were applied within existing thinking, or isolated from it. The real shift only came when doctrine evolved—when people began to understand how tanks worked *with* other elements, how they changed tempo, coordination, and decision-making. As Heinz Guderian recognised, their impact wasn’t in the machine alone, but in how they reshaped the fight around them.
