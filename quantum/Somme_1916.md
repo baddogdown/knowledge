@@ -28,7 +28,7 @@ That understanding did not arrive with the technology. It took time to build. Ex
 </p>
 <p></p>
 
-<p><br><br><br><br>
+<p><br><br><br><br><br>
 <img src="./computer.png" alt="tank" width="200" align="right"/>
   
 And that is where we are now with Quantum Computing - albeit with an important difference. Unlike tanks, which we used imperfectly while learning, we have barely begun to use quantum at all. We are observing, discussing, and waiting for clarity. But the understanding we need will not arrive fully formed with mature systems - it has to be built ahead of them.
