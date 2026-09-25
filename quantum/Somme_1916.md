@@ -1,6 +1,6 @@
 # Somme, 1916: Tanks make a questionable entrance. No wait it’s 2026: We need to talk about Quantum Computing
 *Aug 2026 dan.gardner@baddogdown.com*
-|  |
+|  PREMIS |
 | --- |
 | **Somme, 1916. Tanks arrive, and no one really knows what to do with them.**
 Some dismiss them. Others overhype them. Most misunderstand them.
