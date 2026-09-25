@@ -8,6 +8,8 @@ Some dismiss them. Others overhype them. Most misunderstand them.
 
 We began in a world shaped entirely by cavalry. Range, speed, logistics, **even imagination** were bounded by what a horse could do. If a horse couldn’t solve it, it rarely became a serious question. Entire problem spaces simply didn’t exist to us.
 
+<br><br>
+
 Then tanks appeared.
 
 <p></p>
