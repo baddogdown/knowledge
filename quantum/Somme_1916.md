@@ -1,5 +1,5 @@
 # Somme, 1916: Tanks make a questionable entrance. No wait it’s 2026: We need to talk about Quantum Computing
-
+*Aug 2026 dan.gardner@baddogdown.com*
 |  |
 | --- |
 | **Somme, 1916. Tanks arrive, and no one really knows what to do with them.**
@@ -26,6 +26,7 @@ So progress was uneven. Tanks were applied within existing thinking, or isolated
 That understanding did not arrive with the technology. It took time to build. Experimentation. Failure. Iteration. And people capable of recognising patterns before they were obvious.
 
 </p>
+<p></p>
 <p>
 <img src="./computer.png" alt="tank" width="200" align="right"/>
   
