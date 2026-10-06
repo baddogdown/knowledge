@@ -27,6 +27,9 @@ The intent is that:
 ## Review Tasks
 Please critically assess the proposed CKFs and do not assume they are correct.
 
+### 0. Concept duplication.
+Overall is the whole concept of CKFs repeating what already exists ?
+
 ### 1. Mutual Exclusivity
 For each CKF:
 * Is it genuinely distinct from the others?
