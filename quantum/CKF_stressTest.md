@@ -134,5 +134,5 @@ Provide:
 4. Suggested splits or mergers.
 5. A revised CKF taxonomy if you believe improvements can be made.
 6. A confidence score (1-10) for each CKF as a stable long-term computational abstraction.
-
+7. Complete output must be in markdown and easy to copy paste into a file.
 Do not optimise for politeness. Optimise for intellectual rigour, precision, and long-term usefulness as a compute-agnostic taxonomy.
