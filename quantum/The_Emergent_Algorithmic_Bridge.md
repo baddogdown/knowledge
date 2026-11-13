@@ -15,7 +15,7 @@ Hardware is a commercial commodity; mathematical problem formulation and complex
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
 ### Document Roadmap
-* **Computational Problem Archetypes (CPAs) & Operational Problem Types (OPTs):** Categorises computational challenges into seven fundamental archetypes ("primary colours") and recurring operational problem palettes ("OPTs") that enable enterprise reusability, standardised benchmarking, and dual-use transfer.
+* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven fundamental archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
 * **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries, including OPT-anchored operational feedback loops.
 * **Detailed Phase Mechanics:** In-depth technical breakdown and mathematical formulation options across each pipeline phase.
@@ -28,13 +28,18 @@ flowchart TB
     %% 1. INPUT
     INBOUND["<b>RAW BATTLESPACE & DEFENCE MISSION</b>"]
 
-    %% 2. PROBLEM ARCHETYPES & OPTS
-    subgraph ARCHETYPES ["<b>Problem Formulation Layer (OPTs & CPAs)</b>"]
+    %% 2. COMPUTATIONAL PROBLEM ARCHETYPES
+    subgraph COMPUTATIONAL PROBLEM ARCHETYPES ["<b>COMPUTATIONAL PROBLEM ARCHETYPES</b>"]
         direction LR
-        OPT["<b>Operational Problem Types (OPTs)</b><br/><i>Standardised Operational Palettes</i>"]
-        CPA["<b>7 Computational Problem Archetypes (CPAs)</b><br/><i>Primary Colours of Computation</i>"]
+        CPA1["<b>placve holder</b><br/>"]
+        CPA2["<b>placve holder</b>"]
+        CPA3["<b>placve holder</b>"]
+        CPA4["<b>placve holder</b>"]
+        CPA5["<b>placve holder</b>"]
+        CPA6["<b>placve holder</b>"]
+        CPA7["<b>placve holder</b>"]
         
-        OPT <--> CPA
+        CPA1 ~~~ CPA2 ~~~ CPA3 ~~~ CPA4 ~~~ CPA5 ~~~ CPA6 ~~~ CPA7
     end
 
     %% 3. PIPELINE PHASES 
@@ -59,7 +64,7 @@ flowchart TB
 
     %% CONNECTIONS
     INBOUND --> DOMAINS
-    DOMAINS --> PHASES
+    COMPUTATIONAL PROBLEM ARCHETYPES --> PHASES
     PHASES --> ENV
     ENV --> OUTBOUND
 
@@ -70,19 +75,18 @@ flowchart TB
     style OUTBOUND fill:#f8fafc,stroke:#16a34a,stroke-width:2px,color:#0f172a, stroke-dasharray: 5 5
 
     %% Faint dashed wrapper boxes
-    style DOMAINS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
+    style COMPUTATIONAL PROBLEM ARCHETYPES fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
     style PHASES fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
     style ENV fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
 
     %% Problem Domain boxes (Matched to Diagram 1 Purple Gradients)
-    style PD1 fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
-    style PD2 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-    style PD3 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-
-    %% Phase boxes (Kept colors: 1&2 Sovereign Blue, 3 Marketplace Green)
-    style P1 fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
-    style P2 fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
-    style P3 fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#0f172a
+    style CPA1 fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
+    style CPA2 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    style CPA3 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA4 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA5 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA6 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA7 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
 
     %% Environment layer inner boxes
     style E1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
