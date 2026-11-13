@@ -15,10 +15,10 @@ Hardware is a commercial commodity; mathematical problem formulation and complex
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
 ### Document Roadmap
-* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven fundamental archetypes as useful to understanding the blend of compute challanges to any problem or use case.
+* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
-* **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries, including operational feedback loops (engineering and problem refactoring).
-* **Detailed Phase Mechanics:** In-depth technical breakdown and mathematical formulation options across each pipeline phase.
+* **Sovereignty & Governance:** Defines MOD sovereign custody versus what can be outsourced to a contestable commercial marketplace.
+* **Detailed Phase Mechanics:** Deeper technical breakdown and example mathematical model or solver options across each pipeline phase.
 
 #### Diagram 0: Overview
 
@@ -29,7 +29,7 @@ flowchart TB
     INBOUND["<b>RAW BATTLESPACE & DEFENCE MISSION</b>"]
 
     %% 2. COMPUTATIONAL PROBLEM ARCHETYPES
-    subgraph CPAS ["<b>COMPUTATIONAL PROBLEM ARCHETYPES</b>"]
+    subgraph CPAS ["<b>Computational Problem Archetypes (CPAs)</b>"]
         direction LR
         CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b>"]
         CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b>"]
@@ -104,13 +104,11 @@ flowchart TB
 ## Computational Problem Archetypes (CPAs)
 **The Foundational Mathematical Archetypes of Defence Demand**
 
-To bridge the gap between frontline operational problems and the evolving computational landscape without getting locked into vendor hardware speculation, defence challenges are categorised into **Seven Computational Problem Archetypes (CPAs)**. 
+To bridge the gap between frontline operational problems and the evolving computational landscape without getting locked into vendor hardware speculation, defence challenges are categorised into seven **Computational Problem Archetypes (CPAs)**. 
 
 Each CPA represents a distinct mathematical problem structure. They provide a compute-agnostic abstraction: the underlying mathematical challenge remains constant whether executed on classical CPU/GPU architectures, specialised digital/probabilistic accelerators, or emergent quantum platforms.
 
-*(For detailed definitions, the 0–3 bottleneck scoring rubric, and non-compute boundary analysis, see the companion reference: [Introducing_Computational_Problem_Archetypes.md](Introducing_Computational_Problem_Archetypes.md)).*
-
-| Computational Problem Archetype (CPA) | Core Operational Utility | Example Algorithms (Classical & Emergent) |
+| Computational Problem Archetype (CPA) | Core Operational Challange | Example Algorithms (Classical & Emergent) |
 | :--- | :--- | :--- |
 | **1. Constrained Combinatorial Allocation & Scheduling** | **Deciding *what to do* under hard constraints:** Fleet resupply routing, asset-to-task assignment, electronic warfare spectrum coordination, and joint multi-domain sortie scheduling under strict time and resource limits. | **Classical:** Mixed-Integer Programming (Branch-and-Bound / CP-SAT), Simulated Annealing, A* Pathfinding<br/>**Emergent:** QAOA (Quantum Approximate Optimisation), QUBO / Ising Solvers, Quantum/Digital Annealing |
 | **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* looking into an uncertain future:** Anticipating events that have not yet occurred, multi-stage wargaming, evaluating branching futures under adversarial choices, and dynamic plan adaptation where outcomes depend on uncertain future states. | **Classical:** Markov Decision Processes (MDP/POMDP), Monte Carlo Tree Search (MCTS), Bayesian Filtering (Kalman/Particle)<br/>**Emergent:** Quantum Bayesian Logic, Quantum Monte Carlo |
@@ -196,19 +194,19 @@ flowchart TB
 
 ### The Strategic Value of the CPA Abstraction
 
-1. **Targeted Benchmarking at Potential Inflection Points:** Benchmarking a full operational "system" or multi-stage use case can be difficult and often obscures where computational friction actually lives. Benchmarking at the CPA level enables clean, isolated evaluation. When an emergent compute modality (such as neutral atoms, photonics, or early fault-tolerant quantum silicon) reaches a potential inflection point, that breakthrough is likely to manifest on a **specific CPA**.
-2. **Cascading Algorithmic Reusability:** Because CPAs are decoupled from mission-specific terminology, demonstrating an emergent solver's advantage on a single CPA kernel offers the potential to deliver immediate, reusable advantage across *every* upstream defence use case dependent on that archetype.
+1. **Targeted Benchmarking and recognition of when emergent algorithmic techniques or compute modality become advantagous. (Inflection Points):** Benchmarking a full operational system or multi-stage use case can be difficult and often obscures where computational friction actually lives. Benchmarking at the CPA level enables clean, isolated evaluation. When an emergent compute modality (such as PPU) reaches a potential inflection point, that breakthrough is likely to manifest on a **specific CPA**.
+2. **Algorithmic Reusability:** Because CPAs are decoupled from mission-specific terminology, demonstrating an emergent solver's advantage on a single CPA offers the potential to identify reusable advantage across *every* upstream defence use case dependent on that archetype.
 
 ---
 
-### From Archetypes to Operational Palettes: Introducing OPTs
+### From Archetypes to Operational Efficiency
 
-Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes. 
+Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes (CPAs). 
 
-Think of CPAs as the **primary colours** of computation. When Defence analyses challenges across frontline commands, certain combinations of CPAs may repeat. **Operational Problem Types (OPTs)** are an operational optimisation to recognise recurring blends of CPAs. Problems do not have to fit an OPT to be formulated and executed; however, where patterns repeat, formalising them as OPTs delivers institutional efficiencies through practised workflows and templates:
+Think of CPAs as the **primary colours** of computation. When Defence analyses challenges across use cases, certain combinations of CPAs may repeat. **Operational Problem Types (OPTs)** are an operational optimisation to recognise recurring blends of CPAs. Problems do not have to fit an OPT to be formulated and executed; however, where patterns repeat, formalising them as OPTs delivers efficiencies through practised workflows, templates and recognised integration patterns for the hybrid mix of compute and other technologies:
 
-1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
-2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can directly harvest civilian algorithmic breakthroughs without exposing operational secrets or classified data.
+1. **Enterprise Reusability (Eliminating the bespoke silo):** Different parts of MOD often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts or technology. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining repeating blends of CPAs as an OPT pattern allows software formulations, verification suites, and decomposition workflows to be potentially reused enterprise-wide.
+2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can more easily harvest civilian algorithmic breakthroughs at a composit system level without exposing operational secrets or classified data.
 3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
 
 ---
@@ -217,7 +215,7 @@ Think of CPAs as the **primary colours** of computation. When Defence analyses c
 Regardless of the problem domain or target compute hardware, exploiting advanced mathematics can follow a unified three-phase pipeline:
 | Pipeline Phase | Primary Function | Core Mathematical Role |
 | :--- | :--- | :--- |
-| **1. PROBLEM FORMULATION** | *Creation of Mathematical Models* | **Pure Model Creation:** Translates physical assets, constraints, sensor streams, and operational intent into abstract, vendor-decoupled mathematical models (QUBO, Ising, Graph topologies, Tensor networks, Hamiltonians). Diagnoses constituent CPAs and identifies the dominant rate-limiting bottleneck. |
+| **1. PROBLEM FORMULATION** | *Creation of Mathematical Models & Identification of distinct bottlenecks* | **Pure Model Creation:** Translates physical assets, constraints, sensor streams, and operational intent into abstract, vendor-decoupled mathematical models (QUBO, Ising, Graph topologies, Tensor networks, Hamiltonians). Diagnoses constituent CPAs and identifies the dominant rate-limiting bottleneck. |
 | **2. COMPLEXITY ENGINEERING** | *Model Scaling, Partitioning, Slicing* | **Model Engineering & Adaptation:** Slices and partitions monolithic models along the natural fault lines of the constituent CPAs (e.g., decoupling spatial graphs from discrete allocation variables). Applies mathematical decomposition (Benders, Column Gen, LNS) and adapts models to execution location and hardware topology limits. |
 | **3. EXECUTION & DELIVERY** | *Runtime Mechanics & Decision Output* | **Solver Execution:** Executes engineered sub-models on target engines (MIP, Digital/Quantum Annealers, QPUs, p-bits) and delivers anytime, trade-off-aware decisions to commanders. |
 
@@ -230,7 +228,7 @@ To ensure operational agility, eliminate vendor lock-in, and establish the MOD a
 | :--- | :--- |
 | Pipeline Scope & Ownership | **Phases 1 & 2 — Sovereign Intellectual Property & Middleware:**<br/><br/>• **Pure Mathematical Formulations:** Vendor-decoupled problem models and objective functions.<br/>• **Operational Problem Type (OPT) Library:** Reusable multi-CPA composite challenge templates.<br/>• **Complexity Decomposition Recipes:** Pre-characterised partitioning and slicing algorithms tailored to specific OPTs.<br/>• **Sovereign Benchmark Harnesses:** Isolated CPA and composite OPT verification testbeds.<br/>• **Doctrine & Governance:** Classified constraints, Rules of Engagement (ROE), and trade-off penalty weightings. |
 | Enterprise Strategic Value | **Decoupled, Enduring Enterprise Assets:**<br/><br/>• **Cross-Technology Utility:** Formulations and decomposition logic remain valid across *all* technology options (classical HPC, digital annealers, neuromorphic chips, or future quantum QPUs).<br/>• **Cross-Use Case Reuse:** Reuses proven mathematical structures across superficially disparate military use cases (e.g., the same network-flow model solves both theater fuel logistics and resilient C2 message routing).<br/>• **Doctrine & IP Retention:** Keeps operational secrets, targeting constraints, and strategic priorities strictly within sovereign hands. |
-| Dynamic Value | **Control of Intent & Rapid Inflection Point Exploitation:**<br/><br/>• **Control of Military Intent:** Internal authority retains full control over objectives, risk tolerances, and trade-offs regardless of who provides the underlying compute.<br/>• **Exploiting Hardware Inflection Points:** When an emergent compute paradigm reaches an inflection point on an isolated CPA, sovereign custody of Phases 1 and 2 allows Defence to immediately adopt that advantage across all dependent missions without rewriting front-line systems.<br/>• **Responsive to Battlefield Dynamics:** Adapts dynamically to shifts in operational friction, communication denial (DDIL), and localized compute constraints (complexity vs. urgency vs. accuracy). |
+| Responsive to Change | **Control of Intent Across Changing Realities:**<br/><br/>• **Redefining military objectives and trade-offs** is retained by internal authority regardless of who provides the underlying compute.<br/>• **Recognise technology inflection points** through benchmarking emergent algorithmic techniques or compute types and understanding when novel approaches should be adopted or receive investment.<br/>• **Responsive to battlefield dynamics** where blend of problem classes, risk, locality or other echelons requires changes in where problems are solved and the tension between complexity -vs- urgency -vs- accuracy. |
 
 #### Contestable Compute Marketplace
 
@@ -238,18 +236,18 @@ To ensure operational agility, eliminate vendor lock-in, and establish the MOD a
 | :--- | :--- |
 | Pipeline Scope & Ownership | **Phase-3 — Execution Engines & Runtimes:**<br/><br/>• **Heterogeneous solver hardware:** Classical MIP/CP-SAT, CMOS digital annealers, probabilistic p-bits, neutral-atom arrays, and gate-model QPUs.<br/>• **All scale and deployment models:** Sovereign cloud hyperscalers, forward-deployed HQ servers, and ruggedized vehicle/edge silicon.<br/>• **Runtime orchestration:** Low-latency contraction engines and co-processing loops. |
 | Enterprise Strategic Value | **Commercial Competition & Non-Disruptive Insertion:**<br/><br/>• **Benchmark-Driven Competition:** Drives market competition by challenging vendors with standardised, open CPA and OPT benchmark instances, forcing transparent competition on solution quality, speed, SWaP-C, and price per solve.<br/>• **Enables plug-and-play** insertion of emergent hardware breakthroughs without rewriting underlying defence models. |
-| Dynamic Value | **Buffering Market & Operational Volatility:**<br/><br/>• **Hedges Market Volatility:** Protects the MOD from commercial churn, vendor bankruptcy, and rapid shifts in proprietary hardware architectures.<br/>• **Adapts to Operational Flux & Scale:** Flexibly absorbs shifts in *where* the MOD needs to compute (cloud, HQ, edge) and rapid swings in *scale* (from deliberate campaign analysis to surge tactical response).<br/>• **Spans R&D and BAU:** Supports both mission-critical Business-As-Usual (BAU) operational execution and safe R&D benchmarking of experimental or emergent compute. |
+| Responsive to Change | **Buffering Market & Operational Volatility:**<br/><br/>• **Hedges Market Volatility:** Protects the MOD from commercial churn, vendor bankruptcy, and rapid shifts in proprietary hardware architectures.<br/>• **Adapts to Operational Flux & Scale:** Flexibly absorbs shifts in *where* the MOD needs to compute (cloud, HQ, edge) and rapid swings in *scale* (from deliberate campaign analysis to surge tactical response).<br/>• **Spans R&D and BAU:** Supports both mission-critical Business-As-Usual (BAU) operational execution and safe R&D benchmarking of experimental or emergent compute. |
 
 ## Operational Feedback Loops
-Real-world execution generates two distinct operational feedback loops back into sovereign custody. These feedback loops occur naturally and fundamentally during real-world operations—regardless of whether an Operational Problem Type (OPT) has been assigned. Their core purpose is to determine whether, on occasion, Defence needs to conduct **engineering refactoring** (adapting the execution pipeline, decomposition, or runtime) or **problem refactoring** (reformulating the underlying mathematics, constraints, or doctrine):
+Real-world execution generates two distinct operational feedback loops back into sovereign custody.  Their core purpose is to determine whether, on occasion, Defence needs to conduct **engineering refactoring** (adapting the execution pipeline, decomposition, or runtime) or **problem refactoring** (reformulating the underlying mathematics, constraints, or doctrine):
 
 #### Engineering Refactoring
 
 |  |  |
 | :--- | :--- |
 | Pathway & Cadence | **Phase 3 $\to$ Phase 2** &mdash; *Tactical / High Cadence* |
-| Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), edge power/thermal throttling, or vehicle compute limits during execution. |
-| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts the Engineering Pipeline (Core Mathematical Model Remains Intact):**<br/><br/>• **Algorithmic Slicing & Partitioning:** Dynamically decouples sub-problems along constituent CPA boundaries (e.g., decoupling discrete combinatorial allocation variables from spatial network graphs). Where an OPT template exists, pre-characterised decomposition recipes provide a ready-made efficiency; otherwise, standard mathematical decomposition (Benders, Column Gen, LNS) is applied directly.<br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from a 48-hr deliberate plan to rapid localised repair).<br/>• **Focused Workload Rebalancing:** Drops non-critical secondary CPA variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
+| Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), edge power/thermal throttling, or vehicle compute limits during execution.  Also may include unexpected intelligence of adversary action requiring urgent consideration of greater uncertainty (increasing scale of complexity for the same model).|
+| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts (Core Model Remains Intact):**<br/><br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from 48-hr deliberate plan to rapid localized fix).<br/>• **Focused Workload Rebalancing:** Drops non-critical variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
 | Defence Impact & Example | Rapid plan repair following an ambush or bridge denial on a logistics convoy route without re-running the entire theater-level schedule. |
 
 #### Problem Refactoring
@@ -284,8 +282,8 @@ flowchart TB
         direction LR
         P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>Pure Models & CPA Bottleneck Diagnosis</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing, Partitioning & Adaptation</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Runtime Mechanics & Decision Output</i>"]
 
-        P3 -.->|"<b>Engineering Refactoring</b><br/>Pipeline, partition & solver adaptation"| P2
-        P3 -.->|"<b>Problem Refactoring</b><br/>Model reformulation & constraint re-anchoring"| P1
+        P3 -.->|"<b>Engineering Refactoring</b><br/>Local repair & re-partitioning"| P2
+        P3 -.->|"<b>Problem Refactoring</b><br/>Major shock & model refactoring"| P1
     end
 
     KEY ~~~ PHASES
