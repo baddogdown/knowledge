@@ -132,13 +132,13 @@ flowchart TB
         subgraph ROW1 [" "]
             direction LR
             subgraph G1 ["<b>Deciding What To Do</b>"]
-                direction TB
+                direction LR
                 CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Deciding what to do<br/>under hard constraints</i>"]
                 CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Deciding what to do<br/>looking into an uncertain future</i>"]
                 CPA1 ~~~ CPA2
             end
             subgraph G2 ["<b>Understanding What Is Happening</b>"]
-                direction TB
+                direction LR
                 CPA3["<b>Graph Inference & Search</b><br/><br/><i>Understanding what is happening<br/>across connected systems</i>"]
                 CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Understanding what is happening<br/>in noisy sensor environments</i>"]
                 CPA3 ~~~ CPA4
@@ -150,7 +150,7 @@ flowchart TB
         subgraph ROW2 [" "]
             direction LR
             subgraph G3 ["<b>Simulation & Predicting</b>"]
-                direction TB
+                direction LR
                 CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Predicting what could happen<br/>at microscopic scale</i>"]
                 CPA7["<b>Physics-Based Simulation</b><br/><br/><i>Predicting what could happen<br/>in continuous environments</i>"]
                 CPA5 ~~~ CPA7
