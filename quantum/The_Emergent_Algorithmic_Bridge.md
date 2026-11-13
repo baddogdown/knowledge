@@ -15,9 +15,9 @@ Hardware is a commercial commodity; mathematical problem formulation and complex
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
 ### Document Roadmap
-* **Problem Domains (A, B, C):** Categorises defence operations into Optimisation, Perception, and Simulation archetypes.
+* **Computational Problem Archetypes (CPAs) & Operational Problem Types (OPTs):** Categorises computational challenges into seven fundamental archetypes ("primary colours") and recurring operational problem palettes ("OPTs") that enable enterprise reusability, standardised benchmarking, and dual-use transfer.
 * **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
-* **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries and operational feedback loops.
+* **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries, including OPT-anchored operational feedback loops.
 * **Detailed Phase Mechanics:** In-depth technical breakdown and mathematical formulation options across each pipeline phase.
 
 #### Diagram 0: Overview
@@ -28,14 +28,13 @@ flowchart TB
     %% 1. INPUT
     INBOUND["<b>RAW BATTLESPACE & DEFENCE MISSION</b>"]
 
-    %% 2. PROBLEM DOMAINS
-    subgraph DOMAINS ["Problem Domains"]
+    %% 2. PROBLEM ARCHETYPES & OPTS
+    subgraph ARCHETYPES ["<b>Problem Formulation Layer (OPTs & CPAs)</b>"]
         direction LR
-        PD1["<b>Optimisation</b><br/>"]
-        PD2["<b>Perception & Pattern Recognition</b>"]
-        PD3["<b>Simulation & Synthetic Environments</b>"]
+        OPT["<b>Operational Problem Types (OPTs)</b><br/><i>Standardised Operational Palettes</i>"]
+        CPA["<b>7 Computational Problem Archetypes (CPAs)</b><br/><i>Primary Colours of Computation</i>"]
         
-        PD1 ~~~ PD2 ~~~ PD3
+        OPT <--> CPA
     end
 
     %% 3. PIPELINE PHASES 
@@ -93,55 +92,75 @@ flowchart TB
 
 ---
 
-## Problem Domains
-**Relevant across traditional classical as well as emergent compute**
+## Computational Problem Archetypes (CPAs) & Operational Palettes (OPTs)
+**The Seven Primary Colours of Computation & Standardised Operational Palettes**
 
-To interface effectively with defence primes, research labs (DSTL, NQCC, DARPA), and commercial vendors, defence workloads are clustered into three primary computational archetypes:
+To interface effectively across defence primes, research labs (DSTL, NQCC, DARPA), academia, and commercial vendors without falling into vendor-driven hardware hype, defence workloads are structured into **Seven Computational Problem Archetypes (CPAs)**. 
 
-| MOD Problem Domain | Core Defence Utility | Industry mapping |
+CPAs represent the **"primary colours"** of computation—compute-agnostic mathematical structures that sit between raw technical algorithms and frontline operational missions. Real-world challenges are rarely single archetypes; they are typically blends. As Defence analyses challenges across domains, repeated combinations crystallise into **Operational Problem Types (OPTs)**—the recurring "colour palettes" of defence problem solving.
+
+*(For detailed definitions, the 0–3 bottleneck scoring rubric, and non-compute boundary analysis, see the companion reference: [Introducing_Computational_Problem_Archetypes.md](Introducing_Computational_Problem_Archetypes.md)).*
+
+| Computational Problem Archetype (CPA) | Core Operational Utility | Industry / Academic Mapping |
 | :--- | :--- | :--- |
-| **A. Optimisation** | **Deciding *what to do*:** C2 tasking, strategic/tactical logistics, dynamic asset endurance & employment, sensor-to-shooter pairing, EW spectrum coordination. | Operations Research (OR), Mathematical Programming, Mixed-Integer Programming (MIP), QUBO / Ising Models, Combinatorial Heuristics |
-| **B. Perception & Pattern Recognition** | **Understanding *what is happening*:** Faint signal detection in contested EW, multi-INT data fusion, ISR target identification, sensor clutter rejection, intent derived from disconnected behaviour and movement. | Quantum Machine Learning (QML), High-Dimensional Feature Classification, Tensor Networks, Signal De-interleaving, Anomaly Detection |
-| **C. Simulation & Synthetic Environments** | **Predicting *what could happen*:** Multi-axis adversary wargaming, energetic materials R&D, synthetic radar/sensor generation, risk & uncertainty forecasting. | Quantum Physical/Chemical Simulation (Hamiltonian dynamics), Probabilistic / Stochastic Sampling, Agent-Based & PDE Modeling |
+| **1. Constrained Combinatorial Allocation & Scheduling** | **Deciding *what to do* (Discrete):** Fleet resupply routing, asset-to-task assignment, communications spectrum allocation, and mission sortie scheduling under hard operational constraints. | Operations Research (OR), Mathematical Programming (MIP/CP-SAT), QUBO / Ising Models, Combinatorial Heuristics, QOBLIB |
+| **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* (Dynamic/Stochastic):** Multi-stage wargaming, adaptive search-and-rescue, and autonomous platform routing under fog-of-war, adversarial countermeasures, and weather uncertainty. | Markov Decision Processes (MDP/POMDP), Reinforcement Learning, Monte Carlo Tree Search, Stochastic Dynamic Programming |
+| **3. Graph Inference & Search** | **Understanding *what is happening* (Relational):** Intelligence knowledge-graph traversal, kill-web connectivity, supply network vulnerability analysis, and cyber attack-path discovery. | Graph Traversal, Community Detection, Graph Neural Networks (GNN), Network Flow, Tensor-Network Contraction |
+| **4. High-Dimensional Statistical Inference** | **Understanding *what is happening* (Continuous/Latent):** Electronic warfare signal de-interleaving, multi-static radar/sonar track fusion, predictive maintenance telemetry, and anomaly detection in cluttered environments. | Latent Variable Estimation, Tensor Decomposition, Variational Quantum Classifiers (QML), Density Estimation, Manifold Learning |
+| **5. Electronic Structure & Quantum Dynamics** | **Predicting *what could happen* (Microscopic):** First-principles simulation of energetic molecular bonds, semiconductor defect physics for quantum sensors, and advanced battery chemistry. | Hamiltonian Simulation, Quantum Phase Estimation (QPE), Variational Quantum Eigensolvers (VQE), Quantum Monte Carlo |
+| **6. Cryptanalytic Number-Theoretic Computation** | **Securing & auditing sovereign trust:** Sovereign vulnerability evaluation of public-key architectures, post-quantum cryptographic auditing, and number-theoretic verification. | Integer Factorisation (Shor's, GNFS), Discrete Logarithms, Lattice Reduction (LLL/BKZ), Algebraic Cryptanalysis |
+| **7. Physics-Based Simulation** | **Predicting *what could happen* (Macroscopic):** Continuum mechanics, computational fluid dynamics (CFD) for hypersonics, shock hydrodynamics for sovereign stockpile stewardship, and RF propagation in complex terrain. | Partial Differential Equation (PDE) Solvers, Finite Element Analysis (FEA), Multiphysics Shock Hydrodynamics |
 
-#### Diagram 1: The Three Core Defence Problem Domains
+### The Value of Operational Problem Types (OPTs)
+
+While CPAs provide the seven foundational building blocks, Defence operational value is realized at the **OPT layer**:
+
+1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands traditionally procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these are instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Stochastic Decisions*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
+2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can directly harvest civilian algorithmic breakthroughs without exposing operational secrets or classified data.
+3. **Contestable Benchmark Standards:** Instead of evaluating proprietary vendor claims, the MOD can issue challenges using standardised, synthetic benchmark datasets anchored to a specific OPT specification, forcing vendors to compete transparently on solution quality, speed, and cost.
+
+#### Diagram 1: Problem Formulation Layer — The 7 CPAs and Recurring OPT Palettes
 
 ```mermaid
 flowchart TB
 
-    subgraph DOMAINS ["Problem Domains"]
+    subgraph OPTS ["<b>Operational Problem Types (OPTs) — Recurring Palettes</b>"]
         direction LR
-        D1["<b>A. Optimisation</b><br/><br/><br/><i>Deciding what to do</i><br/><br/>"]
-        D2["<b>B. Perception & Pattern Recognition</b><br/><br/><i>Understanding what is happening</i>"]
-        D3["<b>C. Simulation & Synthetic Environments</b><br/><br/><i>Predicting what could happen</i>"]
-        D1 ~~~ D2 ~~~ D3
+        OPT1["<b>Dynamic Contested Routing</b><br/><i>(Logistics / Convoy / Strike)</i>"]
+        OPT2["<b>Sensor Fusion & De-Interleaving</b><br/><i>(Contested EW / Radar Net)</i>"]
+        OPT3["<b>Energetics & Sensor Design</b><br/><i>(Sovereign Materials / Payloads)</i>"]
     end
 
-    subgraph KEY ["<b>KEY:</b> Current Emergent Maturity & Value"]
-        direction LR
-        K1["<b>Established</b><br/><i>Common in industry</i><br/><br/>"]
-        K2["<b>Early</b><br/><i>Growing (e.g., financial forensics)</i>"]
-        K3["<b>Future</b><br/><i>Large investment (insurance & geopolitics)</i>"]
-        K1 ~~~ K2 ~~~ K3
+    subgraph CPAS ["<b>The 7 Computational Problem Archetypes (CPAs) — Primary Colours</b>"]
+        direction TB
+        subgraph DECIDE ["Deciding What To Do"]
+            CPA1["1. Constrained Combinatorial Allocation"]
+            CPA2["2. Sequential Stochastic Decision-Making"]
+        end
+        subgraph UNDERSTAND ["Understanding What Is Happening"]
+            CPA3["3. Graph Inference & Search"]
+            CPA4["4. High-Dimensional Statistical Inference"]
+        end
+        subgraph PREDICT ["Predicting & Securing"]
+            CPA5["5. Electronic Structure & Quantum Dynamics"]
+            CPA6["6. Cryptanalytic Number-Theoretic Computation"]
+            CPA7["7. Physics-Based Simulation"]
+        end
     end
 
-    DOMAINS ~~~ KEY
+    OPT1 -.->|"Blend: Score 3 + Score 2"| CPA1
+    OPT1 -.->|"Blend: Score 3 + Score 2"| CPA2
+    OPT2 -.->|"Blend: Score 3 + Score 2"| CPA3
+    OPT2 -.->|"Blend: Score 3 + Score 2"| CPA4
+    OPT3 -.->|"Blend: Score 3 + Score 3"| CPA5
+    OPT3 -.->|"Blend: Score 3 + Score 3"| CPA7
 
-    %% Styling Classes
-    classDef strong fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
-    classDef medium fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-    classDef weak fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-
-    class D1,K1 strong
-    class D2,K2 medium
-    class D3,K3 weak
-
-    style DOMAINS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
-    style KEY fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
+    style OPTS fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#1e293b
+    style CPAS fill:#ffffff,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
+    style DECIDE fill:#f0fdf4,stroke:#22c55e,stroke-width:1px,color:#14532d
+    style UNDERSTAND fill:#eff6ff,stroke:#3b82f6,stroke-width:1px,color:#1e40af
+    style PREDICT fill:#faf5ff,stroke:#a855f7,stroke-width:1px,color:#581c87
 ```
-*Note #1: Sovereign Cryptography and Secure Communications are treated as a distinct algebraic/number-theoretic capability outside this computational framework.*
-
-*Note #2: Simulation & Synthetic Environments is currently driven by materials science and pharmaceutical development. Although, as an example, stealth materials is of interest to MOD, this is considered relevant to the industrial supply chain and not where MOD internal algorithmic competence is needed.*
 
 ---
 
@@ -173,15 +192,15 @@ To ensure operational agility, eliminate vendor lock-in, and establish the MOD a
 | Dynamic Value | **Buffering Market & Operational Volatility:**<br/><br/>• **Hedges Market Volatility:** Protects the MOD from commercial churn, vendor bankruptcy, and rapid shifts in proprietary hardware architectures.<br/>• **Adapts to Operational Flux & Scale:** Flexibly absorbs shifts in *where* the MOD needs to compute (cloud, HQ, edge) and rapid swings in *scale* (from deliberate campaign analysis to surge tactical response).<br/>• **Spans R&D and BAU:** Supports both mission-critical Business-As-Usual (BAU) operational execution and safe R&D benchmarking of experimental or emergent compute. |
 
 ## Operational Feedback Loops
-Real-world execution generates two distinct operational feedback loops back into sovereign custody:
+Real-world execution generates two distinct operational feedback loops back into sovereign custody, both critically enabled by the **Operational Problem Type (OPT)** abstraction:
 
 #### Engineering Refactoring
 
 |  |  |
 | :--- | :--- |
 | Pathway & Cadence | **Phase 3 $\to$ Phase 2** &mdash; *Tactical / High Cadence* |
-| Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications, edge power or capacity constraints during execution, unexpected intelligence of adversary requiring greater uncertainty (complexity) consideration. |
-| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts (Core Model Remains Intact):**<br/><br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from 48-hr deliberate plan to rapid localized fix).<br/>• **Focused Workload Rebalancing:** Drops non-critical variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
+| Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), edge power/thermal throttling, or vehicle compute limits during execution. |
+| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts via Pre-Engineered OPT Recipes (Core Model Remains Intact):**<br/><br/>• **Palette-Specific Slicing:** Rather than inventing ad-hoc heuristics under fire, Phase 2 executes the pre-characterised decomposition recipe certified for that mission's **OPT** (e.g., decoupling combinatorial allocation variables from spatial graph networks).<br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from a 48-hr deliberate plan to rapid localised repair).<br/>• **Focused Workload Rebalancing:** Drops non-critical secondary CPA variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
 | Defence Impact & Example | Rapid plan repair following an ambush or bridge denial on a logistics convoy route without re-running the entire theater-level schedule. |
 
 #### Problem Refactoring
@@ -189,9 +208,9 @@ Real-world execution generates two distinct operational feedback loops back into
 |  |  |
 | :--- | :--- |
 | Pathway & Cadence | **Phase 3 $\to$ Phase 1** &mdash; *Strategic / Doctrinal Cadence* |
-| Operational Trigger | Fundamental operational shocks, emergence of novel adversary countermeasures, or major changes in strategic posture. |
-| Sovereign Adaptation Mechanism | **Phase 1 Mathematically Reformulates Core Problem:**<br/><br/>• **Objective Recalibration:** Shifts objective penalty weights (e.g., elevates force survivability over mission speed).<br/>• **Topology Restructuring:** Redraws graph nodes/edges (e.g., severing a denied port, maritime strait, or compromised C2 link).<br/>• **Doctrine Re-anchoring:** Encodes updated Rules of Engagement (ROE) and legal/policy constraints.<br/>• **Expansive Workload Rebalancing:** Includes new critical variables to address new uncertainty & risk implications at scale. |
-| Defence Impact & Example | Doctrinal reformulation when unexpected adversary A2/AD systems deny air corridors, requiring new mathematical constraint envelopes. |
+| Operational Trigger | Fundamental operational shocks, emergence of novel adversary countermeasures, post-exercise debriefs, or major changes in strategic posture revealing misdiagnosed bottlenecks. |
+| Sovereign Adaptation Mechanism | **Phase 1 Reformulates Problem & Recalibrates Enterprise OPT Palettes:**<br/><br/>• **Enterprise Palette Recalibration:** If operational analysis shows that supply convoys are failing due to adversary drone strikes rather than road capacity, the **OPT's dominant CPA** is updated from `Constrained Allocation (Score 3)` to `Sequential Stochastic Decisions (Score 3)`. This feedback systematically updates formulation guidelines, R&D priorities, and solver requirements across all related use cases enterprise-wide.<br/>• **Objective Recalibration:** Shifts objective penalty weights (e.g., prioritising force survivability over mission speed).<br/>• **Topology Restructuring:** Redraws graph nodes/edges (e.g., severing a denied port, maritime strait, or compromised C2 link).<br/>• **Doctrine Re-anchoring:** Encodes updated Rules of Engagement (ROE) and legal/policy constraints. |
+| Defence Impact & Example | Doctrinal reformulation when unexpected adversary A2/AD systems deny air corridors, requiring new mathematical constraint envelopes across all joint strike planning. |
 
 #### Diagram 2: The 3-Phase Pipeline + Sovereignty Boundaries & Compute Horizons
 
@@ -204,8 +223,8 @@ flowchart TB
     %% ==========================================
     subgraph KEY ["<b>KEY:</b> MOD Sovereign Focus"]
         direction LR
-        K1["<b>MOD Sovereign Custody</b><br/><i>(Phases 1 & 2)</i>"]
-        K2["<b>Contestable Marketplace</b><br/><i>(Phase 3)</i>"]
+        K1["<b>MOD Sovereign Custody</b><br/><i>(Phases 1 & 2: OPT & CPA Custody)</i>"]
+        K2["<b>Contestable Marketplace</b><br/><i>(Phase 3: Heterogeneous Execution)</i>"]
         K1 ~~~ K2
     end
 
@@ -214,10 +233,10 @@ flowchart TB
     %% ==========================================
     subgraph PHASES ["The 3-Phase Algorithmic Pipeline"]
         direction LR
-        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>Creation of Mathematical Models</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>Model Scaling, Partitioning, Slicing</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Runtime Mechanics & Decision Output</i>"]
+        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>Creation of Mathematical Models & OPT Palettes</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>Model Scaling, Partitioning, Slicing</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Runtime Mechanics & Decision Output</i>"]
 
-        P3 -.->|"<b>Engineering Refactoring</b><br/>Local repair & re-partitioning"| P2
-        P3 -.->|"<b>Problem Refactoring</b><br/>Major shock & model refactoring"| P1
+        P3 -.->|"<b>Engineering Refactoring</b><br/>Pre-certified OPT partition repair"| P2
+        P3 -.->|"<b>Problem Refactoring</b><br/>OPT palette recalibration & model refactoring"| P1
     end
 
     KEY ~~~ PHASES
@@ -280,9 +299,13 @@ flowchart TB
 ---
 
 # 1. PROBLEM FORMULATION 
-**Creation of Mathematical Models**
+**Creation of Mathematical Models & OPT Palettes**
 
-Translates real-world physical assets, constraints, sensor streams, and operational intent into computable, hardware-aware but vendor-decoupled mathematical structures. Sovereign custody of this formulation phase guarantees that the MOD retains ownership of the core mission logic, possessing the internal middleware to map a core algorithmic intent onto any physical topology (e.g., Pegasus graph, all-to-all CMOS) as the commercial market shifts.
+Translates real-world physical assets, constraints, sensor streams, and operational intent into computable, hardware-aware but vendor-decoupled mathematical structures. 
+
+Crucially, Problem Formulation is not merely writing equations—it is the disciplined identification of **which Computational Problem Archetype (CPA) represents the active operational bottleneck** (evaluated on the 0–3 dominance scale). By diagnosing whether a mission is primarily rate-limited by *Constrained Allocation*, *Sequential Stochastic Decisions*, *Graph Inference*, *Statistical Inference*, *Quantum Dynamics*, *Number-Theoretic Math*, or *Continuum Physics*, Defence ensures it directs algorithmic investment exclusively at the true constraint. 
+
+These archetypes are formulated into **Operational Problem Types (OPTs)**, guaranteeing that the MOD retains sovereign ownership of the core mission logic, reusable formulation libraries, and benchmark harnesses, possessing the internal middleware to map that algorithmic intent onto any physical topology (e.g., Pegasus graph, all-to-all CMOS, tensor cores, QPUs) as the commercial market shifts.
 
 ### 1.1 Complex Optimisation & Decision Advantage
 *Deciding What to Do*
