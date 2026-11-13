@@ -29,15 +29,15 @@ flowchart TB
     INBOUND["<b>RAW BATTLESPACE & DEFENCE MISSION</b>"]
 
     %% 2. COMPUTATIONAL PROBLEM ARCHETYPES
-    subgraph COMPUTATIONAL PROBLEM ARCHETYPES ["<b>COMPUTATIONAL PROBLEM ARCHETYPES</b>"]
+    subgraph CPAS ["<b>COMPUTATIONAL PROBLEM ARCHETYPES</b>"]
         direction LR
-        CPA1["<b>placve holder</b><br/>"]
-        CPA2["<b>placve holder</b>"]
-        CPA3["<b>placve holder</b>"]
-        CPA4["<b>placve holder</b>"]
-        CPA5["<b>placve holder</b>"]
-        CPA6["<b>placve holder</b>"]
-        CPA7["<b>placve holder</b>"]
+        CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b>"]
+        CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b>"]
+        CPA3["<b>Graph Inference & Search</b>"]
+        CPA4["<b>High-Dimensional<br/>Statistical Inference</b>"]
+        CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b>"]
+        CPA6["<b>Cryptanalytic Number-Theoretic<br/>Computation</b>"]
+        CPA7["<b>Physics-Based Simulation</b>"]
         
         CPA1 ~~~ CPA2 ~~~ CPA3 ~~~ CPA4 ~~~ CPA5 ~~~ CPA6 ~~~ CPA7
     end
@@ -63,8 +63,8 @@ flowchart TB
 
 
     %% CONNECTIONS
-    INBOUND --> DOMAINS
-    COMPUTATIONAL PROBLEM ARCHETYPES --> PHASES
+    INBOUND --> CPAS
+    CPAS --> PHASES
     PHASES --> ENV
     ENV --> OUTBOUND
 
@@ -75,18 +75,23 @@ flowchart TB
     style OUTBOUND fill:#f8fafc,stroke:#16a34a,stroke-width:2px,color:#0f172a, stroke-dasharray: 5 5
 
     %% Faint dashed wrapper boxes
-    style COMPUTATIONAL PROBLEM ARCHETYPES fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
+    style CPAS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
     style PHASES fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
     style ENV fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
 
-    %% Problem Domain boxes (Matched to Diagram 1 Purple Gradients)
+    %% Problem Archetype boxes (Matched to Live Spreadsheet Readiness Bands: H=Dark, M=Medium, L=Light)
     style CPA1 fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
-    style CPA2 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-    style CPA3 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-    style CPA4 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-    style CPA5 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA2 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA3 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    style CPA4 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    style CPA5 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
     style CPA6 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-    style CPA7 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+    style CPA7 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+
+    %% Phase boxes (Kept colors: 1&2 Sovereign Blue, 3 Marketplace Green)
+    style P1 fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style P2 fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+    style P3 fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#0f172a
 
     %% Environment layer inner boxes
     style E1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
