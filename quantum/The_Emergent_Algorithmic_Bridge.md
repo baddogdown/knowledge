@@ -17,7 +17,7 @@ Hardware is a commercial commodity; mathematical problem formulation and complex
 ### Document Roadmap
 * **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven fundamental archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
-* **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries, including OPT-anchored operational feedback loops.
+* **Sovereignty & Governance:** Defines MOD sovereign custody versus contestable commercial marketplace boundaries, including operational feedback loops (engineering and problem refactoring).
 * **Detailed Phase Mechanics:** In-depth technical breakdown and mathematical formulation options across each pipeline phase.
 
 #### Diagram 0: Overview
@@ -205,7 +205,7 @@ flowchart TB
 
 Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes. 
 
-Think of CPAs as the **primary colours** of computation. As Defence analyses challenges across frontline commands, repeated combinations may crystallise into **Operational Problem Types (OPTs)**—the recurring "colour palettes" of defence problem solving:
+Think of CPAs as the **primary colours** of computation. When Defence analyses challenges across frontline commands, certain combinations of CPAs may repeat. **Operational Problem Types (OPTs)** are an operational optimisation to recognise recurring blends of CPAs. Problems do not have to fit an OPT to be formulated and executed; however, where patterns repeat, formalising them as OPTs delivers institutional efficiencies through practised workflows and templates:
 
 1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can directly harvest civilian algorithmic breakthroughs without exposing operational secrets or classified data.
@@ -241,7 +241,7 @@ To ensure operational agility, eliminate vendor lock-in, and establish the MOD a
 | Dynamic Value | **Buffering Market & Operational Volatility:**<br/><br/>• **Hedges Market Volatility:** Protects the MOD from commercial churn, vendor bankruptcy, and rapid shifts in proprietary hardware architectures.<br/>• **Adapts to Operational Flux & Scale:** Flexibly absorbs shifts in *where* the MOD needs to compute (cloud, HQ, edge) and rapid swings in *scale* (from deliberate campaign analysis to surge tactical response).<br/>• **Spans R&D and BAU:** Supports both mission-critical Business-As-Usual (BAU) operational execution and safe R&D benchmarking of experimental or emergent compute. |
 
 ## Operational Feedback Loops
-Real-world execution generates two distinct operational feedback loops back into sovereign custody, both critically enabled by the **Operational Problem Type (OPT)** abstraction:
+Real-world execution generates two distinct operational feedback loops back into sovereign custody. These feedback loops occur naturally and fundamentally during real-world operations—regardless of whether an Operational Problem Type (OPT) has been assigned. Their core purpose is to determine whether, on occasion, Defence needs to conduct **engineering refactoring** (adapting the execution pipeline, decomposition, or runtime) or **problem refactoring** (reformulating the underlying mathematics, constraints, or doctrine):
 
 #### Engineering Refactoring
 
@@ -249,7 +249,7 @@ Real-world execution generates two distinct operational feedback loops back into
 | :--- | :--- |
 | Pathway & Cadence | **Phase 3 $\to$ Phase 2** &mdash; *Tactical / High Cadence* |
 | Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), edge power/thermal throttling, or vehicle compute limits during execution. |
-| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts via Pre-Engineered OPT Recipes (Core Model Remains Intact):**<br/><br/>• **Palette-Specific Slicing:** Rather than inventing ad-hoc heuristics under fire, Phase 2 executes the pre-characterised decomposition recipe certified for that mission's **OPT** (e.g., decoupling combinatorial allocation variables from spatial graph networks).<br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from a 48-hr deliberate plan to rapid localised repair).<br/>• **Focused Workload Rebalancing:** Drops non-critical secondary CPA variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
+| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts the Engineering Pipeline (Core Mathematical Model Remains Intact):**<br/><br/>• **Algorithmic Slicing & Partitioning:** Dynamically decouples sub-problems along constituent CPA boundaries (e.g., decoupling discrete combinatorial allocation variables from spatial network graphs). Where an OPT template exists, pre-characterised decomposition recipes provide a ready-made efficiency; otherwise, standard mathematical decomposition (Benders, Column Gen, LNS) is applied directly.<br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from a 48-hr deliberate plan to rapid localised repair).<br/>• **Focused Workload Rebalancing:** Drops non-critical secondary CPA variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
 | Defence Impact & Example | Rapid plan repair following an ambush or bridge denial on a logistics convoy route without re-running the entire theater-level schedule. |
 
 #### Problem Refactoring
@@ -257,8 +257,8 @@ Real-world execution generates two distinct operational feedback loops back into
 |  |  |
 | :--- | :--- |
 | Pathway & Cadence | **Phase 3 $\to$ Phase 1** &mdash; *Strategic / Doctrinal Cadence* |
-| Operational Trigger | Fundamental operational shocks, emergence of novel adversary countermeasures, post-exercise debriefs, or major changes in strategic posture revealing misdiagnosed bottlenecks. |
-| Sovereign Adaptation Mechanism | **Phase 1 Reformulates Problem & Recalibrates Enterprise OPT Palettes:**<br/><br/>• **Enterprise Palette Recalibration:** If operational analysis shows that supply convoys are failing due to adversary drone strikes rather than road capacity, the **OPT's dominant CPA** is updated from `Constrained Allocation (Score 3)` to `Sequential Stochastic Decisions (Score 3)`. This feedback systematically updates formulation guidelines, R&D priorities, and solver requirements across all related use cases enterprise-wide.<br/>• **Objective Recalibration:** Shifts objective penalty weights (e.g., prioritising force survivability over mission speed).<br/>• **Topology Restructuring:** Redraws graph nodes/edges (e.g., severing a denied port, maritime strait, or compromised C2 link).<br/>• **Doctrine Re-anchoring:** Encodes updated Rules of Engagement (ROE) and legal/policy constraints. |
+| Operational Trigger | Fundamental operational shocks, emergence of novel adversary countermeasures, post-exercise debriefs, or major changes in strategic posture revealing misdiagnosed bottlenecks or invalid problem models. |
+| Sovereign Adaptation Mechanism | **Phase 1 Reformulates Problem Logic & Mathematical Governance:**<br/><br/>• **CPA Bottleneck Re-Diagnosis:** Re-evaluates which CPA is truly rate-limiting the mission. For instance, if operational analysis shows supply convoys are failing due to adversary drone strikes rather than road capacity, the dominant bottleneck is re-diagnosed from *Constrained Allocation* to *Sequential Stochastic Decisions* under threat.<br/>• **Objective Recalibration:** Shifts objective penalty weights (e.g., prioritising force survivability over mission speed).<br/>• **Topology Restructuring:** Redraws graph nodes/edges (e.g., severing a denied port, maritime strait, or compromised C2 link).<br/>• **Doctrine Re-anchoring:** Encodes updated Rules of Engagement (ROE) and legal/policy constraints.<br/>*(Where an operational profile repeats across scenarios, updates are catalogued back into the OPT template library for enterprise efficiency, but the refactoring loop itself operates directly on operational reality).* |
 | Defence Impact & Example | Doctrinal reformulation when unexpected adversary A2/AD systems deny air corridors, requiring new mathematical constraint envelopes across all joint strike planning. |
 
 #### Diagram 2: The 3-Phase Pipeline + Sovereignty Boundaries & Compute Horizons
@@ -284,8 +284,8 @@ flowchart TB
         direction LR
         P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>Pure Models & CPA Bottleneck Diagnosis</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing, Partitioning & Adaptation</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Runtime Mechanics & Decision Output</i>"]
 
-        P3 -.->|"<b>Engineering Refactoring</b><br/>Pre-certified OPT partition repair"| P2
-        P3 -.->|"<b>Problem Refactoring</b><br/>OPT palette recalibration & model refactoring"| P1
+        P3 -.->|"<b>Engineering Refactoring</b><br/>Pipeline, partition & solver adaptation"| P2
+        P3 -.->|"<b>Problem Refactoring</b><br/>Model reformulation & constraint re-anchoring"| P1
     end
 
     KEY ~~~ PHASES
@@ -348,13 +348,13 @@ flowchart TB
 ---
 
 # 1. PROBLEM FORMULATION 
-**Creation of Mathematical Models & OPT Palettes**
+**Creation of Pure Mathematical Models & Bottleneck Diagnosis**
 
 Translates real-world physical assets, constraints, sensor streams, and operational intent into computable, hardware-aware but vendor-decoupled mathematical structures. 
 
 Crucially, Problem Formulation is not merely writing equations—it is the disciplined identification of **which Computational Problem Archetype (CPA) represents the active operational bottleneck** (evaluated on the 0–3 dominance scale). By diagnosing whether a mission is primarily rate-limited by *Constrained Allocation*, *Sequential Stochastic Decisions*, *Graph Inference*, *Statistical Inference*, *Quantum Dynamics*, *Number-Theoretic Math*, or *Continuum Physics*, Defence ensures it directs algorithmic investment exclusively at the true constraint. 
 
-These archetypes are formulated into **Operational Problem Types (OPTs)**, guaranteeing that the MOD retains sovereign ownership of the core mission logic, reusable formulation libraries, and benchmark harnesses, possessing the internal middleware to map that algorithmic intent onto any physical topology (e.g., Pegasus graph, all-to-all CMOS, tensor cores, QPUs) as the commercial market shifts.
+By retaining sovereign custody of these pure mathematical models and CPA bottleneck diagnoses—and cataloguing recurring blends as reusable **Operational Problem Types (OPTs)** where repetition offers efficiency—the MOD guarantees vendor-decoupled ownership over core mission logic, reusable formulation libraries, and benchmark harnesses, possessing the internal middleware to map that algorithmic intent onto any physical topology (e.g., Pegasus graph, all-to-all CMOS, tensor cores, QPUs) as the commercial market shifts.
 
 ### 1.1 Complex Optimisation & Decision Advantage
 *Deciding What to Do*
