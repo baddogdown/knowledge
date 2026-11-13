@@ -120,6 +120,61 @@ Each CPA represents a distinct mathematical problem structure. They provide a co
 | **6. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** Assessing mathematical vulnerabilities in public-key infrastructure, evaluating post-quantum cryptographic schemes, and sovereign mathematical verification. | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ)<br/>**Emergent:** Shor's Algorithm (Quantum Period Finding) |
 | **7. Physics-Based Simulation** | **Predicting *what could happen* in continuous macroscopic environments:** Aerodynamic modeling (hypersonic glide bodies), shock hydrodynamics for sovereign stockpile stewardship, micro-climate weather forecasting, and RF propagation in complex terrain. | **Classical:** Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Shock Hydrodynamics PDE Solvers<br/>**Emergent:** Quantum Linear System Solvers (HHL / Quantum PDE), Quantum Monte Carlo |
 
+#### Diagram 1: The Seven Computational Problem Archetypes & Emergent Maturity
+
+```mermaid
+flowchart TB
+
+    subgraph CPAS ["<b>Computational Problem Archetypes (CPAs)</b>"]
+        direction TB
+        subgraph DECIDE ["Deciding What To Do"]
+            direction LR
+            CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Hard constraints & scarce resources</i>"]
+            CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Friction, dynamic adversary & fog of war</i>"]
+            CPA1 ~~~ CPA2
+        end
+        subgraph UNDERSTAND ["Understanding What Is Happening"]
+            direction LR
+            CPA3["<b>Graph Inference & Search</b><br/><br/><i>Relational networks & connected systems</i>"]
+            CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Noisy sensor streams & latent signatures</i>"]
+            CPA3 ~~~ CPA4
+        end
+        subgraph PREDICT ["Predicting & Securing"]
+            direction LR
+            CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Microscopic materials & quantum devices</i>"]
+            CPA6["<b>Cryptanalytic Number-Theoretic<br/>Computation</b><br/><br/><i>Sovereign cryptographic trust & audits</i>"]
+            CPA7["<b>Physics-Based Simulation</b><br/><br/><i>Macroscopic continuum & fluid physics</i>"]
+            CPA5 ~~~ CPA6 ~~~ CPA7
+        end
+        DECIDE ~~~ UNDERSTAND ~~~ PREDICT
+    end
+
+    subgraph KEY ["<b>KEY:</b> Current Emergent Maturity & Value"]
+        direction LR
+        K1["<b>Established (Band H)</b><br/><i>Common in industry / mature</i>"]
+        K2["<b>Early / Growing (Band M)</b><br/><i>Emerging commercial utility</i>"]
+        K3["<b>Future (Band L)</b><br/><i>Long-horizon R&D / sovereign</i>"]
+        K1 ~~~ K2 ~~~ K3
+    end
+
+    CPAS ~~~ KEY
+
+    %% Styling Classes for Maturity
+    classDef strong fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
+    classDef medium fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    classDef weak fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+
+    class CPA1,K1 strong
+    class CPA3,CPA4,CPA5,CPA7,K2 medium
+    class CPA2,CPA6,K3 weak
+
+    style CPAS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
+    style DECIDE fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style UNDERSTAND fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style PREDICT fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style KEY fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
+```
+
 ### The Strategic Value of the CPA Abstraction
 
 1. **Targeted Benchmarking at Potential Inflection Points:** Benchmarking a full operational "system" or multi-stage use case can be difficult and often obscures where computational friction actually lives. Benchmarking at the CPA level enables clean, isolated evaluation. When an emergent compute modality (such as neutral atoms, photonics, or early fault-tolerant quantum silicon) reaches a potential inflection point, that breakthrough is likely to manifest on a **specific CPA**.
@@ -136,49 +191,6 @@ Think of CPAs as the **primary colours** of computation. As Defence analyses cha
 1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can directly harvest civilian algorithmic breakthroughs without exposing operational secrets or classified data.
 3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
-
-#### Diagram 1: Problem Formulation Layer — The 7 CPAs and Recurring OPT Palettes
-
-```mermaid
-flowchart TB
-
-    subgraph OPTS ["<b>Operational Problem Types (OPTs) — Recurring Palettes</b>"]
-        direction LR
-        OPT1["<b>Dynamic Contested Routing</b><br/><i>(Logistics / Convoy / Strike)</i>"]
-        OPT2["<b>Sensor Fusion & De-Interleaving</b><br/><i>(Contested EW / Radar Net)</i>"]
-        OPT3["<b>Energetics & Sensor Design</b><br/><i>(Sovereign Materials / Payloads)</i>"]
-    end
-
-    subgraph CPAS ["<b>The 7 Computational Problem Archetypes (CPAs) — Primary Colours</b>"]
-        direction TB
-        subgraph DECIDE ["Deciding What To Do"]
-            CPA1["1. Constrained Combinatorial Allocation"]
-            CPA2["2. Sequential Stochastic Decision-Making"]
-        end
-        subgraph UNDERSTAND ["Understanding What Is Happening"]
-            CPA3["3. Graph Inference & Search"]
-            CPA4["4. High-Dimensional Statistical Inference"]
-        end
-        subgraph PREDICT ["Predicting & Securing"]
-            CPA5["5. Electronic Structure & Quantum Dynamics"]
-            CPA6["6. Cryptanalytic Number-Theoretic Computation"]
-            CPA7["7. Physics-Based Simulation"]
-        end
-    end
-
-    OPT1 -.->|"Blend: Score 3 + Score 2"| CPA1
-    OPT1 -.->|"Blend: Score 3 + Score 2"| CPA2
-    OPT2 -.->|"Blend: Score 3 + Score 2"| CPA3
-    OPT2 -.->|"Blend: Score 3 + Score 2"| CPA4
-    OPT3 -.->|"Blend: Score 3 + Score 3"| CPA5
-    OPT3 -.->|"Blend: Score 3 + Score 3"| CPA7
-
-    style OPTS fill:#f8fafc,stroke:#94a3b8,stroke-width:2px,color:#1e293b
-    style CPAS fill:#ffffff,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a
-    style DECIDE fill:#f0fdf4,stroke:#22c55e,stroke-width:1px,color:#14532d
-    style UNDERSTAND fill:#eff6ff,stroke:#3b82f6,stroke-width:1px,color:#1e40af
-    style PREDICT fill:#faf5ff,stroke:#a855f7,stroke-width:1px,color:#581c87
-```
 
 ---
 
