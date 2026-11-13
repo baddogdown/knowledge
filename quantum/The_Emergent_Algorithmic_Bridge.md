@@ -113,7 +113,7 @@ Each CPA represents a distinct mathematical problem structure. They provide a co
 | Computational Problem Archetype (CPA) | Core Operational Utility | Example Algorithms (Classical & Emergent) |
 | :--- | :--- | :--- |
 | **1. Constrained Combinatorial Allocation & Scheduling** | **Deciding *what to do* under hard constraints:** Fleet resupply routing, asset-to-task assignment, electronic warfare spectrum coordination, and joint multi-domain sortie scheduling under strict time and resource limits. | **Classical:** Mixed-Integer Programming (Branch-and-Bound / CP-SAT), Simulated Annealing, A* Pathfinding<br/>**Emergent:** QAOA (Quantum Approximate Optimisation), QUBO / Ising Solvers, Quantum/Digital Annealing |
-| **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* under friction and the fog of war:** Multi-stage campaign wargaming, adaptive search-and-rescue replanning, and autonomous platform navigation under dynamic adversary countermeasures, degraded comms, and shifting environmental factors. | **Classical:** Markov Decision Processes (MDP/POMDP), Monte Carlo Tree Search (MCTS), Bayesian Filtering (Kalman/Particle)<br/>**Emergent:** Quantum Bayesian Logic, Quantum Monte Carlo |
+| **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* looking into an uncertain future:** Anticipating events that have not yet occurred, multi-stage wargaming, evaluating branching futures under adversarial choices, and dynamic plan adaptation where outcomes depend on uncertain future states. | **Classical:** Markov Decision Processes (MDP/POMDP), Monte Carlo Tree Search (MCTS), Bayesian Filtering (Kalman/Particle)<br/>**Emergent:** Quantum Bayesian Logic, Quantum Monte Carlo |
 | **3. Graph Inference & Search** | **Understanding *what is happening* across connected systems:** Intelligence knowledge-graph querying, kill-web vulnerability and dependency analysis, multi-echelon supply network tracking, and cyber attack-path discovery. | **Classical:** Graph Traversal (Dijkstra, A*), Community Detection, Graph Neural Networks (GNN)<br/>**Emergent:** Tensor-Network Contraction, Grover's Search Logic |
 | **4. High-Dimensional Statistical Inference** | **Understanding *what is happening* in noisy sensor environments:** Electronic warfare signal de-interleaving, multi-static radar/sonar track fusion, predictive fleet maintenance, and target signature recognition in dense clutter. | **Classical:** Principal Component Analysis (PCA), Expectation-Maximisation, Restricted Boltzmann Machines (RBM)<br/>**Emergent:** Variational Quantum Classifiers (VQC/QML), Quantum Boltzmann Machines (QBM), Gibbs Sampling & QRNG Solvers |
 | **5. Electronic Structure & Quantum Dynamics** | **Predicting *what could happen* at the microscopic material scale:** First-principles simulation of novel energetic materials (propellants and insensitive munitions), atomic defect physics for quantum sensors, and specialized battery chemistry. | **Classical:** Density Functional Theory (DFT), Hartree-Fock, Classical Tensor Networks<br/>**Emergent:** Quantum Phase Estimation (QPE), Variational Quantum Eigensolver (VQE), Analog Many-Body Solvers |
@@ -127,33 +127,49 @@ flowchart TB
 
     subgraph CPAS ["<b>Computational Problem Archetypes (CPAs)</b>"]
         direction TB
-        subgraph DECIDE ["Deciding What To Do"]
+        
+        %% Top Row (2 Boxes)
+        subgraph ROW1 [" "]
             direction LR
-            CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Hard constraints & scarce resources</i>"]
-            CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Friction, dynamic adversary & fog of war</i>"]
-            CPA1 ~~~ CPA2
+            subgraph G1 ["<b>Deciding What To Do</b>"]
+                direction TB
+                CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Deciding what to do<br/>under hard constraints</i>"]
+                CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Deciding what to do<br/>looking into an uncertain future</i>"]
+                CPA1 ~~~ CPA2
+            end
+            subgraph G2 ["<b>Understanding What Is Happening</b>"]
+                direction TB
+                CPA3["<b>Graph Inference & Search</b><br/><br/><i>Understanding what is happening<br/>across connected systems</i>"]
+                CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Understanding what is happening<br/>in noisy sensor environments</i>"]
+                CPA3 ~~~ CPA4
+            end
+            G1 ~~~ G2
         end
-        subgraph UNDERSTAND ["Understanding What Is Happening"]
+
+        %% Bottom Row (2 Boxes)
+        subgraph ROW2 [" "]
             direction LR
-            CPA3["<b>Graph Inference & Search</b><br/><br/><i>Relational networks & connected systems</i>"]
-            CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Noisy sensor streams & latent signatures</i>"]
-            CPA3 ~~~ CPA4
+            subgraph G3 ["<b>Simulation & Predicting</b>"]
+                direction TB
+                CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Predicting what could happen<br/>at microscopic scale</i>"]
+                CPA7["<b>Physics-Based Simulation</b><br/><br/><i>Predicting what could happen<br/>in continuous environments</i>"]
+                CPA5 ~~~ CPA7
+            end
+            subgraph G4 ["<b>Cryptographic Assurance & Exploitation</b>"]
+                direction TB
+                CPA6["<b>Cryptanalytic Number-Theoretic<br/>Computation</b><br/><br/><i>Securing and auditing<br/>sovereign cryptographic trust</i>"]
+            end
+            G3 ~~~ G4
         end
-        subgraph PREDICT ["Predicting & Securing"]
-            direction LR
-            CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Microscopic materials & quantum devices</i>"]
-            CPA6["<b>Cryptanalytic Number-Theoretic<br/>Computation</b><br/><br/><i>Sovereign cryptographic trust & audits</i>"]
-            CPA7["<b>Physics-Based Simulation</b><br/><br/><i>Macroscopic continuum & fluid physics</i>"]
-            CPA5 ~~~ CPA6 ~~~ CPA7
-        end
-        DECIDE ~~~ UNDERSTAND ~~~ PREDICT
+
+        ROW1 ~~~ ROW2
     end
 
     subgraph KEY ["<b>KEY:</b> Current Emergent Maturity & Value"]
         direction LR
-        K1["<b>Established (Band H)</b><br/><i>Common in industry / mature</i>"]
-        K2["<b>Early / Growing (Band M)</b><br/><i>Emerging commercial utility</i>"]
-        K3["<b>Future (Band L)</b><br/><i>Long-horizon R&D / sovereign</i>"]
+        K1["<b>Established</b><br/><i>Common in industry / mature</i>"]
+        K2["<b>Early / Growing</b><br/><i>Emerging commercial utility</i>"]
+        K3["<b>Future</b><br/><i>Long-horizon R&D / sovereign</i>"]
         K1 ~~~ K2 ~~~ K3
     end
 
@@ -169,9 +185,12 @@ flowchart TB
     class CPA2,CPA6,K3 weak
 
     style CPAS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
-    style DECIDE fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
-    style UNDERSTAND fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
-    style PREDICT fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style ROW1 fill:none,stroke:none
+    style ROW2 fill:none,stroke:none
+    style G1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style G2 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style G3 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
+    style G4 fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#1e293b
     style KEY fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
 ```
 
