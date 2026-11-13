@@ -101,32 +101,41 @@ flowchart TB
 
 ---
 
-## Computational Problem Archetypes (CPAs) & Operational Palettes (OPTs)
-**The Seven Primary Colours of Computation & Standardised Operational Palettes**
+## Computational Problem Archetypes (CPAs)
+**The Foundational Mathematical Archetypes of Defence Demand**
 
-To interface effectively across defence primes, research labs (DSTL, NQCC, DARPA), academia, and commercial vendors without falling into vendor-driven hardware hype, defence workloads are structured into **Seven Computational Problem Archetypes (CPAs)**. 
+To bridge the gap between frontline operational problems and the evolving computational landscape without getting locked into vendor hardware speculation, defence challenges are categorised into **Seven Computational Problem Archetypes (CPAs)**. 
 
-CPAs represent the **"primary colours"** of computation—compute-agnostic mathematical structures that sit between raw technical algorithms and frontline operational missions. Real-world challenges are rarely single archetypes; they are typically blends. As Defence analyses challenges across domains, repeated combinations crystallise into **Operational Problem Types (OPTs)**—the recurring "colour palettes" of defence problem solving.
+Each CPA represents a distinct mathematical problem structure. They provide a compute-agnostic abstraction: the underlying mathematical challenge remains constant whether executed on classical CPU/GPU architectures, specialised digital/probabilistic accelerators, or emergent quantum platforms.
 
 *(For detailed definitions, the 0–3 bottleneck scoring rubric, and non-compute boundary analysis, see the companion reference: [Introducing_Computational_Problem_Archetypes.md](Introducing_Computational_Problem_Archetypes.md)).*
 
-| Computational Problem Archetype (CPA) | Core Operational Utility | Industry / Academic Mapping |
+| Computational Problem Archetype (CPA) | Core Operational Utility | Example Algorithms (Classical & Emergent) |
 | :--- | :--- | :--- |
-| **1. Constrained Combinatorial Allocation & Scheduling** | **Deciding *what to do* (Discrete):** Fleet resupply routing, asset-to-task assignment, communications spectrum allocation, and mission sortie scheduling under hard operational constraints. | Operations Research (OR), Mathematical Programming (MIP/CP-SAT), QUBO / Ising Models, Combinatorial Heuristics, QOBLIB |
-| **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* (Dynamic/Stochastic):** Multi-stage wargaming, adaptive search-and-rescue, and autonomous platform routing under fog-of-war, adversarial countermeasures, and weather uncertainty. | Markov Decision Processes (MDP/POMDP), Reinforcement Learning, Monte Carlo Tree Search, Stochastic Dynamic Programming |
-| **3. Graph Inference & Search** | **Understanding *what is happening* (Relational):** Intelligence knowledge-graph traversal, kill-web connectivity, supply network vulnerability analysis, and cyber attack-path discovery. | Graph Traversal, Community Detection, Graph Neural Networks (GNN), Network Flow, Tensor-Network Contraction |
-| **4. High-Dimensional Statistical Inference** | **Understanding *what is happening* (Continuous/Latent):** Electronic warfare signal de-interleaving, multi-static radar/sonar track fusion, predictive maintenance telemetry, and anomaly detection in cluttered environments. | Latent Variable Estimation, Tensor Decomposition, Variational Quantum Classifiers (QML), Density Estimation, Manifold Learning |
-| **5. Electronic Structure & Quantum Dynamics** | **Predicting *what could happen* (Microscopic):** First-principles simulation of energetic molecular bonds, semiconductor defect physics for quantum sensors, and advanced battery chemistry. | Hamiltonian Simulation, Quantum Phase Estimation (QPE), Variational Quantum Eigensolvers (VQE), Quantum Monte Carlo |
-| **6. Cryptanalytic Number-Theoretic Computation** | **Securing & auditing sovereign trust:** Sovereign vulnerability evaluation of public-key architectures, post-quantum cryptographic auditing, and number-theoretic verification. | Integer Factorisation (Shor's, GNFS), Discrete Logarithms, Lattice Reduction (LLL/BKZ), Algebraic Cryptanalysis |
-| **7. Physics-Based Simulation** | **Predicting *what could happen* (Macroscopic):** Continuum mechanics, computational fluid dynamics (CFD) for hypersonics, shock hydrodynamics for sovereign stockpile stewardship, and RF propagation in complex terrain. | Partial Differential Equation (PDE) Solvers, Finite Element Analysis (FEA), Multiphysics Shock Hydrodynamics |
+| **1. Constrained Combinatorial Allocation & Scheduling** | **Deciding *what to do* under hard constraints:** Fleet resupply routing, asset-to-task assignment, electronic warfare spectrum coordination, and joint multi-domain sortie scheduling under strict time and resource limits. | **Classical:** Mixed-Integer Programming (Branch-and-Bound / CP-SAT), Simulated Annealing, A* Pathfinding<br/>**Emergent:** QAOA (Quantum Approximate Optimisation), QUBO / Ising Solvers, Quantum/Digital Annealing |
+| **2. Sequential Stochastic Decision-Making Under Uncertainty** | **Deciding *what to do* under friction and the fog of war:** Multi-stage campaign wargaming, adaptive search-and-rescue replanning, and autonomous platform navigation under dynamic adversary countermeasures, degraded comms, and shifting environmental factors. | **Classical:** Markov Decision Processes (MDP/POMDP), Monte Carlo Tree Search (MCTS), Bayesian Filtering (Kalman/Particle)<br/>**Emergent:** Quantum Bayesian Logic, Quantum Monte Carlo |
+| **3. Graph Inference & Search** | **Understanding *what is happening* across connected systems:** Intelligence knowledge-graph querying, kill-web vulnerability and dependency analysis, multi-echelon supply network tracking, and cyber attack-path discovery. | **Classical:** Graph Traversal (Dijkstra, A*), Community Detection, Graph Neural Networks (GNN)<br/>**Emergent:** Tensor-Network Contraction, Grover's Search Logic |
+| **4. High-Dimensional Statistical Inference** | **Understanding *what is happening* in noisy sensor environments:** Electronic warfare signal de-interleaving, multi-static radar/sonar track fusion, predictive fleet maintenance, and target signature recognition in dense clutter. | **Classical:** Principal Component Analysis (PCA), Expectation-Maximisation, Restricted Boltzmann Machines (RBM)<br/>**Emergent:** Variational Quantum Classifiers (VQC/QML), Quantum Boltzmann Machines (QBM), Gibbs Sampling & QRNG Solvers |
+| **5. Electronic Structure & Quantum Dynamics** | **Predicting *what could happen* at the microscopic material scale:** First-principles simulation of novel energetic materials (propellants and insensitive munitions), atomic defect physics for quantum sensors, and specialized battery chemistry. | **Classical:** Density Functional Theory (DFT), Hartree-Fock, Classical Tensor Networks<br/>**Emergent:** Quantum Phase Estimation (QPE), Variational Quantum Eigensolver (VQE), Analog Many-Body Solvers |
+| **6. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** Assessing mathematical vulnerabilities in public-key infrastructure, evaluating post-quantum cryptographic schemes, and sovereign mathematical verification. | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ)<br/>**Emergent:** Shor's Algorithm (Quantum Period Finding) |
+| **7. Physics-Based Simulation** | **Predicting *what could happen* in continuous macroscopic environments:** Aerodynamic modeling (hypersonic glide bodies), shock hydrodynamics for sovereign stockpile stewardship, micro-climate weather forecasting, and RF propagation in complex terrain. | **Classical:** Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Shock Hydrodynamics PDE Solvers<br/>**Emergent:** Quantum Linear System Solvers (HHL / Quantum PDE), Quantum Monte Carlo |
 
-### The Value of Operational Problem Types (OPTs)
+### The Strategic Value of the CPA Abstraction
 
-While CPAs provide the seven foundational building blocks, Defence operational value is realized at the **OPT layer**:
+1. **Targeted Benchmarking at Potential Inflection Points:** Benchmarking a full operational "system" or multi-stage use case can be difficult and often obscures where computational friction actually lives. Benchmarking at the CPA level enables clean, isolated evaluation. When an emergent compute modality (such as neutral atoms, photonics, or early fault-tolerant quantum silicon) reaches a potential inflection point, that breakthrough is likely to manifest on a **specific CPA**.
+2. **Cascading Algorithmic Reusability:** Because CPAs are decoupled from mission-specific terminology, demonstrating an emergent solver's advantage on a single CPA kernel offers the potential to deliver immediate, reusable advantage across *every* upstream defence use case dependent on that archetype.
 
-1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands traditionally procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these are instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Stochastic Decisions*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
+---
+
+### From Archetypes to Operational Palettes: Introducing OPTs
+
+Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes. 
+
+Think of CPAs as the **primary colours** of computation. As Defence analyses challenges across frontline commands, repeated combinations may crystallise into **Operational Problem Types (OPTs)**—the recurring "colour palettes" of defence problem solving:
+
+1. **Enterprise Reusability (Eliminating the "Bespoke Snowflake"):** Frontline Commands often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining problem palettes allows software formulations, verification suites, and decomposition workflows to be reused enterprise-wide.
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can directly harvest civilian algorithmic breakthroughs without exposing operational secrets or classified data.
-3. **Contestable Benchmark Standards:** Instead of evaluating proprietary vendor claims, the MOD can issue challenges using standardised, synthetic benchmark datasets anchored to a specific OPT specification, forcing vendors to compete transparently on solution quality, speed, and cost.
+3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
 
 #### Diagram 1: Problem Formulation Layer — The 7 CPAs and Recurring OPT Palettes
 
