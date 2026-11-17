@@ -87,8 +87,8 @@ flowchart TB
     style CPA3 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
     style CPA4 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
     style CPA5 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
-    style CPA6 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
-    style CPA7 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    style CPA6 fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    style CPA7 fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
 
     %% Phase boxes (Kept colors: 1&2 Sovereign Blue, 3 Marketplace Green)
     style P1 fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
@@ -118,7 +118,7 @@ Each CPA represents a distinct mathematical problem structure. They provide a co
 | **4. High-Dimensional Statistical Inference** | **Understanding *what is happening* buried within complex, noisy data environments:** <br/><br/>Extracting weak signals, identifying anomalies, and discovering non-obvious correlations across dense, multi-modal data streams—from physical sensor fusion (multi-spectral automatic target recognition, RF emitter de-interleaving, passive sonar tracking) to multi-source intelligence (correlating subtle anomalies across OSINT social chatter, commercial shipping/flight feeds, financial trading volatility, and cyber telemetry). | Optimizes decision boundaries and extracts latent structural regularities across dense, high-dimensional continuous feature spaces.<br/><br/>Operates via tensor algebra and multivariate probability density estimation, overcoming the curse of dimensionality and severe signal-to-noise degradation to separate true signatures from background clutter. | **Classical:** Principal Component Analysis (PCA), Expectation-Maximisation, High-Dimensional Clustering, Support Vector Machines (SVM), Deep Autoencoders<br/><br/>**Emergent:** Variational Quantum Classifiers (VQC/QML), Quantum Boltzmann Machines (QBM), Quantum Kernel Methods, Gibbs Sampling & QRNG Solvers |
 | **5. Electronic Structure & Quantum Dynamics** | **Predicting *what could happen* at the microscopic material scale:** <br/><br/>Simulating foundational quantum mechanical and molecular interactions to engineer advanced materials and assess material aging without hazardous physical testing (e.g., novel energetic formulations and insensitive munitions, radar-absorbent stealth metamaterials, actinide lattice degradation for sovereign nuclear stockpile stewardship, and atomic defect physics for solid-state quantum sensors). | Computes microscopic Hamiltonian dynamics, atomic lattice configurations, and many-body electron correlations.<br/><br/>Addresses exponential Hilbert-space scaling where simulating $N$ strongly correlated quantum particles requires tracking $2^N$ complex amplitudes, rendering classical exact computation intractable beyond small molecular systems. | **Classical:** Density Functional Theory (DFT), Hartree-Fock, Quantum Monte Carlo (QMC), Tensor Network States (DMRG)<br/><br/>**Emergent:** Quantum Phase Estimation (QPE), Variational Quantum Eigensolver (VQE), Analog Quantum Simulation |
 | **6. Physics-Based Simulation** | **Predicting *what could happen* in continuous macroscopic environments:** <br/><br/>Simulating continuous physical media, field dynamics, and kinematic interactions to evaluate platforms, weapon effects, and mission environments without costly physical trials (e.g., hypersonic aerodynamics, underwater acoustic propagation, electromagnetic field mapping for physical digital twins, and high-fidelity physics-based adjudication engines in operational wargaming). | Numerical solution of continuous partial and ordinary differential equations (PDEs/ODEs) discretized over high-resolution spatial, temporal, or state manifolds.<br/><br/>Addresses computational bottlenecks in massive sparse linear/non-linear system solving ($Ax = b$), multi-scale continuum dynamics, and non-linear boundary constraints where fine grid meshes cause computational runtime to scale cubicly. | **Classical:** Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD / Lattice Boltzmann), Shock Hydrodynamics PDE Solvers, Boundary Element Methods (BEM)<br/><br/>**Emergent:** Quantum Linear System Solvers (HHL / Quantum PDE), Physics-Informed Neural Networks (PINNs), Quantum Monte Carlo |
-| **7. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** <br/><br/>Assessing mathematical vulnerabilities in public-key infrastructure, evaluating post-quantum cryptographic schemes, and sovereign mathematical verification. | *(To be reviewed)* | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ)<br/><br/>**Emergent:** Shor's Algorithm (Quantum Period Finding) |
+| **7. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** <br/><br/>Evaluating mathematical resilience, assessing vulnerabilities in public-key infrastructure, and mitigating "harvest-now, decrypt-later" threats across sovereign communications (e.g., auditing RSA/ECC encryption vulnerabilities, certifying sovereign Post-Quantum Cryptographic lattice schemes, and verifying cryptographic trust in secure military C2 links). | Algebraic operations and bound calculation over discrete finite fields, modular rings, and high-dimensional vector lattices.<br/><br/>Focuses on non-NP-complete computational hard problems (integer factorisation, discrete logarithms, and lattice basis reduction) where sub-exponential classical sieves or polynomial quantum algorithms determine the cryptographic security threshold. | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ), Pollard's Rho<br/><br/>**Emergent:** Shor's Algorithm (Quantum Period Finding / Phase Estimation), Quantum Lattice Algorithms |
 
 #### Diagram 1: The Seven Computational Problem Archetypes & Emergent Maturity
 
@@ -133,14 +133,14 @@ flowchart TB
             direction LR
             subgraph G1 ["<b>Deciding What To Do</b>"]
                 direction LR
-                CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Deciding what to do<br/>under hard constraints</i>"]
-                CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Deciding what to do<br/>looking into an uncertain future</i>"]
+                CPA1["<b>Constrained Combinatorial<br/>Allocation & Scheduling</b><br/><br/><i>Deciding what to do under<br/>hard constraints across horizons</i>"]
+                CPA2["<b>Sequential Stochastic<br/>Decision-Making Under Uncertainty</b><br/><br/><i>Deciding what to do looking into<br/>an uncertain future ('fog of war')</i>"]
                 CPA1 ~~~ CPA2
             end
             subgraph G2 ["<b>Understanding What Is Happening</b>"]
                 direction LR
-                CPA3["<b>Graph Inference & Search</b><br/><br/><i>Understanding what is happening<br/>across connected systems</i>"]
-                CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Understanding what is happening<br/>in noisy sensor environments</i>"]
+                CPA3["<b>Graph Inference & Search</b><br/><br/><i>Understanding what is happening<br/>across connected network systems</i>"]
+                CPA4["<b>High-Dimensional<br/>Statistical Inference</b><br/><br/><i>Understanding what is happening buried<br/>within complex, noisy data</i>"]
                 CPA3 ~~~ CPA4
             end
             G1 ~~~ G2
@@ -151,7 +151,7 @@ flowchart TB
             direction LR
             subgraph G3 ["<b>Simulation & Predicting</b>"]
                 direction LR
-                CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Predicting what could happen<br/>at microscopic scale</i>"]
+                CPA5["<b>Electronic Structure &<br/>Quantum Dynamics</b><br/><br/><i>Predicting what could happen<br/>at microscopic material scale</i>"]
                 CPA6["<b>Physics-Based Simulation</b><br/><br/><i>Predicting what could happen<br/>in continuous environments</i>"]
                 CPA5 ~~~ CPA6
             end
@@ -181,8 +181,8 @@ flowchart TB
     classDef weak fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
 
     class CPA1,K1 strong
-    class CPA3,CPA4,CPA5,CPA7,K2 medium
-    class CPA2,CPA6,K3 weak
+    class CPA3,CPA4,CPA5,CPA6,K2 medium
+    class CPA2,CPA7,K3 weak
 
     style CPAS fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,stroke-dasharray: 5 5,color:#475569
     style ROW1 fill:none,stroke:none
