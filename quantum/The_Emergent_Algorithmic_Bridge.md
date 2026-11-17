@@ -353,22 +353,21 @@ flowchart TB
 
 ---
 
-> **Footnote — Sovereign Benchmarking & Testbed Authority:**  
-> While Phase 3 execution engines operate within a contestable commercial marketplace, the MOD must retain sovereign or independent ownership of solver testbeds and benchmarking harnesses. Retaining internal custody of standardized evaluation harnesses is essential for Defence to independently verify commercial performance claims, assess the relative merits of competing compute modalities, and detect precisely when emergent hardware achieves a true inflection point of operational advantage over established classical methods.
-> This is turn will feedback into decisions made in Phase 1 & Phase 2.
-
----
-
 ## Enterprise Governance & Strategic Value Matrix
 
 To ensure operational agility, eliminate vendor lock-in, and establish the MOD as an authoritative "smart customer", the pipeline maintains a clear governance division between sovereign decision rights and commercial compute commodities:
 
 | Dimension | Phase 1: Problem Formulation | Phase 2: Complexity Engineering | Phase 3: Execution & Delivery |
 | :--- | :--- | :--- | :--- |
-| **Ownership Model** | **MOD Sovereign Custody**<br/>*(Doctrinal Intent & Problem Models)* | **MOD Sovereign Decision Authority**<br/>*(Pattern Selection & Trade-offs)* | **Contestable Marketplace**<br/>*(Commercial Compute Engines)* |
+| **Ownership** | **MOD Sovereign Custody**<br/>*(Doctrinal Intent & Problem Models)* | **MOD Sovereign Decision Authority**<br/>*(Pattern Selection & Trade-offs)* | **Contestable Marketplace**<br/>*(Commercial Compute Engines)* |
 | **Enduring Defence Assets** | • Vendor-decoupled mathematical models<br/>• Reusable OPT template library<br/>• Standardised CPA/OPT benchmark instances<br/>• Classified ROE penalty functions & constraints | • Pre-characterised decomposition recipes<br/>• Architectural routing heuristics<br/>• Sizing profiles for deployment echelons<br/>• Speed-vs-fidelity boundary definitions | • Standardised API integration harnesses<br/>• Sovereign solution-validation gate<br/>• Multi-COA / Pareto delivery layer<br/>• Competitive pricing and latency records |
 | **Enterprise Strategic Value** | **Cross-Domain & Technology Longevity:**<br/><br/>• **Cross-Domain Reuse:** Identical mathematical formulations solve disparate defence problems (e.g., the same network-flow model solves theater fuel logistics and resilient C2 message routing).<br/>• **Technology Neutrality:** Formulations outlive commercial hardware churn, remaining valid across classical HPC, annealers, and future QPUs.<br/>• **Doctrine & IP Retention:** Keeps operational secrets, targeting constraints, and mission intent strictly sovereign. | **Architectural Agility & Smart Customer Control:**<br/><br/>• **Directs Rather Than Builds:** Directs off-the-shelf and commercial compute patterns without attempting to manufacture in-house middleware.<br/>• **Operational Risk Control:** Retains internal authority over what approximations and safety margins are acceptable under combat conditions.<br/>• **Echelon Portability:** Flexibly packages workloads for sovereign cloud down to forward-deployed vehicle silicon. | **Commercial Competition & Market Hedging:**<br/><br/>• **Benchmark-Driven Leverage:** Challenges commercial vendors with open, standardised CPA/OPT instances, forcing competition on price-per-solve, latency, and SWaP-C.<br/>• **Buffers Market Volatility:** Protects Defence from vendor churn, lock-in, and proprietary hardware obsolescence.<br/>• **Spans R&D and Operations:** Safely benchmarks experimental laboratory hardware using the exact same problem instances deployed in live operations. |
-| **Operational Feedback Loop** | **Problem Refactoring** *(Strategic Cadence)*:<br/>Triggered by fundamental shocks or adversary counter-tactics to re-diagnose rate-limiting CPAs or redefine objective functions. | **Engineering Refactoring** *(Tactical Cadence)*:<br/>Triggered by local friction, DDIL dropouts, or edge throttling to dynamically compress planning horizons or sandbox units. | **Runtime Telemetry Origin**:<br/>Originates real-time solver performance data and feasibility alerts that inform tactical plan repair or doctrinal review. |
+
+---
+
+> **Footnote — Sovereign Benchmarking & Testbed Authority:**  
+> While Phase 3 execution engines operate within a contestable commercial marketplace, the MOD must retain sovereign or independent ownership of solver testbeds and benchmarking harnesses. Retaining internal custody of standardized evaluation harnesses is essential for Defence to independently verify commercial performance claims, assess the relative merits of competing compute modalities, and detect precisely when emergent hardware achieves a true inflection point of operational advantage over established classical methods.
+> This is turn will feedback into decisions made in Phase 1 & Phase 2.
 
 ---
 
