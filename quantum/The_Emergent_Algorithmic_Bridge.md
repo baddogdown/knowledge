@@ -414,13 +414,17 @@ To diagnose which Computational Problem Archetypes (CPAs) dominate an operationa
 
 | If your operational friction is caused by... | The Primary Bottleneck is... | Dominant Archetype |
 | :--- | :--- | :--- |
-| **Explosive choice combinations:** Assigning platforms, weapons, frequencies, or flight corridors where every choice constrains the next, causing planning tools to freeze or time out. | Discrete Combinatorial Explosion | **CPA 1:** Constrained Allocation & Scheduling |
-| **Dynamic friction and uncertainty:** Decisions that must be made in sequence over time where adversary counter-moves, weather, or attrition constantly invalidate the next step. | Multi-Stage Branching Under Fog | **CPA 2:** Sequential Stochastic Decisions |
-| **Interconnected dependency cascades:** Hidden hubs, choke points, critical single points of failure in supply webs, kill-webs, or cyber networks. | Relational & Topological Complexity | **CPA 3:** Graph Inference & Topology |
-| **Sensor data saturation:** Vast feeds of radar, EW, RF spectrum, or imagery where faint adversary signals are buried in massive background noise. | High-Dimensional Pattern Extraction | **CPA 4:** Statistical Inference |
-| **Atomic/quantum physical properties:** Developing stealth materials, energetic compounds, radiation shielding, or calibrating quantum gravimeters/magnetometers. | Quantum Many-Body Dynamics | **CPA 5:** Quantum Dynamics |
-| **Continuous physical battle environments:** Simulating hypersonic thermal ablation, blast overpressure in urban terrain, or undersea acoustic propagation. | Continuous Field Discretisation | **CPA 6:** Continuum Physics |
-| **Mathematical cryptanalysis & assurance:** Verifying cryptographic resilience against future quantum decryption or discovering weaknesses in cryptographic primitives. | Lattice & Algebraic Structure | **CPA 7:** Cryptanalytic Computation |
+| **Explosive choice combinations:** Assigning platforms, weapons, frequencies, or flight corridors where every choice constrains the next, causing planning tools to freeze or time out. | Discrete Combinatorial Explosion | **CPA 1:** Constrained Combinatorial Allocation & Scheduling |
+| **Rigid regulatory & physical limits:** Deconflicting non-negotiable rules like aircrew legal rest limits, runway slot allocations, maintenance depot queues, or magazine capacities. | Highly Constrained Feasibility Search | **CPA 1:** Constrained Combinatorial Allocation & Scheduling |
+| **Dynamic friction and uncertainty:** Decisions that must be made in sequence over time where adversary counter-moves, weather, or attrition constantly invalidate the next step. | Multi-Stage Branching Under Fog | **CPA 2:** Sequential Stochastic Decision-Making Under Uncertainty |
+| **Autonomous coordination in disconnected environments:** Directing uncrewed swarms or edge units that must make adaptive sequential choices while operating under communications blackout (DDIL). | Distributed Decentralized Decision Logic | **CPA 2:** Sequential Stochastic Decision-Making Under Uncertainty |
+| **Interconnected dependency cascades:** Hidden hubs, choke points, critical single points of failure in supply webs, kill-webs, or cyber networks. | Relational & Topological Complexity | **CPA 3:** Graph Inference & Search |
+| **Covert network unmasking:** Tracing illicit procurement channels, adversary command hierarchies, or lateral cyber intrusion paths across vast knowledge graphs. | Subgraph Isomorphism & Path Traversals | **CPA 3:** Graph Inference & Search |
+| **Sensor data saturation:** Vast feeds of radar, EW, RF spectrum, or imagery where faint adversary signals are buried in massive background noise. | High-Dimensional Pattern Extraction | **CPA 4:** High-Dimensional Statistical Inference |
+| **Multi-modal threat classification:** Fusing disparate streams (visual, thermal, RF, acoustic) in real time to classify deceptive targets under active adversary camouflage. | Cross-Modal Density Separation | **CPA 4:** High-Dimensional Statistical Inference |
+| **Atomic/quantum physical properties:** Developing stealth materials, energetic compounds, radiation shielding, or calibrating quantum gravimeters/magnetometers. | Quantum Many-Body Dynamics | **CPA 5:** Electronic Structure & Quantum Dynamics |
+| **Continuous physical battle environments:** Simulating hypersonic thermal ablation, blast overpressure in urban terrain, or undersea acoustic propagation. | Continuous Field Discretisation | **CPA 6:** Physics-Based Simulation |
+| **Mathematical cryptanalysis & assurance:** Verifying cryptographic resilience against future quantum decryption or discovering weaknesses in cryptographic primitives. | Lattice & Algebraic Structure | **CPA 7:** Cryptanalytic Number-Theoretic Computation |
 
 Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical teams select the appropriate mathematical representation and solver family below.
 
@@ -444,7 +448,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 | **Multi-Stage Stochastic Programming** | Designs resilient supply networks and forward deployments that commit resources today while retaining flexibility to adapt to future combat branches and sequelae. | <ul><li>**Solvers & Algorithms:** Benders Decomposition (L-shaped method), Progressive Hedging Algorithm (PHA), Sample Average Approximation (SAA).</li><li>**Formulation Mechanics:** Extensive form scenario trees with non-anticipativity constraints, recourse stages, and Chance-Constrained bounds ensuring operational survival probabilities.</li></ul> |
 | **Robust & Distributionally Robust Optimisation (DRO)** | Safeguards mission-critical plans against the "worst-case" scenario, ensuring plans do not fail catastrophically if adversary capabilities or weather turn out worse than intelligence estimates. | <ul><li>**Solvers & Algorithms:** Dual reformulations (Wasserstein and Kullback-Leibler ball projections), conic duality transformations into SOCP/SDP.</li><li>**Formulation Mechanics:** Solves min-max objectives over ambiguity sets $\mathcal{P}$: $\min_{x} \max_{P \in \mathcal{P}} \mathbb{E}_P [f(x, \xi)]$, guaranteeing minimum mission outcomes despite bounded adversary deception.</li></ul> |
 
-### 1.3 Graph Inference & Topology Analysis (CPA 3)
+### 1.3 Graph Inference & Search (CPA 3)
 *Encoding relational structures, networks, dependency chains, and topological invariants into algebraic matrices.*
 
 | Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
@@ -471,7 +475,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 | **Fermion-to-Qubit Isomorphisms** | Translates molecular and atomic models into instructions executable on digital quantum computers, avoiding exponential classical memory bottlenecks. | <ul><li>**Solvers & Algorithms:** Jordan-Wigner transformation, Bravyi-Kitaev encoding, Parity mapping with two-qubit reduction.</li><li>**Formulation Mechanics:** Algebraic mappings of anti-commuting fermionic operators onto Pauli spin matrices ($\sigma_x, \sigma_y, \sigma_z$) while minimizing non-local string circuit depth.</li></ul> |
 | **Open Quantum Systems & Sensor Dynamics** | Models environmental drift, decoherence, and noise in GPS-denied quantum navigation sensors (cold-atom gravimeters and optical atomic clocks). | <ul><li>**Solvers & Algorithms:** Runge-Kutta master equation integrators, Quantum Jump Trajectory methods, Suzuki-Trotter Hamiltonian product formulas.</li><li>**Formulation Mechanics:** Liouville-von Neumann and Lindblad master equations ($\dot{\rho} = -i[H, \rho] + \sum \mathcal{D}[L_k]\rho$) simulating atom-interferometry phase shifts under platform vibration.</li></ul> |
 
-### 1.6 Continuum Physics & Field Simulation (CPA 6)
+### 1.6 Physics-Based Simulation (CPA 6)
 *Discretising continuous partial differential equations governing aerothermodynamics, electromagnetics, and hydrodynamics into sparse linear/non-linear systems.*
 
 | Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
