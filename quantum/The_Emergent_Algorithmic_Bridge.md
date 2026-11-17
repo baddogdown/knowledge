@@ -394,40 +394,79 @@ Real-world execution generates two distinct feedback loops back into sovereign c
 
 ---
 
-# 1. PROBLEM FORMULATION 
+# PHASE 1. PROBLEM FORMULATION 
 **Creation of Pure Mathematical Models & Bottleneck Diagnosis**
 
 Translates real-world physical assets, constraints, sensor streams, and operational intent into computable, hardware-aware but vendor-decoupled mathematical structures. 
 
 Crucially, Problem Formulation operates across two continuous operational modes:
-1. **Initial Problem Factoring:** When tackling an operational challenge for the first time, Phase 1 establishes the baseline mathematical representation and conducts the disciplined diagnosis of **which Computational Problem Archetype (CPA) represents the active operational bottleneck** (evaluated on the 0–3 dominance scale). By diagnosing whether a mission is primarily rate-limited by *Constrained Allocation*, *Sequential Stochastic Decisions*, *Graph Inference*, *Statistical Inference*, *Quantum Dynamics*, *Continuum Physics*, or *Number-Theoretic Cryptanalysis*, Defence ensures it directs algorithmic investment exclusively at the true constraint.
-2. **Problem Refactoring (Feedback Loop):** When real-world execution debriefs, adversary countermeasures, or strategic posture shifts reveal that the operational reality has diverged from the baseline model, Phase 1 reformulates the mathematical objective, redraws topological constraints, or re-diagnoses the dominant CPA bottleneck (e.g., shifting emphasis from road capacity to stochastic threat avoidance).
+1. **Initial Problem Factoring:** When tackling an operational challenge for the first time, Phase 1 establishes the baseline mathematical representation and conducts the disciplined diagnosis of **which Computational Problem Archetype (CPA) represents the active operational bottleneck** (evaluated on the 0–3 dominance scale). By diagnosing whether a mission is primarily rate-limited by *Constrained Combinatorial Allocation*, *Sequential Stochastic Decisions*, *Graph Inference*, *Statistical Inference*, *Quantum Dynamics*, *Continuum Physics*, or *Number-Theoretic Cryptanalysis*, Defence ensures it directs algorithmic investment exclusively at the true constraint.
+2. **Problem Refactoring (Feedback Loop):** When real-world execution debriefs, adversary countermeasures, or strategic posture shifts reveal that the operational reality has diverged from the baseline model, Phase 1 reformulates the mathematical objective, redraws topological constraints, or re-diagnoses the dominant CPA bottleneck (e.g., shifting emphasis from static road capacity to stochastic threat avoidance).
 
 By retaining sovereign custody of these pure mathematical models and CPA bottleneck diagnoses—and cataloguing recurring blends as reusable **Operational Problem Types (OPTs)** where repetition offers efficiency—the MOD guarantees vendor-decoupled ownership over core mission logic, reusable formulation libraries, and benchmark harnesses, possessing the internal middleware to map that algorithmic intent onto any physical topology (e.g., Pegasus graph, all-to-all CMOS, tensor cores, QPUs) as the commercial market shifts.
 
-### 1.1 Complex Optimisation & Decision Advantage
-*Deciding What to Do*
+### 1.1 Constrained Combinatorial Allocation & Scheduling (CPA 1)
+*Translating discrete resource-task assignment, packing, and routing constraints into mathematical energy landscapes and constraint systems.*
 
-| Technique | Mathematical Relevance | Defence Utility |
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
 | :--- | :--- | :--- |
-| **Graph & Network Topologies** | Encodes systems as interconnected nodes and weighted edges ($G = (V, E)$) to compute network flows, maximum cliques, minimum cuts, and bipartite matchings. | Solves complex interconnected challenges across all domains—such as theater-wide multi-modal supply pipelines, resilient communications routing, naval escort formation screening, dynamic sensor-to-shooter pairing, and joint air-defence missile assignment—scaling from operational HQs to frontline units. |
-| **QUBO / Ising Reformulation** | Converts combinatorial problems into energy landscapes ($x^T Q x$). Crucially relies on sovereign degree-reduction techniques to manage "ancilla" (penalty) variable overhead when reducing complex multi-way military interactions (HUBOs) into quadratic pairs, preventing near-term silicon from being overwhelmed. | Provides a universal "common currency" for high-stakes operational trade-offs—such as rapid course-of-action (COA) deconfliction, strategic airlift loading, contested electromagnetic spectrum allocation, and multi-axis fires synchronization—compiling seamlessly across classical MIP solvers, digital annealers, and quantum hardware. |
+| **Mixed-Integer Linear & Non-Linear Programs (MILP / MINLP)** | Explicit linear/quadratic constraint inequalities ($A x \le b$, $x \in \{0, 1\}^n \times \mathbb{R}^m$), slack variable formulation, and polyhedral relaxation bounds. | Branch-and-Cut, Interior Point Methods (Barrier), Simplex with Gomory cuts (HiGHS, Gurobi, SCIP). |
+| **QUBO & Spin Glass (Ising) Encodings** | Unconstrained binary quadratic forms ($E(x) = x^T Q x + c^T x$ or $H(\sigma) = \sum J_{ij}\sigma_i\sigma_j + \sum h_i\sigma_i$); penalty weight tuning for hard operational constraints. | Simulated Annealing, Parallel Tempering, Digital Annealing, QAOA parameter initialization. |
+| **HUBO-to-QUBO Degree Reduction** | Quadratic reformulation of higher-order multi-way interaction terms ($\prod_{k=1}^d x_{i_k}$) via auxiliary ancilla variables and quadric penalty substitution. | Rosenberg polynomials, quadratization reduction algorithms, minimum ancilla graph embedding. |
 
-### 1.2 Perception & Pattern Recognition
-*Understanding what is happening*
+### 1.2 Sequential Stochastic Decision-Making Under Uncertainty (CPA 2)
+*Formulating multi-stage temporal decision policies and dynamic adaptation under partial observability and contested friction.*
 
-| Technique | Mathematical Relevance | Defence Utility |
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
 | :--- | :--- | :--- |
-| **High-Dimensional Embeddings** | Maps unstructured multi-modal data into continuous vector spaces ($\mathbb{R}^d$) where geometric distance directly reflects operational similarity or threat category. | Unifies vast, disparate intelligence feeds—fusing full-motion video, radar tracks, radio emissions, cyber telemetry, and acoustic hydrophone data into a single operational picture—to instantly expose deceptive adversary patterns, camouflage, dark maritime vessels, and anomalous tactical behavior. |
-| **Tensor Network Encodings** | Decomposes high-rank correlation matrices into structured low-rank tensor trains (e.g., Matrix Product States), drastically compressing state spaces while preserving vital multi-channel entanglements. | Uncovers faint, hidden correlations across congested multi-sensor streams—such as wideband electronic warfare (EW) de-interleaving, distributed anti-submarine sonar arrays, multi-static radar networks, and multi-spectral satellite constellations—isolating critical targets without requiring power-hungry data center compute. |
+| **Markov Decision Processes & POMDPs** | State-action-transition tuples $(S, A, T, R, \gamma)$, belief-state simplices $b(s)$, and Bellman optimality operator equations: $V^*(s) = \max_a [R(s,a) + \gamma \sum T(s'|s,a) V^*(s')]$. | Value Iteration, Policy Iteration, Point-Based Value Iteration (PBVI), Monte Carlo Tree Search (MCTS / AlphaZero). |
+| **Multi-Stage Stochastic Programming** | Extensive form scenario trees with non-anticipativity constraints, recourse decision stages, and probabilistic Chance-Constrained Optimization. | Benders Decomposition (L-shaped method), Progressive Hedging Algorithm (PHA), Sample Average Approximation (SAA). |
+| **Robust & Distributionally Robust Optimisation (DRO)** | Min-max objective under ambiguity sets $\mathcal{P}$: $\min_{x} \max_{P \in \mathcal{P}} \mathbb{E}_P [f(x, \xi)]$, bounding worst-case adversary actions and environmental extremes. | Dual reformulations (Wasserstein / Kullback-Leibler ball projections), conic duality transformations into SOCP/SDP. |
 
-### 1.3 Simulation & Synthetic Environments
-*Predicting what could happen*
+### 1.3 Graph Inference & Topology Analysis (CPA 3)
+*Encoding relational structures, networks, dependency chains, and topological invariants into algebraic matrices.*
 
-| Technique | Mathematical Relevance | Defence Utility |
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
 | :--- | :--- | :--- |
-| **Hamiltonians & Physical State-Spaces** | Formulates quantum physical dynamics and state evolution as energy operator matrices ($H = \sum H_i$) and unitary operators ($e^{-iHt}$) without classical state explosion. | Simulates non-classical battlespace physics and environmental propagation—such as GPS-denied quantum sensor dynamics (cold-atom gravimetry and magnetometry), complex RF propagation in contested clutter, and synthetic signature generation (leaving molecular materials synthesis to the industrial supply chain). |
-| **Probabilistic Transition & Belief Graphs** | Encodes stochastic Markov transitions and Bayesian belief networks to propagate cascading probabilities and non-deterministic decision trees under partial observability. | Quantifies battlefield uncertainty and adversary intent under deep fog of war—evaluating cascading operational risks across multi-axis amphibious operations, contested airspace penetration, cyber counter-attack scenarios, and geopolitical escalation pathways. |
+| **Spectral Graph & Laplacian Matrices** | Graph Laplacian ($L = D - A$), normalized symmetric Laplacian ($L_{sym}$), adjacency matrices, and spectral graph partitioning formulations. | Lanczos eigensolvers, Fiedler vector bisection, Spectral Clustering, PageRank power iterations. |
+| **Extremal Graph Substructures** | Formulations for Maximum Clique, Minimum Vertex Cover, Maximum Independent Set, and Min-Cut/Max-Flow on directed hypergraphs. | Bron-Kerbosch algorithm, Edmonds-Karp / Dinic push-relabel network flows, semidefinite relaxations (Lovász $\vartheta$ number). |
+| **Topological Data Analysis (TDA) & Persistent Homology** | Vietoris-Rips and Čech simplicial complexes, boundary matrix reduction ($\partial_k$), and persistence diagram representations. | Simplicial homology matrix reduction (Smith Normal Form over $\mathbb{Z}_2$), Ripser, Gudhi. |
+
+### 1.4 High-Dimensional Statistical Inference (CPA 4)
+*Structuring continuous embeddings, probabilistic density manifolds, and compressed tensor representations from multi-source operational feeds.*
+
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
+| :--- | :--- | :--- |
+| **Geometric Vector Embeddings & Metric Spaces** | Metric space projections ($\mathbb{R}^d$), cosine and Mahalanobis distance manifolds, contrastive loss representations for multi-modal alignment. | Exact $k$-NN, Approximate Nearest Neighbor search (HNSW, ScaNN), Voronoi cell partitioning. |
+| **Tensor Network Factorizations (MPS / TT)** | Decomposition of high-rank multi-sensor correlation tensors into low-rank Matrix Product States (MPS) / Tensor Trains ($T_{i_1 \dots i_d} = A^{(1)}_{i_1} \dots A^{(d)}_{i_d}$). | Tensor-Train SVD (TT-SVD), Density Matrix Renormalization Group (DMRG) compression, ALS (Alternating Least Squares). |
+| **Gaussian Mixture & Deep Generative Latent Spaces** | Multi-modal probability density estimation, latent variable formulations ($z \sim \mathcal{N}(0, I)$), and variational lower bound (ELBO) objectives. | Expectation-Maximization (EM), Variational Autoencoders (VAEs), Normalizing Flows. |
+
+### 1.5 Electronic Structure & Quantum Dynamics (CPA 5)
+*Formulating fermionic Hamiltonians, quantum chemistry lattices, and quantum sensor field dynamics into qubit and state-space operators.*
+
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
+| :--- | :--- | :--- |
+| **Second-Quantized Electronic Hamiltonians** | Fermionic creation/annihilation operators ($H = \sum h_{pq} a^\dagger_p a_q + \frac{1}{2}\sum g_{pqrs} a^\dagger_p a^\dagger_q a_s a_r$), Coulomb/exchange integral tensors. | Active space selection (CASSCF), Complete Active Space configuration interaction, Hartree-Fock reference baselines. |
+| **Fermion-to-Qubit Isomorphisms** | Mapping anti-commuting fermionic algebras onto Pauli spin matrices ($\sigma_x, \sigma_y, \sigma_z$) while minimizing non-local string overhead. | Jordan-Wigner transformation, Bravyi-Kitaev encoding, Parity mapping with two-qubit reduction. |
+| **Open Quantum Systems & Sensor Dynamics** | Liouville-von Neumann and Lindblad master equations ($\dot{\rho} = -i[H, \rho] + \sum \mathcal{D}[L_k]\rho$) for decoherence and atom-interferometry drift. | Runge-Kutta numerical master equation solvers, Quantum Jump Trajectory methods, Suzuki-Trotter Hamiltonian product formulas. |
+
+### 1.6 Continuum Physics & Field Simulation (CPA 6)
+*Discretising continuous partial differential equations governing aerothermodynamics, electromagnetics, and hydrodynamics into sparse linear/non-linear systems.*
+
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
+| :--- | :--- | :--- |
+| **Discretised Partial Differential Equations (PDEs)** | Weak formulations of Navier-Stokes, Maxwell's, and elastodynamic equations on unstructured conformal meshes; boundary condition encodings. | Finite Element Analysis (FEA), Finite Volume Method (FVM), Boundary Element Method (BEM). |
+| **Sparse Linear Systems ($A x = b$)** | Symmetric positive-definite and non-symmetric sparse stiffness matrices; conditioning matrix analysis ($\kappa(A) = \|A\|\|A^{-1}\|$). | Krylov Subspace solvers (Conjugate Gradient, GMRES, BiCGSTAB), Algebraic Multigrid (AMG) preconditioning, HHL (Quantum Linear Systems Algorithm target models). |
+| **Particle & Hydrodynamic State-Spaces** | Lagrangian fluid-particle equations of motion, shock-capturing formulations, multi-phase equation-of-state (EOS) coupling. | Smoothed Particle Hydrodynamics (SPH), Lattice Boltzmann Methods (LBM), Riemann shock-solver formulations. |
+
+### 1.7 Cryptanalytic Number-Theoretic Computation (CPA 7)
+*Formulating post-quantum lattice geometries, discrete logarithm lattices, and algebraic relation collections for security assurance.*
+
+| Model / Representation | Mathematical Formulation Focus | Example Solvers & Algorithms (Phase 1 Target) |
+| :--- | :--- | :--- |
+| **Euclidean Lattice Geometries** | Lattice bases $B = [b_1, \dots, b_n] \in \mathbb{R}^{m \times n}$; Shortest Vector Problem (SVP) and Learning With Errors (LWE) error-distribution geometries. | Lenstra-Lenstra-Lovász (LLL) basis reduction, Block Korkine-Zolotarev (BKZ 2.0) reduction, Lattice Sieve algorithms. |
+| **Non-Linear Boolean Polynomial Systems** | Systems of algebraic multivariate quadratic equations over Galois Fields ($\mathbb{F}_2[x_1, \dots, x_n]$) representing symmetric primitives and ciphers. | Gröbner Basis algorithms (F4 / F5), SAT solver translation (CNF-SAT encodings, CDCL engines). |
+| **Algebraic Number Fields & Factorization Relations** | Ideals, smooth number bounds, and norm algebraic relations over number fields for integer factorization and discrete logarithms. | General Number Field Sieve (GNFS) polynomial selection and relation collection, Shor's order-finding period-finding formulation. |
 
 #### Diagram 3: Problem Formulation — Translating Operational Challenges to Mathematics
 
