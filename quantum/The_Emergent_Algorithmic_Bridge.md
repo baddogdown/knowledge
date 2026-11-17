@@ -2,15 +2,17 @@
 **A 3-Phase Algorithmic Framework for Exploiting Advanced Compute and Securing Decision Advantage**
 
 ### Executive Summary
-Modern multi-domain operations generate scale, speed, and friction that outstrip human cognitive capacity and legacy software systems. While emergent computing hardware—from quantum processors to neuromorphic and digital annealing silicon—promises transformative computational leaps, hardware alone will not deliver military advantage. Advantage requires the sovereign ability to translate complex military challenges into computable mathematical models.
+Modern multi-domain operations generate scale, speed, and complexity that outstrip human cognitive capacity and legacy software systems. While emergent computing hardware - from quantum processors to neuromorphic and digital annealing silicon — promises transformative computational leaps, hardware alone will not deliver advantage. Advantage requires the ability to translate complex challenges into something computable.
 
-This paper outlines a **3-Phase Algorithmic Pipeline** designed to decouple sovereign defence logic from commercial computing hardware, establishing an enduring, reusable enterprise capability for the Ministry of Defence.
+This page outlines a **3-Phase Algorithmic Pipeline** designed to decouple sovereign defence logic from commercial computing hardware, through an exploitation of the abstract algorithms involved.  First in definiting and modeling problems as composable,  then scaling and distributing the workload across the constantly evolving hetrogenius compute landscape before, and lastly assimilating the result of distributed problem solvers into valuable courses of action for commanders.
+
+This is a non-technical draft notion of what might be involved in increasing skills and maturing process to acheive Alogrithmic Compotence nessasery within Ministry of Defence,  and perhaps a future reusable enterprise capability to efficintly marry up use cases and mission threads to the optimal blend of algorithms that best exploit all the compute options as part of acheiving decision advantage.
 
 ### Strategic Posit
-**Algorithmic competence—not raw hardware ownership—is the decisive sovereign capability.**
+**Algorithmic competence, not raw hardware ownership, is the decisive sovereign capability.**
 
-Hardware is a commercial commodity; mathematical problem formulation and complexity engineering are sovereign doctrine. By mastering a unified 3-phase algorithmic framework, the MOD can:
-1. **Bridge Today to Tomorrow:** Seamlessly connect existing classical HPC and edge devices with emerging quantum, digital annealing, and probabilistic hardware without rewriting underlying mission definitions.
+Hardware is a commercial commodity and mathematical problem formulation and complexity engineering should be sovereign. By mastering a unified 3-phase algorithmic framework, the MOD can:
+1. **Bridge Today to Tomorrow:** Seamlessly understand advantage from existing classical (CPU, GPU), HPC and edge devices through to emerging quantum, digital annealing, and probabilistic hardware without rewriting underlying mission definitions.
 2. **Operate Across Echelons:** Scale mission workloads dynamically from permanent cloud data centres during deliberate campaign planning down to constrained, disconnected (DDIL) tactical edge units in high-tempo combat.
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
