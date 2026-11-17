@@ -231,52 +231,92 @@ An OPT delivers enterprise value when Defence recognises that radically differen
 ---
 
 # The 3-Phase Algorithmic Pipeline
-Regardless of the problem domain or target compute hardware, exploiting advanced mathematics can follow a unified three-phase pipeline:
-| Pipeline Phase | Primary Function | Core Mathematical Role |
-| :--- | :--- | :--- |
-| **1. PROBLEM FORMULATION** | *Creation of Mathematical Models & Identification of distinct bottlenecks* | **Pure Model Creation:** Translates physical assets, constraints, sensor streams, and operational intent into abstract, vendor-decoupled mathematical models (QUBO, Ising, Graph topologies, Tensor networks, Hamiltonians). Diagnoses constituent CPAs and identifies the dominant rate-limiting bottleneck. |
-| **2. COMPLEXITY ENGINEERING** | *Model Scaling, Partitioning, Slicing* | **Model Engineering & Adaptation:** Slices and partitions monolithic models along the natural fault lines of the constituent CPAs (e.g., decoupling spatial graphs from discrete allocation variables). Applies mathematical decomposition (Benders, Column Gen, LNS) and adapts models to execution location and hardware topology limits. |
-| **3. EXECUTION & DELIVERY** | *Runtime Mechanics & Decision Output* | **Solver Execution:** Executes engineered sub-models on target engines (MIP, Digital/Quantum Annealers, QPUs, p-bits) and delivers anytime, trade-off-aware decisions to commanders. |
 
-## Sovereign Custody vs. Contestable Marketplace
-To ensure operational agility, eliminate vendor lock-in, and establish the MOD as an authoritative "smart customer", the pipeline enforces a clear governance boundary between sovereign assets and commercial compute commodities:
+Regardless of the problem domain or target compute hardware, exploiting advanced mathematics follows a unified three-phase pipeline: translating operational military intent into pure mathematical models, engineering their computational complexity, and executing them across a competitive marketplace of heterogeneous solvers.
 
-#### MOD Sovereign Custody
+```
++---------------------------------------------------------------------------------------------------+
+|                                  THE 3-PHASE ALGORITHMIC PIPELINE                                 |
++-----------------------------------+-----------------------------------+---------------------------+
+| PHASE 1: PROBLEM FORMULATION      | PHASE 2: COMPLEXITY ENGINEERING   | PHASE 3: EXECUTION        |
+| Ownership: Sovereign Custody      | Ownership: Decision Authority     | Ownership: Contestable    |
+| • OPT Instantiation (80% path)    | • Unzip OPTs along CPA lines      | • Standardised dispatch   |
+| • Direct CPA formulation (20%)    | • Pattern selection (COTS/open)   | • Heterogeneous solvers   |
+| • Encode ROE & intent             | • Echelon sizing (Cloud -> Edge)  | • Feasibility validation  |
+| • Pure vendor-decoupled models    | • Speed vs. fidelity trade-offs   | • Multi-COA generation    |
++-----------------------------------+-----------------------------------+---------------------------+
+                  ^                                   ^                               |
+                  |                                   |--- Engineering Refactor ------| (Tactical)
+                  |--------------------------------------- Problem Refactor ----------+ (Strategic)
+```
 
-|  |  |
-| :--- | :--- |
-| Pipeline Scope & Ownership | **Phases 1 & 2 — Sovereign Intellectual Property & Middleware:**<br/><br/>• **Pure Mathematical Formulations:** Vendor-decoupled problem models and objective functions.<br/>• **Operational Problem Type (OPT) Library:** Reusable multi-CPA composite challenge templates.<br/>• **Complexity Decomposition Recipes:** Pre-characterised partitioning and slicing algorithms tailored to specific OPTs.<br/>• **Sovereign Benchmark Harnesses:** Isolated CPA and composite OPT verification testbeds.<br/>• **Doctrine & Governance:** Classified constraints, Rules of Engagement (ROE), and trade-off penalty weightings. |
-| Enterprise Strategic Value | **Decoupled, Enduring Enterprise Assets:**<br/><br/>• **Cross-Technology Utility:** Formulations and decomposition logic remain valid across *all* technology options (classical HPC, digital annealers, neuromorphic chips, or future quantum QPUs).<br/>• **Cross-Use Case Reuse:** Reuses proven mathematical structures across superficially disparate military use cases (e.g., the same network-flow model solves both theater fuel logistics and resilient C2 message routing).<br/>• **Doctrine & IP Retention:** Keeps operational secrets, targeting constraints, and strategic priorities strictly within sovereign hands. |
-| Responsive to Change | **Control of Intent Across Changing Realities:**<br/><br/>• **Redefining military objectives and trade-offs** is retained by internal authority regardless of who provides the underlying compute.<br/>• **Recognise technology inflection points** through benchmarking emergent algorithmic techniques or compute types and understanding when novel approaches should be adopted or receive investment.<br/>• **Responsive to battlefield dynamics** where blend of problem classes, risk, locality or other echelons requires changes in where problems are solved and the tension between complexity -vs- urgency -vs- accuracy. |
+---
 
-#### Contestable Compute Marketplace
+### Phase 1: Problem Formulation & Bottleneck Diagnosis
+* **Ownership Model:** **MOD Sovereign Custody** *(Doctrinal Intent & Problem Models)*
+* **Primary Role:** Translates operational missions, physical assets, Rules of Engagement (ROE), sensor feeds, and command intent into vendor-decoupled mathematical models. It avoids premature hardware bias, expressing challenges as pure objective functions, decision variables, state spaces, and constraint manifolds.
+* **Operational Mechanism:**
+  * **The 80% Path (OPT Instantiation):** Recognises recurring operational demand patterns (e.g., *Dynamic Resource-to-Task Dispatch*) from the MOD's pre-characterised Operational Problem Type library, inheriting proven mathematical structures and constraint envelopes.
+  * **The 20% Path (Direct CPA Formulation):** For novel or bespoke battlefield challenges, directly decomposes raw operational intent into pure Computational Problem Archetypes (e.g., framing a novel electronic warfare sensor network directly as *Graph Inference & Search* [CPA 3]) and isolates the dominant computational bottleneck.
+* **Operational Adaptation Target:** Receives **Problem Refactoring** (Strategic / Doctrinal Cadence) when operational shocks or adversary counter-tactics invalidate baseline models.
 
-|  |  |
-| :--- | :--- |
-| Pipeline Scope & Ownership | **Phase-3 — Execution Engines & Runtimes:**<br/><br/>• **Heterogeneous solver hardware:** Classical MIP/CP-SAT, CMOS digital annealers, probabilistic p-bits, neutral-atom arrays, and gate-model QPUs.<br/>• **All scale and deployment models:** Sovereign cloud hyperscalers, forward-deployed HQ servers, and ruggedized vehicle/edge silicon.<br/>• **Runtime orchestration:** Low-latency contraction engines and co-processing loops. |
-| Enterprise Strategic Value | **Commercial Competition & Non-Disruptive Insertion:**<br/><br/>• **Benchmark-Driven Competition:** Drives market competition by challenging vendors with standardised, open CPA and OPT benchmark instances, forcing transparent competition on solution quality, speed, SWaP-C, and price per solve.<br/>• **Enables plug-and-play** insertion of emergent hardware breakthroughs without rewriting underlying defence models. |
-| Responsive to Change | **Buffering Market & Operational Volatility:**<br/><br/>• **Hedges Market Volatility:** Protects the MOD from commercial churn, vendor bankruptcy, and rapid shifts in proprietary hardware architectures.<br/>• **Adapts to Operational Flux & Scale:** Flexibly absorbs shifts in *where* the MOD needs to compute (cloud, HQ, edge) and rapid swings in *scale* (from deliberate campaign analysis to surge tactical response).<br/>• **Spans R&D and BAU:** Supports both mission-critical Business-As-Usual (BAU) operational execution and safe R&D benchmarking of experimental or emergent compute. |
+---
 
-## Operational Feedback Loops
-Real-world execution generates two distinct operational feedback loops back into sovereign custody.  Their core purpose is to determine whether, on occasion, Defence needs to conduct **engineering refactoring** (adapting the execution pipeline, decomposition, or runtime) or **problem refactoring** (reformulating the underlying mathematics, constraints, or doctrine):
+### Phase 2: Complexity Engineering & Decomposition
+* **Ownership Model:** **MOD Sovereign Decision Authority** *(Pattern Selection & Architectural Trade-offs)*
+* **Primary Role:** Bridges pure problem formulations and target execution environments. Rather than manufacturing proprietary middleware, the MOD acts as an authoritative architect—directing how problems are partitioned, selecting proven mathematical compute patterns, and setting acceptable trade-offs between computational speed and operational fidelity.
+* **Operational Mechanism:**
+  * **OPT Deconstruction:** Slices and "unzips" composite OPT models along the natural mathematical fault lines of their constituent CPAs (e.g., decoupling spatial routing graphs [CPA 3] from discrete asset allocation variables [CPA 1]).
+  * **Compute Pattern Selection:** Directs mathematical decomposition (e.g., Benders decomposition, Column Generation, Large Neighbourhood Search) by selecting appropriate commercial off-the-shelf, open-source, or sovereign mathematical templates.
+  * **Echelon Adaptation:** Sizes sub-problems to fit execution realities across command echelons—from high-capacity sovereign cloud servers down to power- and thermal-constrained ruggedized vehicle silicon.
+* **Operational Adaptation Target:** Receives **Engineering Refactoring** (Tactical / High Cadence) when battlefield friction, network disruption, or hardware throttling requires dynamic plan repair without reformulating core doctrine.
 
-#### Engineering Refactoring
+---
 
-|  |  |
-| :--- | :--- |
-| Pathway & Cadence | **Phase 3 $\to$ Phase 2** &mdash; *Tactical / High Cadence* |
-| Operational Trigger | Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), edge power/thermal throttling, or vehicle compute limits during execution.  Also may include unexpected intelligence of adversary action requiring urgent consideration of greater uncertainty (increasing scale of complexity for the same model).|
-| Sovereign Adaptation Mechanism | **Phase 2 Dynamically Adapts (Core Model Remains Intact):**<br/><br/>• **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.<br/>• **Temporal Compression:** Collapses planning horizons (e.g., switches from 48-hr deliberate plan to rapid localized fix).<br/>• **Focused Workload Rebalancing:** Drops non-critical variables to compile ultra-lightweight integer heuristics on ruggedized vehicle silicon. |
-| Defence Impact & Example | Rapid plan repair following an ambush or bridge denial on a logistics convoy route without re-running the entire theater-level schedule. |
+### Phase 3: Execution & Delivery
+* **Ownership Model:** **Contestable Compute Marketplace** *(Heterogeneous Solvers & Commodity Hardware)*
+* **Primary Role:** Executes engineered sub-models across a competitive, vendor-agnostic ecosystem of specialised solvers and delivers anytime, trade-off-aware Courses of Action (COAs) to commanders.
+* **Operational Mechanism:**
+  * **Heterogeneous Solver Dispatch:** Routes partitioned workloads to the most cost-effective, fit-for-purpose engine (Classical MIP/CP-SAT, CMOS digital annealers, neuromorphic silicon, or future QPUs).
+  * **Feasibility Validation & Solution Stitching:** Re-assembles distributed sub-problem outputs into a single coherent plan, running sovereign validation checks to ensure stitched solutions violate no classified constraints or ROE.
+  * **Command Decision Delivery:** Surfaces Pareto-optimal trade-off frontiers (e.g., mission speed vs. force survivability) rather than a single black-box "solution", enabling human-in-the-loop command selection.
+* **Runtime Telemetry Origin:** Generates the real-time solve performance, constraint friction, and feasibility signals that drive tactical repair (Phase 2) or doctrinal review (Phase 1).
 
-#### Problem Refactoring
+---
 
-|  |  |
-| :--- | :--- |
-| Pathway & Cadence | **Phase 3 $\to$ Phase 1** &mdash; *Strategic / Doctrinal Cadence* |
-| Operational Trigger | Fundamental operational shocks, emergence of novel adversary countermeasures, post-exercise debriefs, or major changes in strategic posture revealing misdiagnosed bottlenecks or invalid problem models. |
-| Sovereign Adaptation Mechanism | **Phase 1 Reformulates Problem Logic & Mathematical Governance:**<br/><br/>• **CPA Bottleneck Re-Diagnosis:** Re-evaluates which CPA is truly rate-limiting the mission. For instance, if operational analysis shows supply convoys are failing due to adversary drone strikes rather than road capacity, the dominant bottleneck is re-diagnosed from *Constrained Allocation* to *Sequential Stochastic Decisions* under threat.<br/>• **Objective Recalibration:** Shifts objective penalty weights (e.g., prioritising force survivability over mission speed).<br/>• **Topology Restructuring:** Redraws graph nodes/edges (e.g., severing a denied port, maritime strait, or compromised C2 link).<br/>• **Doctrine Re-anchoring:** Encodes updated Rules of Engagement (ROE) and legal/policy constraints.<br/>*(Where an operational profile repeats across scenarios, updates are catalogued back into the OPT template library for enterprise efficiency, but the refactoring loop itself operates directly on operational reality).* |
-| Defence Impact & Example | Doctrinal reformulation when unexpected adversary A2/AD systems deny air corridors, requiring new mathematical constraint envelopes across all joint strike planning. |
+## Enterprise Governance & Strategic Value Matrix
+
+To ensure operational agility, eliminate vendor lock-in, and establish the MOD as an authoritative "smart customer", the pipeline maintains a clear governance division between sovereign decision rights and commercial compute commodities:
+
+| Dimension | Phase 1: Problem Formulation | Phase 2: Complexity Engineering | Phase 3: Execution & Delivery |
+| :--- | :--- | :--- | :--- |
+| **Ownership Model** | **MOD Sovereign Custody**<br/>*(Doctrinal Intent & Problem Models)* | **MOD Sovereign Decision Authority**<br/>*(Pattern Selection & Trade-offs)* | **Contestable Marketplace**<br/>*(Commercial Compute Engines)* |
+| **Enduring Defence Assets** | • Vendor-decoupled mathematical models<br/>• Reusable OPT template library<br/>• Standardised CPA/OPT benchmark instances<br/>• Classified ROE penalty functions & constraints | • Pre-characterised decomposition recipes<br/>• Architectural routing heuristics<br/>• Sizing profiles for deployment echelons<br/>• Speed-vs-fidelity boundary definitions | • Standardised API integration harnesses<br/>• Sovereign solution-validation gate<br/>• Multi-COA / Pareto delivery layer<br/>• Competitive pricing and latency records |
+| **Enterprise Strategic Value** | **Cross-Domain & Technology Longevity:**<br/><br/>• **Cross-Domain Reuse:** Identical mathematical formulations solve disparate defence problems (e.g., the same network-flow model solves theater fuel logistics and resilient C2 message routing).<br/>• **Technology Neutrality:** Formulations outlive commercial hardware churn, remaining valid across classical HPC, annealers, and future QPUs.<br/>• **Doctrine & IP Retention:** Keeps operational secrets, targeting constraints, and mission intent strictly sovereign. | **Architectural Agility & Smart Customer Control:**<br/><br/>• **Directs Rather Than Builds:** Directs off-the-shelf and commercial compute patterns without attempting to manufacture in-house middleware.<br/>• **Operational Risk Control:** Retains internal authority over what approximations and safety margins are acceptable under combat conditions.<br/>• **Echelon Portability:** Flexibly packages workloads for sovereign cloud down to forward-deployed vehicle silicon. | **Commercial Competition & Market Hedging:**<br/><br/>• **Benchmark-Driven Leverage:** Challenges commercial vendors with open, standardised CPA/OPT instances, forcing competition on price-per-solve, latency, and SWaP-C.<br/>• **Buffers Market Volatility:** Protects Defence from vendor churn, lock-in, and proprietary hardware obsolescence.<br/>• **Spans R&D and Operations:** Safely benchmarks experimental laboratory hardware using the exact same problem instances deployed in live operations. |
+| **Operational Adaptation Loop** | **Problem Refactoring** *(Strategic Cadence)*:<br/>Triggered by fundamental shocks or adversary counter-tactics to re-diagnose rate-limiting CPAs or redefine objective functions. | **Engineering Refactoring** *(Tactical Cadence)*:<br/>Triggered by local friction, DDIL dropouts, or edge throttling to dynamically compress planning horizons or sandbox units. | **Runtime Telemetry Origin**:<br/>Originates real-time solver performance data and feasibility alerts that inform tactical plan repair or doctrinal review. |
+
+---
+
+## Operational Feedback Loops: Adapting to Battlefield Realities
+
+Real-world execution generates two distinct feedback loops back into sovereign control. Their core purpose is to determine whether operational disruption requires **engineering refactoring** (adapting decomposition, horizons, or runtimes) or **problem refactoring** (reformulating underlying mathematics, constraints, or doctrine):
+
+1. **Engineering Refactoring (Phase 3 $\to$ Phase 2 &mdash; Tactical / High Cadence):**
+   * *Trigger:* Rapid battlefield friction, unexpected local disruptions, degraded communications (DDIL), or edge power/thermal throttling.
+   * *Mechanism:* Phase 2 dynamically adapts without breaking core doctrine:
+     * **Spatial Sandboxing:** Resizes sub-problems to isolate disconnected units for edge autonomy.
+     * **Temporal Compression:** Collapses planning horizons (e.g., switching from a 48-hour deliberate campaign schedule to a 30-minute localised plan repair).
+     * **Workload Rebalancing:** Drops non-critical secondary constraints to run lightweight integer heuristics on vehicle silicon.
+   * *Defence Impact:* Rapid plan repair following an ambush or bridge denial on a logistics convoy route without re-running the entire theater-level schedule.
+
+2. **Problem Refactoring (Phase 3 $\to$ Phase 1 &mdash; Strategic / Doctrinal Cadence):**
+   * *Trigger:* Fundamental operational shocks, emergence of novel adversary countermeasures, post-exercise debriefs, or major changes in strategic posture revealing misdiagnosed bottlenecks or invalid problem models.
+   * *Mechanism:* Phase 1 reformulates the mathematical governance and problem logic:
+     * **CPA Bottleneck Re-Diagnosis:** Re-evaluates which CPA is truly rate-limiting. For example, if supply convoys fail due to adversary drone strikes rather than road capacity, the bottleneck is re-diagnosed from *Constrained Allocation* (CPA 1) to *Sequential Stochastic Decisions* (CPA 2).
+     * **Objective Recalibration:** Shifts penalty weights (e.g., prioritising force survivability over delivery speed).
+     * **Topology Restructuring:** Redraws graph nodes and edges (e.g., severing a denied port, maritime strait, or compromised C2 link).
+     * **Doctrine Re-anchoring:** Encodes updated Rules of Engagement and legal/policy constraints.
+   * *Defence Impact:* Doctrinal reformulation when adversary A2/AD systems deny planned air corridors, requiring new mathematical constraint envelopes across all joint strike planning.
 
 #### Diagram 2: The 3-Phase Pipeline + Sovereignty Boundaries & Compute Horizons
 
@@ -289,7 +329,7 @@ flowchart TB
     %% ==========================================
     subgraph KEY ["<b>KEY:</b> MOD Sovereign Focus"]
         direction LR
-        K1["<b>MOD Sovereign Custody</b><br/><i>(Phases 1 & 2: OPT & CPA Custody)</i>"]
+        K1["<b>MOD Sovereign Custody & Decision Authority</b><br/><i>(Phase 1: Custody | Phase 2: Decision Authority)</i>"]
         K2["<b>Contestable Marketplace</b><br/><i>(Phase 3: Heterogeneous Execution)</i>"]
         K1 ~~~ K2
     end
@@ -299,10 +339,10 @@ flowchart TB
     %% ==========================================
     subgraph PHASES ["The 3-Phase Algorithmic Pipeline"]
         direction LR
-        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>Pure Models & CPA Bottleneck Diagnosis</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing, Partitioning & Adaptation</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Runtime Mechanics & Decision Output</i>"]
+        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>OPT Instantiation & CPA Diagnosis</i><br/>[MOD Sovereign Custody]"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing & Pattern Selection</i><br/>[Sovereign Decision Authority]"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Heterogeneous Solve & COA Delivery</i><br/>[Contestable Marketplace]"]
 
-        P3 -.->|"<b>Engineering Refactoring</b><br/>Local repair & re-partitioning"| P2
-        P3 -.->|"<b>Problem Refactoring</b><br/>Major shock & model refactoring"| P1
+        P3 -.->|"<b>Engineering Refactoring</b><br/>Local plan repair & edge adaptation"| P2
+        P3 -.->|"<b>Problem Refactoring</b><br/>Doctrinal shock & model reformulation"| P1
     end
 
     KEY ~~~ PHASES
