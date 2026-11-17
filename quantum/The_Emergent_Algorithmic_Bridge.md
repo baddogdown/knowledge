@@ -19,7 +19,7 @@ Hardware is a commercial commodity and mathematical problem formulation and comp
 
 # Page Sections
 * **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
-* **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
+* **The 3-Phase Algorithmic Pipeline:** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
 * **Sovereignty & Governance:** Defines MOD sovereign custody versus what can be outsourced to a contestable commercial marketplace.
 * **Detailed Phase Mechanics:** Deeper technical breakdown and example mathematical model or solver options across each pipeline phase.
 
@@ -246,8 +246,8 @@ flowchart TB
     %% ==========================================
     subgraph KEY ["<b>KEY:</b> MOD Sovereign Focus"]
         direction LR
-        K1["<b>MOD Sovereign Custody & Decision Authority</b><br/><i>(Phase 1: Custody | Phase 2: Decision Authority)</i>"]
-        K2["<b>Contestable Marketplace</b><br/><i>(Phase 3: Heterogeneous Execution)</i>"]
+        K1["<b>MOD Sovereign Custody & Decision Authority</b><br/><i>(Phase 1 & 2)</i>"]
+        K2["<b>Contestable Marketplace</b><br/><i>(Phase 3)</i>"]
         K1 ~~~ K2
     end
 
@@ -256,9 +256,9 @@ flowchart TB
     %% ==========================================
     subgraph PHASES ["The 3-Phase Algorithmic Pipeline"]
         direction LR
-        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>OPT Instantiation & CPA Diagnosis</i><br/>[MOD Sovereign Custody]"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing & Pattern Selection</i><br/>[Sovereign Decision Authority]"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Heterogeneous Solve & COA Delivery</i><br/>[Contestable Marketplace]"]
+        P1["<b>1. PROBLEM FORMULATION</b><br/><br/><i>OPT Instantiation & CPA Diagnosis</i>"] --> P2["<b>2. COMPLEXITY ENGINEERING</b><br/><br/><i>CPA Slicing & Pattern Selection</i>"] --> P3["<b>3. EXECUTION & DELIVERY</b><br/><br/><i>Heterogeneous Solve & COA Delivery</i>"]
 
-        P3 -.->|"<b>Engineering Refactoring</b><br/>Local plan repair & edge adaptation"| P2
+        P3 -.->|"<b>Engineering Refactoring</b><br/>Local plan repair & repartitioning"| P2
         P3 -.->|"<b>Problem Refactoring</b><br/>Doctrinal shock & model reformulation"| P1
     end
 
@@ -321,32 +321,32 @@ flowchart TB
 
 ---
 
-## Phase 1: Problem Formulation & Bottleneck Diagnosis
-* **Ownership Model:** **MOD Sovereign Custody** *(Doctrinal Intent & Problem Models)*
-* **Phase Role:** Translates operational missions, physical assets, Rules of Engagement (ROE), sensor feeds, and command intent into vendor-decoupled mathematical models. Expresses challenges as pure objective functions, decision variables, state spaces, and constraint manifolds without premature hardware bias.
-* **Operational Mechanism:**
-  * **Recurring Operational Demand (OPT Instantiation):** Recognises established demand patterns (e.g., *Dynamic Resource-to-Task Dispatch*) from the MOD's pre-characterised Operational Problem Type library, inheriting proven mathematical structures and constraint envelopes.
-  * **Novel & Bespoke Challenges (Direct CPA Formulation):** For uncatalogued challenges across operational, intelligence, or enterprise domains, directly decomposes mission intent into pure Computational Problem Archetypes (e.g., framing an electronic warfare sensor network directly as *Graph Inference & Search* [CPA 3]) and isolates the dominant computational bottleneck.
-* **Feedback & Refactoring:** Receives strategic **Problem Refactoring** when real-world shocks, adversary countermeasures, or strategic posture shifts invalidate baseline models.
+## Phase 1: Problem Formulation (& Bottleneck Diagnosis)
+* Ownership: **MOD Sovereign Custody** *(Doctrinal Intent & Problem Models)*
+* **Role:** Translates mission threads,  use cases or demand signals into vendor-decoupled mathematical models. Expresses challenges as pure objective functions, decision variables, state spaces, and constraint manifolds without premature hardware bias.
+* **Functions:**
+  * **Recurring Operational Demand (OPT Instantiation):** Recognises established demand patterns (e.g., *Dynamic Resource-to-Task Dispatch*) from the MOD's pre-characterised Operational Problem Type library, inheriting proven composable mathematical models & solvers, the respective toolchains and how they fit together (workflow steps).
+  * **New Challenges (New CPA blends):** For uncatalogued challenges, directly decomposes mission intent into pure Computational Problem Archetypes (e.g., framing an electronic warfare sensor network directly as *Graph Inference & Search* [CPA 3]) and isolates the dominant computational bottleneck.
+* **Feedback & Refactoring:** Receives **Problem Refactoring** when real-world shocks, adversary countermeasures, or strategic posture shifts invalidate baseline models.
 
 ---
 
-## Phase 2: Complexity Engineering & Decomposition
-* **Ownership Model:** **MOD Sovereign Decision Authority** *(Pattern Selection & Architectural Trade-offs)*
-* **Phase Role:** Bridges pure problem formulations and target execution environments. Rather than manufacturing proprietary middleware, the MOD acts as an authoritative architect—directing how problems are partitioned, selecting proven mathematical compute patterns, and setting acceptable trade-offs between computational speed and operational fidelity.
-* **Operational Mechanism:**
+## Phase 2: Complexity Engineering (& Decomposition)
+* Ownership: **MOD Sovereign Decision Authority** *(Pattern Selection & Architectural Trade-offs)*
+* **Role:** Bridges pure problem formulations and target execution environments. MOD acts as an authoritative architect — directing how problems are partitioned, selecting proven mathematical compute patterns and setting acceptable trade-offs between computational speed and operational fidelity, problem complexity & decision locality.
+* **Functions:**
   * **OPT Deconstruction:** Slices and "unzips" composite OPT models along the natural mathematical fault lines of their constituent CPAs (e.g., decoupling spatial routing graphs [CPA 3] from discrete asset allocation variables [CPA 1]).
   * **Compute Pattern Selection:** Directs mathematical decomposition (e.g., Benders decomposition, Column Generation, Large Neighbourhood Search) by selecting appropriate commercial off-the-shelf, open-source, or sovereign mathematical templates.
   * **Echelon Adaptation:** Sizes sub-problems to fit execution realities across command echelons—from high-capacity sovereign cloud servers down to power- and thermal-constrained ruggedized vehicle silicon.
-* **Feedback & Refactoring:** Receives tactical **Engineering Refactoring** when local friction, degraded communications (DDIL), or hardware throttling requires rapid plan repair without changing core doctrine.
+* **Feedback & Refactoring:** Receives tactical **Engineering Refactoring** when local friction, urgent tactical response, degraded communications (DDIL), or hardware throttling requires rapid plan repair without changing core models or doctrine.
 
 ---
 
 ## Phase 3: Execution & Delivery
-* **Ownership Model:** **Contestable Compute Marketplace** *(Heterogeneous Solvers & Commodity Hardware)*
-* **Phase Role:** Executes engineered sub-models across a competitive, vendor-agnostic ecosystem of specialised solvers and delivers anytime, trade-off-aware Courses of Action (COAs) to commanders.
-* **Operational Mechanism:**
-  * **Heterogeneous Solver Dispatch:** Routes partitioned workloads to the most cost-effective, fit-for-purpose engine (Classical MIP/CP-SAT, CMOS digital annealers, neuromorphic silicon, or future QPUs).
+* Ownership: **Contestable Compute Marketplace** *(Heterogeneous Solvers & Commodity Hardware)*
+* **Role:** Distributed or sequenced execution of engineered sub-models across a competitive, vendor-agnostic ecosystem of specialised solvers and delivers anytime, trade-off-aware Courses of Action (COAs) to commanders.
+* **Functions:**
+  * **Heterogeneous Solver Dispatch:** Routes partitioned workloads to the most effective, fit-for-purpose engine (Classical MIP/CP-SAT, PPUs, CMOS digital annealers, neuromorphic silicon, or future QPUs).
   * **Feasibility Validation & Solution Stitching:** Re-assembles distributed sub-problem outputs into a single coherent plan, running sovereign validation checks to ensure stitched solutions violate no classified constraints or ROE.
   * **Command Decision Delivery:** Surfaces Pareto-optimal trade-off frontiers (e.g., mission speed vs. force survivability) rather than a single black-box "solution", enabling human-in-the-loop command selection.
 * **Feedback & Refactoring:** Generates the runtime solve performance, constraint friction, and feasibility signals that drive tactical plan repair (Phase 2) or strategic doctrinal review (Phase 1).
