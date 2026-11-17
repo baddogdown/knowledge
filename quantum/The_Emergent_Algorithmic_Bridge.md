@@ -1,14 +1,15 @@
-# An Emergent Algorithmic Bridge
+An Emergent Algorithmic Bridge
+==============================
 **A 3-Phase Algorithmic Framework for Exploiting Advanced Compute and Securing Decision Advantage**
 
-### Executive Summary
+# Executive Summary
 Modern multi-domain operations generate scale, speed, and complexity that outstrip human cognitive capacity and legacy software systems. While emergent computing hardware - from quantum processors to neuromorphic and digital annealing silicon — promises transformative computational leaps, hardware alone will not deliver advantage. Advantage requires the ability to translate complex challenges into something computable.
 
 This page outlines a **3-Phase Algorithmic Pipeline** designed to decouple sovereign defence logic from commercial computing hardware, through an exploitation of the abstract algorithms involved.  First in definiting and modeling problems as composable,  then scaling and distributing the workload across the constantly evolving hetrogenius compute landscape before, and lastly assimilating the result of distributed problem solvers into valuable courses of action for commanders.
 
 This is a non-technical draft notion of what might be involved in increasing skills and maturing process to acheive Alogrithmic Compotence nessasery within Ministry of Defence,  and perhaps a future reusable enterprise capability to efficintly marry up use cases and mission threads to the optimal blend of algorithms that best exploit all the compute options as part of acheiving decision advantage.
 
-### Strategic Posit
+## Strategic Posit
 **Algorithmic competence, not raw hardware ownership, is the decisive sovereign capability.**
 
 Hardware is a commercial commodity and mathematical problem formulation and complexity engineering should be sovereign. By mastering a unified 3-phase algorithmic framework, the MOD can:
@@ -16,13 +17,13 @@ Hardware is a commercial commodity and mathematical problem formulation and comp
 2. **Operate Across Echelons:** Scale mission workloads dynamically from permanent cloud data centres during deliberate campaign planning down to constrained, disconnected (DDIL) tactical edge units in high-tempo combat.
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
-### Document Roadmap
+# Page Sections
 * **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Pipeline (1, 2, 3):** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
 * **Sovereignty & Governance:** Defines MOD sovereign custody versus what can be outsourced to a contestable commercial marketplace.
 * **Detailed Phase Mechanics:** Deeper technical breakdown and example mathematical model or solver options across each pipeline phase.
 
-#### Diagram 0: Overview
+## Diagram 0: Page Overview
 
 ```mermaid
 flowchart TB
@@ -103,7 +104,7 @@ flowchart TB
 
 ---
 
-## Computational Problem Archetypes (CPAs)
+# Computational Problem Archetypes (CPAs)
 **The Foundational Mathematical Archetypes of Defence Demand**
 
 To bridge the gap between frontline operational problems and the evolving computational landscape without getting locked into vendor hardware speculation, defence challenges are categorised into seven **Computational Problem Archetypes (CPAs)**. 
@@ -120,7 +121,7 @@ Each CPA represents a distinct mathematical problem structure. They provide a co
 | **6. Physics-Based Simulation** | **Predicting *what could happen* in continuous macroscopic environments:** <br/><br/>Simulating continuous physical media, field dynamics, and kinematic interactions to evaluate platforms, weapon effects, and mission environments without costly physical trials (e.g., hypersonic aerodynamics, underwater acoustic propagation, electromagnetic field mapping for physical digital twins, and high-fidelity physics-based adjudication engines in operational wargaming). | Numerical solution of continuous partial and ordinary differential equations (PDEs/ODEs) discretized over high-resolution spatial, temporal, or state manifolds.<br/><br/>Addresses computational bottlenecks in massive sparse linear/non-linear system solving ($Ax = b$), multi-scale continuum dynamics, and non-linear boundary constraints where fine grid meshes cause computational runtime to scale cubicly. | **Classical:** Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD / Lattice Boltzmann), Shock Hydrodynamics PDE Solvers, Boundary Element Methods (BEM)<br/><br/>**Emergent:** Quantum Linear System Solvers (HHL / Quantum PDE), Physics-Informed Neural Networks (PINNs), Quantum Monte Carlo |
 | **7. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** <br/><br/>Evaluating mathematical resilience, assessing vulnerabilities in public-key infrastructure, and mitigating "harvest-now, decrypt-later" threats across sovereign communications (e.g., auditing RSA/ECC encryption vulnerabilities, certifying sovereign Post-Quantum Cryptographic lattice schemes, and verifying cryptographic trust in secure military C2 links). | Algebraic operations and bound calculation over discrete finite fields, modular rings, and high-dimensional vector lattices.<br/><br/>Focuses on non-NP-complete computational hard problems (integer factorisation, discrete logarithms, and lattice basis reduction) where sub-exponential classical sieves or polynomial quantum algorithms determine the cryptographic security threshold. | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ), Pollard's Rho<br/><br/>**Emergent:** Shor's Algorithm (Quantum Period Finding / Phase Estimation), Quantum Lattice Algorithms |
 
-#### Diagram 1: The Seven Computational Problem Archetypes & Emergent Maturity
+## Diagram 1: The Seven Computational Problem Archetypes & Emergent Maturity
 
 ```mermaid
 flowchart TB
@@ -194,14 +195,14 @@ flowchart TB
     style KEY fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#475569
 ```
 
-### The Strategic Value of the CPA Abstraction
+## The Strategic Value of the CPA Abstraction
 
 1. **Targeted Benchmarking and recognition of when emergent algorithmic techniques or compute modality become advantagous. (Inflection Points):** Benchmarking a full operational system or multi-stage use case can be difficult and often obscures where computational friction actually lives. Benchmarking at the CPA level enables clean, isolated evaluation. When an emergent compute modality (such as PPU) reaches a potential inflection point, that breakthrough is likely to manifest on a **specific CPA**.
 2. **Algorithmic Reusability:** Because CPAs are decoupled from mission-specific terminology, demonstrating an emergent solver's advantage on a single CPA offers the potential to identify reusable advantage across *every* upstream defence use case dependent on that archetype.
 
 ---
 
-### From Archetypes to Operational Efficiency
+## From Archetypes to Operational Efficiency
 
 Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes (CPAs). 
 
@@ -213,7 +214,7 @@ Think of OPTs are the useful **colour pallets**. Problems do not have to fit an 
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can more easily harvest civilian algorithmic breakthroughs at a composit system level without exposing operational secrets or classified data.
 3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
 
-#### A Tangible Example: Dynamic Resource-to-Task Dispatch
+### A Tangible Example: Dynamic Resource-to-Task Dispatch
 
 An OPT delivers enterprise value when Defence recognises that radically different operational demand signals share the exact same underlying mathematical blend.
 
@@ -234,7 +235,7 @@ An OPT delivers enterprise value when Defence recognises that radically differen
 
 Regardless of the problem domain or target compute hardware, exploiting advanced mathematics follows a unified three-phase pipeline: translating operational defence intent into pure mathematical models, engineering their computational complexity, and executing them across a competitive marketplace of heterogeneous solvers.
 
-#### Diagram 2: The 3-Phase Pipeline, Sovereignty Boundaries & Compute Horizons
+## Diagram 2: The 3-Phase Pipeline, Sovereignty Boundaries & Compute Horizons
 
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground': '#ffffff'}}}%%
@@ -320,7 +321,7 @@ flowchart TB
 
 ---
 
-### Phase 1: Problem Formulation & Bottleneck Diagnosis
+## Phase 1: Problem Formulation & Bottleneck Diagnosis
 * **Ownership Model:** **MOD Sovereign Custody** *(Doctrinal Intent & Problem Models)*
 * **Phase Role:** Translates operational missions, physical assets, Rules of Engagement (ROE), sensor feeds, and command intent into vendor-decoupled mathematical models. Expresses challenges as pure objective functions, decision variables, state spaces, and constraint manifolds without premature hardware bias.
 * **Operational Mechanism:**
@@ -330,7 +331,7 @@ flowchart TB
 
 ---
 
-### Phase 2: Complexity Engineering & Decomposition
+## Phase 2: Complexity Engineering & Decomposition
 * **Ownership Model:** **MOD Sovereign Decision Authority** *(Pattern Selection & Architectural Trade-offs)*
 * **Phase Role:** Bridges pure problem formulations and target execution environments. Rather than manufacturing proprietary middleware, the MOD acts as an authoritative architect—directing how problems are partitioned, selecting proven mathematical compute patterns, and setting acceptable trade-offs between computational speed and operational fidelity.
 * **Operational Mechanism:**
@@ -341,7 +342,7 @@ flowchart TB
 
 ---
 
-### Phase 3: Execution & Delivery
+## Phase 3: Execution & Delivery
 * **Ownership Model:** **Contestable Compute Marketplace** *(Heterogeneous Solvers & Commodity Hardware)*
 * **Phase Role:** Executes engineered sub-models across a competitive, vendor-agnostic ecosystem of specialised solvers and delivers anytime, trade-off-aware Courses of Action (COAs) to commanders.
 * **Operational Mechanism:**
