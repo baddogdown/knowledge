@@ -351,8 +351,11 @@ flowchart TB
   * **Command Decision Delivery:** Surfaces Pareto-optimal trade-off frontiers (e.g., mission speed vs. force survivability) rather than a single black-box "solution", enabling human-in-the-loop command selection.
 * **Feedback & Refactoring:** Generates the runtime solve performance, constraint friction, and feasibility signals that drive tactical plan repair (Phase 2) or strategic doctrinal review (Phase 1).
 
+---
+
 > **Footnote — Sovereign Benchmarking & Testbed Authority:**  
 > While Phase 3 execution engines operate within a contestable commercial marketplace, the MOD must retain sovereign or independent ownership of solver testbeds and benchmarking harnesses. Retaining internal custody of standardized evaluation harnesses is essential for Defence to independently verify commercial performance claims, assess the relative merits of competing compute modalities, and detect precisely when emergent hardware achieves a true inflection point of operational advantage over established classical methods.
+> This is turn will feedback into decisions made in Phase 1 & Phase 2.
 
 ---
 
