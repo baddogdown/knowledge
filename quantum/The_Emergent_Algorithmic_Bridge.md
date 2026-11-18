@@ -17,11 +17,14 @@ Hardware is a commercial commodity and mathematical problem formulation and comp
 2. **Operate Across Echelons:** Scale mission workloads dynamically from permanent cloud data centres during deliberate campaign planning down to constrained, disconnected (DDIL) tactical edge units in high-tempo combat.
 3. **Act as an Authoritative "Smart Customer":** Prevent proprietary vendor lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
-# Page Sections
-* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
-* **The 3-Phase Algorithmic Pipeline:** The sequential path from *Problem Formulation* to *Complexity Engineering* to *Execution & Delivery*.
-* **Sovereignty & Governance:** Defines MOD sovereign custody versus what can be outsourced to a contestable commercial marketplace.
-* **Detailed Phase Mechanics:** Deeper technical breakdown and example mathematical model or solver options across each pipeline phase.
+# How to Read This Document: The Narrative Arc
+*A strategic guide for defence leadership, operational planners, and technical teams.*
+
+* **1. Computational Problem Archetypes (CPAs):** Establishes the foundational abstraction layer. Categorises complex military missions into seven vendor-neutral mathematical archetypes, diagnoses computational friction, and defines recurring mission blends as Operational Problem Types (OPTs).
+* **2. The 3-Phase Algorithmic Pipeline & Sovereign Governance:** Sets out the strategic lifecycle (*Problem Formulation* $\rightarrow$ *Complexity Engineering* $\rightarrow$ *Execution & Delivery*), establishing an Enterprise Governance Matrix that delineates sovereign MOD custody from contestable commercial compute.
+* **3. Phase 1 — Problem Formulation & Bottleneck Diagnosis:** Guides operational commanders from real-world battlefield friction to CPA bottleneck diagnosis, followed by example mathematical representations, defence utility, and candidate solver targets.
+* **4. Phase 2 — Complexity Engineering:** Details how sovereign middleware unzips and slices composite problems into decoupled sub-problems, selecting optimal hybrid execution patterns.
+* **5. Phase 3 — Execution & Delivery:** Covers heterogeneous execution across multi-echelon environments (from secure data centres to disconnected DDIL edge units) and closes the loop via operational feedback.
 
 ## Diagram 0: Page Overview
 
