@@ -5,9 +5,9 @@ An Emergent Algorithmic Bridge
 # Executive Summary
 Modern multi-domain operations generate scale, speed, and complexity that outstrip human cognitive capacity and legacy software systems. While emergent computing hardware - from quantum processors to neuromorphic and digital annealing silicon — promises transformative computational leaps, hardware alone will not deliver advantage. Advantage requires the ability to translate complex challenges into something computable.
 
-This page outlines a **3-Phase Algorithmic Pipeline** designed to decouple sovereign defence logic from commercial computing hardware, through an exploitation of the abstract algorithms involved. First in defining and modelling problems as composable, then scaling and distributing the workload across the constantly evolving heterogeneous compute landscape before lastly assimilating the result of distributed problem solvers into valuable courses of action for commanders.
+This page outlines a **3-Phase Algorithmic Pipeline** designed to decouple sovereign defence logic from commercial computing hardware. It achieves this by first defining problems as composable models, dynamically distributing these workloads across a heterogeneous compute landscape, and finally assimilating the outputs into actionable courses of action for commanders.
 
-This is a non-technical draft notion of what might be involved in increasing skills and maturing process to achieve Algorithmic Competence necessary within Ministry of Defence, and perhaps a future reusable enterprise capability to efficiently marry up use cases and mission threads to the optimal blend of algorithms that best exploit all the compute options as part of continuous innovation and achieving decision advantage.
+This document provides the strategic blueprint for achieving **Algorithmic Competence** within the Ministry of Defence. It outlines the skills, processes, and reusable enterprise capabilities required to efficiently match mission threads to the optimal blend of algorithms, ensuring continuous innovation and decision advantage.
 
 ## Strategic Posit
 **Algorithmic competence, not raw hardware ownership, is the decisive sovereign capability.**
@@ -23,7 +23,7 @@ Becoming a smart customer able to recognise the relative merit of emergent compu
 ## How to Read This Document:
 *A strategic guide for leadership & operational planners showing how algorithms can be a critical sovereign bridge from military and civil business teams to technical teams and the contestable and optimal enterprise exploitation of all compute.*
 
-* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
+* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes, providing a shared language to understand the blend of compute required for any problem or use case.
 * **The 3-Phase Algorithmic Pipeline:** Sets out the lifecycle (*Problem Formulation* $\rightarrow$ *Complexity Engineering* $\rightarrow$ *Execution & Delivery*), establishing an Enterprise Governance Matrix that delineates sovereign MOD custody from contestable commercial compute.
 * **Phase 1 — Problem Formulation:** Guides operational commanders from real-world battlefield friction to CPA bottleneck diagnosis, followed by example mathematical representations, defence utility, and candidate solver targets.
 * **Phase 2 — Complexity Engineering:** Details how problems & workloads can be unzipped and sliced into composite decoupled sub-problems,  scaled up or down and the selection of optimal hybrid execution patterns.
@@ -179,7 +179,7 @@ flowchart TB
         direction LR
         K1["<b>Established</b><br/><i>Common in industry / mature</i>"]
         K2["<b>Early / Growing</b><br/><i>Emerging commercial utility</i>"]
-        K3["<b>Future</b><br/><i>Long-horizon R&D / sovereign</i>"]
+        K3["<b>Future</b><br/><i>Long-horizon R&D</i>"]
         K1 ~~~ K2 ~~~ K3
     end
 
@@ -664,8 +664,8 @@ flowchart TB
 
     subgraph KEY_D3 ["<b>KEY: Mathematical Formulation Type</b>"]
         direction LR
-        K_OPP["<b>High Emergent Compute Opportunity</b><br/><i>Physics, Annealing, Neuromorphic, Tensor & Quantum Encodings</i>"]
-        K_STD["<b>Standard Mathematical Formulation</b><br/><i>Established Classical Baselines (MILP, MDP, PDEs, Graph Matrices)</i>"]
+        K_OPP["<b>High Emergent Compute Opportunity</b>"]
+        K_STD["<b>Standard Mathematical Formulation</b>"]
         K_OPP ~~~ K_STD
     end
 
@@ -814,7 +814,7 @@ flowchart TB
     DEMAND --> BRIDGE
     BRIDGE --> OUTCOME
 
-    subgraph KEY_D4 ["<b>KEY: Compute Substrate Maturity (Section 2.3)</b>"]
+    subgraph KEY_D4 ["<b>KEY: Compute Substrate Maturity</b>"]
         direction LR
         K1["<b>Established</b><br/><i>HPC / Cloud / Embedded ARM</i>"]
         K2["<b>Early / Growing</b><br/><i>Physics / Annealers / Neuromorphic</i>"]
