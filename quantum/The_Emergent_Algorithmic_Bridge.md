@@ -127,6 +127,9 @@ Each CPA represents a distinct mathematical problem structure. They provide a co
 | **6. Physics-Based Simulation** | **Predicting *what could happen* in continuous macroscopic environments:** <br/><br/>Simulating continuous physical media, field dynamics, and kinematic interactions to evaluate platforms, weapon effects, and mission environments without costly physical trials (e.g., hypersonic aerodynamics, underwater acoustic propagation, electromagnetic field mapping for physical digital twins, and high-fidelity physics-based adjudication engines in operational wargaming). | Numerical solution of continuous partial and ordinary differential equations (PDEs/ODEs) discretised over high-resolution spatial, temporal, or state manifolds.<br/><br/>Addresses computational bottlenecks in massive sparse linear/non-linear system solving ($Ax = b$), multi-scale continuum dynamics, and non-linear boundary constraints where fine grid meshes cause computational runtime to scale cubicly. | **Classical:** Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD / Lattice Boltzmann), Shock Hydrodynamics PDE Solvers, Boundary Element Methods (BEM)<br/><br/>**Emergent:** Quantum Linear System Solvers (HHL / Quantum PDE), Physics-Informed Neural Networks (PINNs), Quantum Monte Carlo |
 | **7. Cryptanalytic Number-Theoretic Computation** | **Securing and auditing sovereign cryptographic trust:** <br/><br/>Evaluating mathematical resilience, assessing vulnerabilities in public-key infrastructure, and mitigating "harvest-now, decrypt-later" threats across sovereign communications (e.g., auditing RSA/ECC encryption vulnerabilities, certifying sovereign Post-Quantum Cryptographic lattice schemes, and verifying cryptographic trust in secure military C2 links). | Algebraic operations and bound calculation over discrete finite fields, modular rings, and high-dimensional vector lattices.<br/><br/>Focuses on non-NP-complete computational hard problems (integer factorisation, discrete logarithms, and lattice basis reduction) where sub-exponential classical sieves or polynomial quantum algorithms determine the cryptographic security threshold. | **Classical:** General Number Field Sieve (GNFS), Index Calculus, Lattice Reduction (LLL/BKZ), Pollard's Rho<br/><br/>**Emergent:** Shor's Algorithm (Quantum Period Finding / Phase Estimation), Quantum Lattice Algorithms |
 
+> **Footnote — Beyond the Optimisation Trap (The QOBLIB Context):**  
+> Many commercial quantum benchmark libraries and vendor offerings are heavily concentrated on combinatorial optimisation (represented by benchmark suites such as **QOBLIB**). While combinatorial optimisation (CPA 1) is critical, it represents only one of the seven archetypes. Significant defence challenges live entirely outside optimisation—in graph inference, statistical signal processing, PDE physics simulation, or quantum dynamics. The absence of a sensible QOBLIB mapping is an immediate signal that the challenge is dominated by an entirely different archetype and must not be forced into a combinatorial solver.
+
 ## Diagram 1: The Seven Computational Problem Archetypes & Emergent Maturity
 
 ```mermaid
@@ -414,7 +417,10 @@ By retaining sovereign custody of these pure mathematical models and CPA bottlen
 ## Operational Bottleneck Diagnosis: From Military Friction to CPA Dominance
 *Bridging the gap between operational reality and mathematical formulation.*
 
-Before a single equation is drafted or a software solver is selected, Phase 1 requires military commanders and operational analysts to conduct **Bottleneck Factoring**. Military problems rarely fail to compute because they are "too large"; they fail because the computational pipeline is choked at a specific mathematical bottleneck that standard enterprise IT cannot process within operational timelines.
+**The Lucy Principle (Operational Boundaries):**
+Before assuming that advanced or emergent compute is required, capability sponsors must verify where the true operational friction lies. Not every operational friction is a technology problem, and not every technology problem is a computational bottleneck. Does faster compute matter if edge transmission bandwidth cannot deliver inputs in time? Does solving a mathematical problem in seconds change operational outcomes if human mission-approval workflows take days? A computational archetype only creates operational edge when computation itself is the critical path.
+
+Assuming the critical path *is* computational, Phase 1 requires military commanders and operational analysts to conduct **Bottleneck Factoring**. Military problems rarely fail to compute because they are "too large"; they fail because the computational pipeline is choked at a specific mathematical bottleneck that standard enterprise IT cannot process within operational timelines.
 
 To diagnose which Computational Problem Archetypes (CPAs) dominate an operational challenge, defence planners evaluate where the mission friction originates:
 
@@ -432,6 +438,19 @@ To diagnose which Computational Problem Archetypes (CPAs) dominate an operationa
 | **Continuous physical battle environments:** Simulating hypersonic thermal ablation, blast overpressure in urban terrain, or undersea acoustic propagation. | Continuous Field Discretisation | **CPA 6:** Physics-Based Simulation |
 | **Physical Digital Twins & Wargame Adjudication:** Simulating the realistic physical interactions of platforms and environments (e.g. radar line-of-sight, weapon flight envelopes, sensor degradation) to realistically stress-test compound human factors like troop exhaustion, maintenance turnarounds, and restrictive Rules of Engagement (ROE) in operational wargaming. | Coupled Multi-Domain Field & Kinematic Physics | **CPA 6:** Physics-Based Simulation |
 | **Mathematical cryptanalysis & assurance:** Verifying cryptographic resilience against future quantum decryption or discovering weaknesses in cryptographic primitives. | Lattice & Algebraic Structure | **CPA 7:** Cryptanalytic Number-Theoretic Computation |
+
+### The 0–3 Dominance Scoring Model
+
+To map a problem without getting lost in technical speculation, each CPA is evaluated against the target operational challenge using a simple 0–3 contribution scale:
+
+| Score | Meaning | Operational Interpretation |
+| :---: | :--- | :--- |
+| **0** | **Not materially relevant** | Archetype is absent or has trivial computational impact. |
+| **1** | **Present but secondary** | Archetype is required as part of the pipeline, but does not dictate runtime or success. |
+| **2** | **Important contributor** | Archetype represents a significant computational demand that impacts performance. |
+| **3** | **Dominant bottleneck** | Archetype is the primary rate-limiting factor; operational success hinges on solving this. |
+
+> **The Bottleneck Rule:** Operational advantage comes strictly from attacking the **Score 3** archetype. If an Intelligence Exploitation pipeline is dominated by Graph Inference & Search (Score 3) and only uses Constrained Allocation (Score 1) to distribute batch compute jobs, procuring an advanced quantum annealing hardware solver for the allocation step will deliver virtually zero operational advantage.
 
 Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical teams select the appropriate mathematical representation and solver family below.
 
