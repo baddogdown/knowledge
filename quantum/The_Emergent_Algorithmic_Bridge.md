@@ -335,7 +335,7 @@ flowchart TB
 * **Functions:**
   * **Recurring Operational Demand (OPT Instantiation):** Recognises established demand patterns (e.g., *Dynamic Resource-to-Task Dispatch*) from the MOD's pre-characterised Operational Problem Type library, inheriting proven composable mathematical models & solvers, the respective toolchains and how they fit together (workflow steps).
   * **New Challenges (New CPA blends):** For uncatalogued challenges, directly decomposes mission intent into pure Computational Problem Archetypes (e.g., framing an electronic warfare sensor network directly as *Graph Inference & Search* [CPA 3]) and isolates the dominant computational bottleneck.
-* **Feedback & Refactoring:** Receives **Problem Refactoring** when real-world shocks, adversary countermeasures, or strategic posture shifts invalidate baseline models.
+* **Feedback & Refactoring:** Receives **Problem Refactoring** when adversary countermeasures or strategic posture shifts force baseline model changes *(see Operational Feedback Loops below)*.
 
 ---
 
@@ -346,7 +346,7 @@ flowchart TB
   * **OPT Deconstruction:** Slices and "unzips" composite OPT models along the natural mathematical fault lines of their constituent CPAs (e.g., decoupling spatial routing graphs [CPA 3] from discrete asset allocation variables [CPA 1]).
   * **Compute Pattern Selection:** Directs mathematical decomposition (e.g., Benders decomposition, Column Generation, Large Neighbourhood Search) by selecting appropriate commercial off-the-shelf, open-source, or sovereign mathematical templates.
   * **Echelon Adaptation:** Sizes sub-problems to fit execution realities across command echelons—from high-capacity sovereign cloud servers down to power- and thermal-constrained ruggedized vehicle silicon.
-* **Feedback & Refactoring:** Receives tactical **Engineering Refactoring** when local friction, urgent tactical response, degraded communications (DDIL), or hardware throttling requires rapid plan repair without changing core models or doctrine.
+* **Feedback & Refactoring:** Receives tactical **Engineering Refactoring** for rapid local plan repair under DDIL or sudden friction *(see Operational Feedback Loops below)*.
 
 ---
 
@@ -357,13 +357,13 @@ flowchart TB
   * **Heterogeneous Solver Dispatch:** Routes partitioned workloads to the most effective, fit-for-purpose engine (Classical MIP/CP-SAT, PPUs, CMOS digital annealers, neuromorphic silicon, or future QPUs).
   * **Feasibility Validation & Solution Stitching:** Re-assembles distributed sub-problem outputs into a single coherent plan, running sovereign validation checks to ensure stitched solutions violate no classified constraints or ROE.
   * **Command Decision Delivery:** Surfaces Pareto-optimal trade-off frontiers (e.g., mission speed vs. force survivability) rather than a single black-box "solution", enabling human-in-the-loop command selection.
-* **Feedback & Refactoring:** Generates the runtime solve performance, constraint friction, and feasibility signals that drive tactical plan repair (Phase 2) or strategic doctrinal review (Phase 1).
+* **Feedback & Refactoring:** Generates runtime performance, constraint friction, and feasibility telemetry driving Phase 2 or Phase 1 refactoring loops *(see Operational Feedback Loops below)*.
 
 ---
 
 ## Enterprise Governance & Strategic Value
 
-To ensure operational agility, eliminate vendor lock-in, and establish the MOD as an authoritative "smart customer", the pipeline maintains a clear governance division between sovereign decision rights and commercial compute commodities:
+The pipeline maintains a strict governance boundary between sovereign decision rights and commercial compute commodities:
 
 | Dimension | Phase 1: Problem Formulation | Phase 2: Complexity Engineering | Phase 3: Execution & Delivery |
 | :--- | :--- | :--- | :--- |
