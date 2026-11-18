@@ -444,7 +444,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.1 Constrained Combinatorial Allocation & Scheduling (CPA 1)
 *Translating discrete resource-task assignment, packing, and routing constraints into mathematical energy landscapes and constraint systems.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Mixed-Integer Linear & Non-Linear Programs (MILP / MINLP)** | Enforces strict, unbending operational rules (such as legal flight crew rest limits, magazine capacities, and maintenance timetables) where violating a rule is impermissible. | <ul><li>**Solvers & Algorithms:** Branch-and-Cut, Interior Point Methods (Barrier), Simplex with Gomory cuts (HiGHS, Gurobi, SCIP).</li><li>**Formulation Mechanics:** Encoded as linear/quadratic inequalities ($A x \le b$, $x \in \{0, 1\}^n \times \mathbb{R}^m$), slack variables, and polyhedral relaxation bounds to strictly prune invalid operational options.</li></ul> |
 | **QUBO & Spin Glass (Ising) Encodings** | Provides a universal "common currency" for rapid trade-offs across competing priorities (e.g. speed vs. fuel vs. threat exposure), solvable across digital annealers and quantum hardware. | <ul><li>**Solvers & Algorithms:** Simulated Annealing, Parallel Tempering, Digital Annealers (Fujitsu DAU), QAOA parameter optimizers.</li><li>**Formulation Mechanics:** Formulated as unconstrained energy minimization ($E(x) = x^T Q x + c^T x$ or $H(\sigma) = \sum J_{ij}\sigma_i\sigma_j$); operational rules are enforced via quadratic penalty weights added to the cost function.</li></ul> |
@@ -453,7 +453,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.2 Sequential Stochastic Decision-Making Under Uncertainty (CPA 2)
 *Formulating multi-stage temporal decision policies and dynamic adaptation under partial observability and contested friction.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Markov Decision Processes & POMDPs** | Plans multi-step combat missions under the fog of war, calculating the best immediate action when sensor reports are noisy and adversary actions are uncertain. | <ul><li>**Solvers & Algorithms:** Value Iteration, Policy Iteration, Point-Based Value Iteration (PBVI), Monte Carlo Tree Search (MCTS / AlphaZero).</li><li>**Formulation Mechanics:** State-action-transition tuples $(S, A, T, R, \gamma)$ and belief simplices $b(s)$ solved via Bellman optimality equations: $V^*(s) = \max_a [R(s,a) + \gamma \sum T(s'|s,a) V^*(s')]$.</li></ul> |
 | **Multi-Stage Stochastic Programming** | Designs resilient supply networks and forward deployments that commit resources today while retaining flexibility to adapt to future combat branches and sequelae. | <ul><li>**Solvers & Algorithms:** Benders Decomposition (L-shaped method), Progressive Hedging Algorithm (PHA), Sample Average Approximation (SAA).</li><li>**Formulation Mechanics:** Extensive form scenario trees with non-anticipativity constraints, recourse stages, and Chance-Constrained bounds ensuring operational survival probabilities.</li></ul> |
@@ -462,7 +462,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.3 Graph Inference & Search (CPA 3)
 *Encoding relational structures, networks, dependency chains, and topological invariants into algebraic matrices.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Spectral Graph & Laplacian Matrices** | Reveals hidden structural clusters, isolates command-and-control subnetworks, and partitions complex battlespaces into autonomous operating zones. | <ul><li>**Solvers & Algorithms:** Lanczos eigensolvers, Fiedler vector bisection, Spectral Clustering, PageRank power iterations.</li><li>**Formulation Mechanics:** Graph Laplacian ($L = D - A$), normalized symmetric Laplacian ($L_{sym}$), and eigenvalue spectrum analysis to compute network connectivity and natural fault lines.</li></ul> |
 | **Extremal Graph Substructures** | Pinpoints high-value targets, single points of failure in enemy logistics webs, and optimal sensor-to-shooter kill-web paths. | <ul><li>**Solvers & Algorithms:** Bron-Kerbosch algorithm, Edmonds-Karp / Dinic push-relabel network flows, semidefinite relaxations (Lovász $\vartheta$ number).</li><li>**Formulation Mechanics:** Algebraic integer formulations for Maximum Clique, Minimum Vertex Cover, Maximum Independent Set, and Min-Cut/Max-Flow on directed hypergraphs.</li></ul> |
@@ -471,7 +471,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.4 High-Dimensional Statistical Inference (CPA 4)
 *Structuring continuous embeddings, probabilistic density manifolds, and compressed tensor representations from multi-source operational feeds.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Geometric Vector Embeddings & Metric Spaces** | Instantly fuses disparate intelligence streams (radar, satellite imagery, intercepted radio, cyber feeds) into a common picture based on operational meaning and threat category. | <ul><li>**Solvers & Algorithms:** Exact $k$-NN, Approximate Nearest Neighbor search (HNSW, ScaNN), Voronoi spatial indexing.</li><li>**Formulation Mechanics:** Continuous vector projections ($\mathbb{R}^d$), cosine and Mahalanobis distance metrics, and contrastive loss alignments structuring multi-modal intelligence feeds.</li></ul> |
 | **Tensor Network Factorizations (MPS / TT)** | Compresses massive sensor streams (such as wideband electronic warfare or acoustic sonar arrays) to detect faint hostile emitters without needing massive cloud computing. | <ul><li>**Solvers & Algorithms:** Tensor-Train SVD (TT-SVD), Density Matrix Renormalization Group (DMRG) compression, Alternating Least Squares (ALS).</li><li>**Formulation Mechanics:** Decomposes high-rank multi-channel correlation tensors into low-rank Matrix Product States (MPS) / Tensor Trains ($T_{i_1 \dots i_d} = A^{(1)}_{i_1} \dots A^{(d)}_{i_d}$), preserving key cross-sensor entanglements.</li></ul> |
@@ -480,7 +480,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.5 Electronic Structure & Quantum Dynamics (CPA 5)
 *Formulating fermionic Hamiltonians, quantum chemistry lattices, and quantum sensor field dynamics into qubit and state-space operators.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Second-Quantized Electronic Hamiltonians** | Accelerates sovereign sovereign discovery of next-generation defense materials—such as radar-absorbent coatings, high-temperature energetics, and radiation-hardened electronics. | <ul><li>**Solvers & Algorithms:** Active space selection (CASSCF), Complete Active Space configuration interaction, Hartree-Fock reference baselines.</li><li>**Formulation Mechanics:** Fermionic creation/annihilation operators ($H = \sum h_{pq} a^\dagger_p a_q + \frac{1}{2}\sum g_{pqrs} a^\dagger_p a^\dagger_q a_s a_r$) and electron Coulomb/exchange integral tensors.</li></ul> |
 | **Fermion-to-Qubit Isomorphisms** | Translates molecular and atomic models into instructions executable on digital quantum computers, avoiding exponential classical memory bottlenecks. | <ul><li>**Solvers & Algorithms:** Jordan-Wigner transformation, Bravyi-Kitaev encoding, Parity mapping with two-qubit reduction.</li><li>**Formulation Mechanics:** Algebraic mappings of anti-commuting fermionic operators onto Pauli spin matrices ($\sigma_x, \sigma_y, \sigma_z$) while minimizing non-local string circuit depth.</li></ul> |
@@ -489,7 +489,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.6 Physics-Based Simulation (CPA 6)
 *Discretising continuous partial differential equations governing aerothermodynamics, electromagnetics, and hydrodynamics into sparse linear/non-linear systems.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Discretised Partial Differential Equations (PDEs)** | Simulates complex battlespace physics—such as hypersonic vehicle heat shields, acoustic propagation in deep waters, and RF antenna radar cross-sections. | <ul><li>**Solvers & Algorithms:** Finite Element Analysis (FEA), Finite Volume Method (FVM), Boundary Element Method (BEM).</li><li>**Formulation Mechanics:** Weak formulations of Navier-Stokes, Maxwell's, and elastodynamic equations on unstructured conformal meshes; Dirichlet and Neumann boundary encodings.</li></ul> |
 | **Sparse Linear Systems ($A x = b$)** | Solves the massive system of equations at the heart of structural and aerodynamic simulations, speeding up design verification cycles. | <ul><li>**Solvers & Algorithms:** Krylov Subspace solvers (Conjugate Gradient, GMRES, BiCGSTAB), Algebraic Multigrid (AMG) preconditioning, HHL algorithm.</li><li>**Formulation Mechanics:** Sparse symmetric positive-definite and non-symmetric stiffness matrices; conditioning analysis ($\kappa(A) = \|A\|\|A^{-1}\|$) to ensure numerical stability under extreme shock conditions.</li></ul> |
@@ -499,7 +499,7 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 ### 1.7 Cryptanalytic Number-Theoretic Computation (CPA 7)
 *Formulating post-quantum lattice geometries, discrete logarithm lattices, and algebraic relation collections for security assurance.*
 
-| Model / Representation | Why Useful to Defence? | Example Solvers, Algorithms & Mathematical Mechanics |
+| Model / Representation | Relevance to MOD | Example Solvers, Algorithms & Mathematical Mechanics |
 | :--- | :--- | :--- |
 | **Euclidean Lattice Geometries** | Benchmarks and validates the cryptographic resilience of sovereign UK post-quantum encryption standards (ML-KEM, ML-DSA) against adversary breakthrough. | <ul><li>**Solvers & Algorithms:** Lenstra-Lenstra-Lovász (LLL) basis reduction, Block Korkine-Zolotarev (BKZ 2.0) reduction, Lattice Sieve algorithms.</li><li>**Formulation Mechanics:** Discrete vector bases $B = [b_1, \dots, b_n] \in \mathbb{R}^{m \times n}$; Shortest Vector Problem (SVP) and Learning With Errors (LWE) error-distribution parameter spaces.</li></ul> |
 | **Non-Linear Boolean Polynomial Systems** | Verifies sovereign communications security, identifying potential mathematical vulnerabilities in symmetric military ciphers and hashing algorithms. | <ul><li>**Solvers & Algorithms:** Gröbner Basis algorithms (F4 / F5), SAT solver translation (CNF-SAT encodings, CDCL engines).</li><li>**Formulation Mechanics:** Large-scale systems of multivariate quadratic equations over Galois Fields ($\mathbb{F}_2[x_1, \dots, x_n]$) representing cryptographic state transformations.</li></ul> |
@@ -727,7 +727,7 @@ flowchart LR
 ### 2.1 Demarcation Dimensions
 *Where Operational Lines Are Drawn*
 
-| Dimension | Engineering Mechanism | Defence Utility |
+| Dimension | Engineering Mechanism | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Spatial / Geographic** | Partitions extensive battlespace networks into localized operational sandboxes or tactical sectors. | Enables forward forces—such as a naval task group under emission control, an autonomous UAS swarm, or a forward land combat team—to maintain full decision autonomy and mission tempo during communications blackouts (DDIL). |
 | **Temporal / Horizons** | Slices continuous operational cycles into rolling planning windows with tiered execution cadences. | Decouples immediate tactical survival and reaction (e.g., counter-UAS engagement, collision avoidance) from rolling joint coordination (e.g., 24-hr Air Tasking Orders) and strategic campaign sustainment (e.g., 30-day munitions replenishment). |
@@ -736,7 +736,7 @@ flowchart LR
 ### 2.2 Mathematical Decomposition & Partitioning
 *Managing Scale & Uncertainty Across CPAs*
 
-| Method | Mathematical Relevance | Defence Utility |
+| Method | Mathematical Relevance | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Benders Decomposition** | Separates complicating master resource decisions from independent tactical sub-problems.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 2: Sequential Stochastic Decisions | Coordinates scarce theater-level enablers (e.g., high-demand ISR orbits, tanker aircraft, precision strike stockpiles) from headquarters while delegating tactical execution and route planning to autonomous operational sub-commands. |
 | **Dantzig-Wolfe & Column Generation** | Slices massive linear models with shared linking constraints into parallel sub-problems, generating candidate plans dynamically.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 2: Sequential Stochastic Decisions | Solves massive enterprise-scale scheduling challenges—such as joint theater logistics, multinational airlift allocation, and multi-brigade deployment timelines—that are far too complex to solve in a single computer model. |
@@ -751,7 +751,7 @@ flowchart LR
 
 While Demarcation (2.1) and Decomposition (2.2) maintain common, sovereign mathematical models across all operational echelons, this final engineering step adapts those unified representations to the physical topologies, memory footprints, and physics of diverse target hardware flavours:
 
-| Compute Paradigm | Adaptation & Compilation Mechanism | Defence Utility |
+| Compute Paradigm | Adaptation & Compilation Mechanism | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Classical HPC, Cloud & Embedded** | Applies linear presolving, matrix factorisation, parallel GPU/SIMD kernel batching, and branch-and-bound tree pruning. | Maximizes capability from standard commercial and military hardware—enabling theater-scale analysis in cloud data centres while scaling down to run mission planning on vehicle servers and dismounted tactical handhelds (e.g., ATAK). |
 | **Specialist Annealing & Physics-Based Optimisers** | Maps dense logical problem formulations (QUBO/Ising) onto sparse physical coupling fabrics via graph minor-embedding and matrix sparsification. | Exploits energy-minimization silicon (CMOS digital annealers, spintronic p-bits, quantum annealers) to solve acute combinatorial bottlenecks—such as dynamic spectrum deconfliction, dense satellite constellation tasking, and air defence weapon assignment—at high speed with low power. |
@@ -851,7 +851,7 @@ flowchart LR
 
 Treats commercial solvers and hardware engines as interchangeable commodity layers, selecting compute based on operational posture, time budget, and SWaP-C limits:
 
-| Solver Engine | Operational Mechanism | Defence Utility |
+| Solver Engine | Operational Mechanism | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Classical Exact & Matheuristic Solvers** | Combines fast heuristics with exact mathematical solvers (e.g., Mixed-Integer Programming, CP-SAT) to find a rapid feasible plan and tighten optimality bounds over time. | Delivers dependable, mathematically verified baselines for high-stakes operational planning—such as theater munitions distribution, maintenance scheduling, and airfield parking allocation. |
 | **Specialist Annealing & Physics-Based Optimisers** | Exploits energy-minimization and physical tunneling across classical, quantum-inspired, and quantum substrates (CMOS Digital Annealers, spintronic p-bits, and Quantum Annealers) to traverse massive combinatorial QUBO/Ising landscapes without exhaustive search. | Solves acute combinatorial decision and deconfliction bottlenecks in fractions of a second—including real-time air-defence weapon-target assignment, dynamic electromagnetic spectrum deconfliction, satellite constellation tasking, and resilient kill-web reconfiguration under heavy jamming. |
@@ -861,7 +861,7 @@ Treats commercial solvers and hardware engines as interchangeable commodity laye
 ### 3.2 Operational Runtime Mechanics
 *Real-Time & Anytime Execution*
 
-| Runtime Mechanism | Operational Mechanism | Defence Utility |
+| Runtime Mechanism | Operational Mechanism | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Anytime Algorithms** | Restructures solver loops with interruptible execution patterns, returning the mathematically best-valid plan found up to that microsecond. | Guarantees commanders always have an executable, validated plan—whether a crisis gives them 2 seconds at the tactical edge or 2 hours in a joint operations centre. |
 | **Low-Latency Tensor Contraction** | Executes streaming multi-linear tensor contractions in real-time directly on localized host silicon. | Delivers millisecond threat classification and multi-sensor correlation under contested electronic warfare (EW) conditions without relying on vulnerable cloud reach-back. |
@@ -871,7 +871,7 @@ Treats commercial solvers and hardware engines as interchangeable commodity laye
 ### 3.3 Command Decision Delivery & Trade-off Sampling
 *Actionable Command Output*
 
-| Delivery Mechanism | Operational Mechanism | Defence Utility |
+| Delivery Mechanism | Operational Mechanism | Relevance to MOD |
 | :--- | :--- | :--- |
 | **Diverse Course of Action (COA) Sampling** | Uses statistical mechanics (Gibbs and Boltzmann sampling) to extract a diverse population of distinct feasible operational plans. | Moves beyond fragile single-point "optimal" plans by presenting commanders with fundamentally distinct operational choices (e.g., stealth ingress vs. high-tempo deception). |
 | **Trade-off Frontiers & Risk Surfacing** | Formats solver outputs into multi-dimensional Pareto frontiers balancing competing operational priorities. | Empowers commanders to make informed tactical judgment calls—explicitly trading off mission speed, casualty risk, fuel consumption, and ammunition reserves as the situation evolves. |
