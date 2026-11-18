@@ -222,10 +222,9 @@ For any given challenge, the critical operational question is not whether a spec
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can more easily harvest civilian algorithmic breakthroughs at a composit system level without exposing operational secrets or classified data.
 3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
 
-
->### An Example: Dynamic Resource-to-Task Dispatch
->
->An OPT delivers enterprise value when Defence recognises that radically different operational demand signals share the exact same underlying mathematical blend.
+### An Example:
+An OPT delivers enterprise value when Defence recognises that radically different operational demand signals share the exact same underlying mathematical blend.
+>**Dynamic Resource-to-Task Dispatch**
 >
 >* **The OPT (Colour Palette) blend of CPAs:**
 >>  * **[CPA 1] Constrained Combinatorial Allocation & Scheduling:** Matching scarce, specialized assets to urgent demands under hard physical constraints (capacity, range, deadlines).
