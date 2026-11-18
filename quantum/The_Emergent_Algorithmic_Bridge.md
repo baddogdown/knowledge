@@ -29,7 +29,7 @@ Becoming a smart customer able to recognise the relative merit of emergent compu
 * **Phase 2 — Complexity Engineering:** Details how problems & workloads can be unzipped and sliced into composite decoupled sub-problems,  scaled up or down and the selection of optimal hybrid execution patterns.
 * **Phase 3 — Execution & Delivery:** Covers heterogeneous execution across multi-echelon environments (from secure data centres to disconnected DDIL edge units) and closes the loop via operational feedback.
 
-## Diagram 0: Page Overview
+## Diagram 0: Overview
 
 ```mermaid
 flowchart TB
