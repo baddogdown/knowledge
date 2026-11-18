@@ -712,6 +712,18 @@ Takes the unzipped blend of CPAs defined in Phase 1 and evaluates the relative m
 
 Crucially, Phase 2 conducts the **sovereign benchmarking comparison** within each CPA context—evaluating trade-offs across solve latency, hardware maturity, and SWaP-C to determine whether a problem requires classical HPC, digital annealers, or emerging quantum processors. In doing so, it manages the critical boundary between **mathematical fidelity and operational urgency** (e.g., establishing where a fast 85% heuristic at the tactical edge beats a 100% optimal solve delivered too late from HQ). Phase 2 governs **where execution must take place** (cloud HQ vs. disconnected DDIL edge) and provides the core mechanics for **Engineering Refactoring** when battlefield disruption forces rapid plan repair under fire.
 
+```mermaid
+flowchart LR
+    P2_1["<b>2.1 Demarcation Dimensions</b><br/><br/><i>Where Operational Lines Are Drawn</i>"]
+    P2_2["<b>2.2 Mathematical Decomposition & Partitioning</b><br/><br/><i>Managing Scale & Uncertainty Across CPAs</i>"]
+    P2_3["<b>2.3 Hardware & Topological Adaptation</b><br/><br/><i>Shared Algorithmic Utility Branching to Specific Compute Flavours</i>"]
+    P2_1 ~~~ P2_2 ~~~ P2_3
+
+    style P2_1 fill:#ffffff,stroke:#0284c7,stroke-width:1.5px,color:#0f172a
+    style P2_2 fill:#ffffff,stroke:#0284c7,stroke-width:1.5px,color:#0f172a
+    style P2_3 fill:#ffffff,stroke:#0284c7,stroke-width:1.5px,color:#0f172a
+```
+
 ### 2.1 Demarcation Dimensions
 *Where Operational Lines Are Drawn*
 
@@ -821,6 +833,18 @@ flowchart TB
 **Runtime Mechanics & Decision Output**
 
 Controls how mathematical models and partitioned sub-problems are executed across available compute substrates within a contestable commercial marketplace, delivering timely, resilient, and actionable outputs to military decision-makers.
+
+```mermaid
+flowchart LR
+    P3_1["<b>3.1 Heterogeneous Solver Engines</b><br/><br/><i>Compute Selection & Marketplace Agility</i>"]
+    P3_2["<b>3.2 Operational Runtime Mechanics</b><br/><br/><i>Real-Time & Anytime Execution</i>"]
+    P3_3["<b>3.3 Command Decision Delivery & Trade-off Sampling</b><br/><br/><i>Actionable Command Output</i>"]
+    P3_1 ~~~ P3_2 ~~~ P3_3
+
+    style P3_1 fill:#ffffff,stroke:#16a34a,stroke-width:1.5px,color:#0f172a
+    style P3_2 fill:#ffffff,stroke:#16a34a,stroke-width:1.5px,color:#0f172a
+    style P3_3 fill:#ffffff,stroke:#16a34a,stroke-width:1.5px,color:#0f172a
+```
 
 ### 3.1 Heterogeneous Solver Engines
 *Compute Selection & Marketplace Agility*
