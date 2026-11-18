@@ -817,7 +817,7 @@ flowchart TB
 
 ---
 
-# 3. EXECUTION & DELIVERY
+# PHASE 3. EXECUTION & DELIVERY
 **Runtime Mechanics & Decision Output**
 
 Controls how mathematical models and partitioned sub-problems are executed across available compute substrates within a contestable commercial marketplace, delivering timely, resilient, and actionable outputs to military decision-makers.
@@ -842,6 +842,7 @@ Treats commercial solvers and hardware engines as interchangeable commodity laye
 | **Anytime Algorithms** | Restructures solver loops with interruptible execution patterns, returning the mathematically best-valid plan found up to that microsecond. | Guarantees commanders always have an executable, validated plan—whether a crisis gives them 2 seconds at the tactical edge or 2 hours in a joint operations centre. |
 | **Low-Latency Tensor Contraction** | Executes streaming multi-linear tensor contractions in real-time directly on localized host silicon. | Delivers millisecond threat classification and multi-sensor correlation under contested electronic warfare (EW) conditions without relying on vulnerable cloud reach-back. |
 | **Hybrid Orchestration & Latency Management** | Manages the critical data-movement bottleneck between disparate systems—whether offloading from a TAK handheld to a vehicle edge server over contested RF, or coordinating microsecond co-processing loops between an HPC host and a specialized Digital/Quantum Annealer. | Overcomes the fatal latency of data transfer, seamlessly combining legacy military command systems with cutting-edge commercial accelerators to ensure maximum compute efficiency across all deployment echelons—while surfacing runtime execution telemetry (e.g., latency spikes, link drops) that triggers tactical **Engineering Refactoring** loops. |
+| **Sovereign Solution-Validation Gate** | Interposes an independent sovereign verification check evaluating candidate plans returned by commercial or black-box solvers against hard doctrinal constraints. | Guarantees that no commercially computed Course of Action (COA) is presented to operational commanders unless it strictly satisfies sovereign Rules of Engagement (ROE), legal compliance bounds, and safety envelopes. |
 
 ### 3.3 Command Decision Delivery & Trade-off Sampling
 *Actionable Command Output*
@@ -860,7 +861,7 @@ flowchart TB
     
     OUTBOUND["<b>ACTIONABLE COMMAND ADVANTAGE</b><br/><br/><i>Real-time situational awareness, robust anytime execution under disruption, and diverse Pareto trade-off frontiers empowering operational commanders.</i>"]
 
-    subgraph EXEC_DELIVERY ["<b>EXECUTION & DELIVERY: Runtime & Decision Output</b>"]
+    subgraph EXEC_DELIVERY ["<b>PHASE 3. EXECUTION & DELIVERY: Runtime & Decision Output</b>"]
         direction TB
 
         %% Row 1: Section 3.1 Bullets (Compute Selection)
@@ -879,7 +880,8 @@ flowchart TB
             R1["<b>Anytime Algorithms</b><br/><br/><i>Interruptible loops; best-valid plan returned at any second</i>"]
             R2["<b>Low-Latency Tensor Contraction</b><br/><br/><i>Streaming EW & sensor classification at the tactical edge</i>"]
             R3["<b>Latency Management & Orchestration</b><br/><br/><i>Managing data-movement bottlenecks across hybrid echelons</i>"]
-            R1 ~~~ R2 ~~~ R3
+            R4["<b>Sovereign Validation Gate</b><br/><br/><i>Independent audit verifying candidate COAs satisfy hard ROE & safety</i>"]
+            R1 ~~~ R2 ~~~ R3 ~~~ R4
         end
 
         %% Row 3: Section 3.3 Bullets (Actionable Command Output)
@@ -913,6 +915,7 @@ flowchart TB
     style R1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
     style R2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
     style R3 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style R4 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
 
     style D1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
     style D2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
