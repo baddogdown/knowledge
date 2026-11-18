@@ -208,32 +208,35 @@ flowchart TB
 
 ---
 
-## From Archetypes to Operational Efficiency
+## Reuse & Industrialising our exploitation of Algorithms & Compute
 
-Real-world defence challenges are rarely isolated mathematical problems; they are almost always **blends** of multiple archetypes (CPAs). 
+Real-world use cases are rarely confined to a single archetype; they are typically blends of several. A useful analogy is to **think of CPAs as the primary colours** of computational problem solving.
 
-Think of CPAs as the **primary colours** of computation. When Defence analyses challenges across use cases, certain combinations of CPAs may repeat. **Operational Problem Types (OPTs)** are an operational optimisation to recognise recurring blends of CPAs.
+For any given challenge, the critical operational question is not whether a specific emergent technology is relevant, but which CPAs are actively constraining performance. Understanding the relative contribution of each archetype exposes the dominant bottleneck, guides investment, and determines where advances in compute capability will actually deliver tangible edge. Improving a secondary archetype yields little to no operational return if the dominant archetype remains constrained.
 
-Think of OPTs are the useful **colour pallets**. Problems do not have to fit an OPT to be formulated and executed; however, where patterns repeat, formalising them as OPTs delivers efficiencies through practised workflows, templates and recognised integration patterns for the hybrid mix of compute and other technologies:
+**Operational Problem Types (OPTs)** are an operational optimisation to recognise recurring blends of CPAs and capture them as a pattern.
+
+**Think of OPTs are the useful colour pallets**.  Problems do not have to fit an OPT to be formulated and executed; however, where patterns repeat, formalising them as OPTs delivers efficiencies through practised workflows, templates and recognised integration patterns for the hybrid mix of compute and other technologies involved:
 
 1. **Enterprise Reusability (Eliminating the bespoke silo):** Different parts of MOD often procure custom systems for maritime convoy screening, air tasking, and armoured resupply under separate, incompatible contracts or technology. At the mathematical layer, these can be instances of the same **OPT** (blending *Combinatorial Allocation* with *Sequential Decision-Making*). Defining repeating blends of CPAs as an OPT pattern allows software formulations, verification suites, decomposition workflows and hybrid compute integration patterns to be potentially reused enterprise-wide.
 2. **Dual-Use Acceleration:** Academic researchers and commercial supply-chain logistics solve instances of identical OPTs daily. By abstracting mission specifics into an OPT palette, Defence can more easily harvest civilian algorithmic breakthroughs at a composit system level without exposing operational secrets or classified data.
 3. **Integrated Workflow Benchmarking:** While CPAs can benchmark raw mathematical solver speed, OPTs provide the benchmark standards for testing how multiple solvers interact within a composite operational pipeline under real-time constraints.
 
-### A Tangible Example: Dynamic Resource-to-Task Dispatch
 
-An OPT delivers enterprise value when Defence recognises that radically different operational demand signals share the exact same underlying mathematical blend.
-
-* **The Palette Blend:**
-  * **[CPA 1] Constrained Combinatorial Allocation & Scheduling:** Matching scarce, specialized assets to urgent demands under hard physical constraints (capacity, range, deadlines).
-  * **[CPA 2] Sequential Stochastic Decision-Making Under Uncertainty:** Dynamically re-allocating and adapting in real time as assets fail, priorities shift, or conditions change.
-
-* **Disparate Demand Signals, Identical Mathematics:**
-  * **Air & Missile Defence (Tactical Kinetic):** Pairing interceptors and radar tracks against incoming missile salvos under finite magazine depth.
-  * **Defensive Cyber Operations (Cyber SOC):** Dispatching automated containment playbooks and isolation rules across thousands of servers to quarantine spreading malware.
-  * **Combat Medical Evacuation (Support & Health):** Dispatching and rerouting helicopters and ambulances to mass-casualty triage points as patient numbers fluctuate and weather closes in.
-
-* **Enterprise Value & Compute Investment:** These three communities would traditionally procure three bespoke software tools under separate contracts. By recognising them as instances of the same **Dynamic Dispatch OPT**, Defence can reuse the core mathematical formulation, solver middleware, and verification harnesses across all three. Crucially, this directly informs **where compute investment is needed**: because all three demand sub-second re-dispatching during sudden tactical surges, Defence can justify targeted co-investment into hybrid compute acceleration (e.g. digital/quantum annealers or low-power edge accelerators) that simultaneously lifts operational capability across kinetic air defence, cyber resilience, and frontline casualty care.
+>### An Example: Dynamic Resource-to-Task Dispatch
+>
+>An OPT delivers enterprise value when Defence recognises that radically different operational demand signals share the exact same underlying mathematical blend.
+>
+>* **The OPT (Colour Palette) blend of CPAs:**
+>  * **[CPA 1] Constrained Combinatorial Allocation & Scheduling:** Matching scarce, specialized assets to urgent demands under hard physical constraints (capacity, range, deadlines).
+>  * **[CPA 2] Sequential Stochastic Decision-Making Under Uncertainty:** Dynamically re-allocating and adapting in real time as assets fail, priorities shift, or conditions change.
+>
+>* **Disparate Demand Signals, Identical Mathematics:**
+>  * **Air & Missile Defence (Tactical Kinetic):** Pairing interceptors and radar tracks against incoming missile salvos under finite magazine depth.
+>  * **Defensive Cyber Operations (Cyber SOC):** Dispatching automated containment playbooks and isolation rules across thousands of servers to quarantine spreading malware.
+>  * **Combat Medical Evacuation (Support & Health):** Dispatching and rerouting helicopters and ambulances to mass-casualty triage points as patient numbers fluctuate and weather closes in.
+>
+>* **Enterprise Value & Compute Investment:** These three communities would traditionally procure three bespoke software tools under separate contracts. By recognising them as instances of the same **Dynamic Dispatch OPT**, Defence can reuse the core mathematical formulation, solver middleware, and verification harnesses across all three. Crucially, this directly informs **where compute investment is needed**: because all three demand sub-second re-dispatching during sudden tactical surges, Defence can justify targeted co-investment into hybrid compute acceleration (e.g. digital/quantum annealers or low-power edge accelerators) that simultaneously lifts operational capability across kinetic air defence, cyber resilience, and frontline casualty care.
 
 ---
 
