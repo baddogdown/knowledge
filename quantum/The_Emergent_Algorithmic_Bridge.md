@@ -705,10 +705,12 @@ flowchart TB
 
 ---
 
-# 2. COMPLEXITY ENGINEERING
+# PHASE 2. COMPLEXITY ENGINEERING
 **Model Scaling, Partitioning, Slicing**
 
-Prevents monolithic failure and adapts abstract mathematical models to real-world constraints by **slicing and partitioning along the natural fault lines of the constituent CPAs** (e.g., decoupling discrete combinatorial allocation variables from spatial graph networks). Complexity Engineering governs **where execution must take place** (cloud HQ vs. disconnected tactical edge) and **what hardware substrate is available** (classical CPU/GPU, digital annealers, probabilistic p-bits, or sparse quantum processors). It manages the tension between problem complexity and time urgency, serving as the operational bridge between raw battlespace demand and realistic compute exploitation—while providing the primary mechanics for **Engineering Refactoring** when tactical friction demands rapid plan repair under fire.
+Takes the unzipped blend of CPAs defined in Phase 1 and evaluates the relative merits of competing algorithm flavours and compute substrates to make grounded architectural choices. Complexity Engineering prevents monolithic failure and adapts mathematical models to real-world friction by **slicing and partitioning along the natural fault lines of the constituent CPAs** (e.g., decoupling discrete combinatorial allocation variables from spatial graph networks).
+
+Crucially, Phase 2 conducts the **sovereign benchmarking comparison** within each CPA context—evaluating trade-offs across solve latency, hardware maturity, and SWaP-C to determine whether a problem requires classical HPC, digital annealers, or emerging quantum processors. In doing so, it manages the critical boundary between **mathematical fidelity and operational urgency** (e.g., establishing where a fast 85% heuristic at the tactical edge beats a 100% optimal solve delivered too late from HQ). Phase 2 governs **where execution must take place** (cloud HQ vs. disconnected DDIL edge) and provides the core mechanics for **Engineering Refactoring** when battlefield disruption forces rapid plan repair under fire.
 
 ### 2.1 Demarcation Dimensions
 *Where Operational Lines Are Drawn*
@@ -720,15 +722,17 @@ Prevents monolithic failure and adapts abstract mathematical models to real-worl
 | **Structural / Multi-Echelon** | Decouples command hierarchies into distinct functional tiers (master allocation vs. localized execution). | Preserves the Joint Commander’s theater-wide intent and asset priorities while giving tactical unit commanders (air wings, maritime surface groups, land battalions) the freedom to optimize local routes, strikes, and tasking within authorized boundaries. |
 
 ### 2.2 Mathematical Decomposition & Partitioning
-*Managing Scale & Uncertainty*
+*Managing Scale & Uncertainty Across CPAs*
 
 | Method | Mathematical Relevance | Defence Utility |
 | :--- | :--- | :--- |
-| **Benders Decomposition** | Separates complicating master resource decisions from independent tactical sub-problems. | Coordinates scarce theater-level enablers (e.g., high-demand ISR orbits, tanker aircraft, precision strike stockpiles) from headquarters while delegating tactical execution and route planning to autonomous operational sub-commands. |
-| **Dantzig-Wolfe & Column Generation** | Slices massive linear models with shared linking constraints into parallel sub-problems, generating candidate plans dynamically. | Solves massive enterprise-scale scheduling challenges—such as joint theater logistics, multinational airlift allocation, and multi-brigade deployment timelines—that are far too complex to solve in a single computer model. |
-| **Lagrangian Relaxation** | Temporarily relaxes hard cross-domain coupling constraints into penalty costs within the objective function. | Rapidly decouples interdependent multi-domain systems—such as deconflicting joint fires trajectories, commercial maritime transit lanes, and congested airspace corridors—to deliver workable operational baselines in seconds. |
-| **Large Neighbourhood Search (LNS)** | Freezes ~90% of an existing operational plan and dynamically destroys and re-optimizes only the disrupted ~10% subset within a defined sandbox. | Delivers rapid plan repair when battlefield friction strikes (e.g., a denied runway, an ambushed supply route, a jammed sensor node, or a damaged warship), acting as the operational engine for **Engineering Refactoring** by fixing the localized failure in seconds without disrupting the wider campaign plan. |
-| **Probabilistic Partitioning** | Replaces rigid deterministic assumptions with probability distribution curves across spatial, temporal, and structural bounds. | Inoculates plans against the "fog of war" and adversary friction (e.g., variable transit delays, fluctuating threat bubbles, sensor noise, and contested supply), generating military options that survive contact with reality. |
+| **Benders Decomposition** | Separates complicating master resource decisions from independent tactical sub-problems.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 2: Sequential Stochastic Decisions | Coordinates scarce theater-level enablers (e.g., high-demand ISR orbits, tanker aircraft, precision strike stockpiles) from headquarters while delegating tactical execution and route planning to autonomous operational sub-commands. |
+| **Dantzig-Wolfe & Column Generation** | Slices massive linear models with shared linking constraints into parallel sub-problems, generating candidate plans dynamically.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 2: Sequential Stochastic Decisions | Solves massive enterprise-scale scheduling challenges—such as joint theater logistics, multinational airlift allocation, and multi-brigade deployment timelines—that are far too complex to solve in a single computer model. |
+| **Lagrangian Relaxation** | Temporarily relaxes hard cross-domain coupling constraints into penalty costs within the objective function.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 3: Graph Inference & Search | Rapidly decouples interdependent multi-domain systems—such as deconflicting joint fires trajectories, commercial maritime transit lanes, and congested airspace corridors—to deliver workable operational baselines in seconds. |
+| **Large Neighbourhood Search (LNS)** | Freezes ~90% of an existing operational plan and dynamically destroys and re-optimizes only the disrupted ~10% subset within a defined sandbox.<br/><br/>**Relevant CPAs:**<br/>• CPA 1: Constrained Combinatorial Allocation<br/>• CPA 2: Sequential Stochastic Decisions<br/>• CPA 3: Graph Inference & Search | Delivers rapid plan repair when battlefield friction strikes (e.g., a denied runway, an ambushed supply route, a jammed sensor node, or a damaged warship), acting as the operational engine for **Engineering Refactoring** by fixing the localized failure in seconds without disrupting the wider campaign plan. |
+| **Probabilistic Partitioning** | Replaces rigid deterministic assumptions with probability distribution curves across spatial, temporal, and structural bounds.<br/><br/>**Relevant CPAs:**<br/>• CPA 2: Sequential Stochastic Decisions<br/>• CPA 4: High-Dimensional Statistical Inference | Inoculates plans against the "fog of war" and adversary friction (e.g., variable transit delays, fluctuating threat bubbles, sensor noise, and contested supply), generating military options that survive contact with reality. |
+| **Domain Decomposition & Mesh Tearing (FETI / DDM)** | Tears large continuous boundary-value meshes into smaller subdomains solved in parallel with interface continuity conditions.<br/><br/>**Relevant CPAs:**<br/>• CPA 6: Physics-Based Simulation | Accelerates complex survivability simulations—such as aerodynamic heating on hypersonic glide bodies or underwater acoustic propagation—enabling distributed HPC clusters or GPU arrays to compute within design cycles. |
+| **Active Space & Tensor Core Slicing (CAS / TT Slicing)** | Isolates high-entanglement core states from weakly coupled environmental states, compressing tensor rank dimensions.<br/><br/>**Relevant CPAs:**<br/>• CPA 4: High-Dimensional Statistical Inference<br/>• CPA 5: Electronic Structure & Quantum Dynamics | Compresses high-dimensional electronic warfare signals or molecular quantum states to run on edge silicon or noisy near-term quantum processors (QPUs) without catastrophic memory blowup. |
 
 ### 2.3 Hardware & Topological Adaptation
 *Shared Algorithmic Utility Branching to Specific Compute Flavours*
@@ -751,7 +755,7 @@ flowchart TB
     
     OUTCOME["<b>REALISTIC TECHNOLOGY SELECTION & DECISIONS</b><br/><br/><i>Tractable compute, hardware-fitted models, resilient mission execution, efficient optimal choices of compute solving micro & macro problem variants in flux throughout the battlespace echelons.</i>"]
 
-    subgraph BRIDGE ["<b>COMPLEXITY ENGINEERING: The Operational Bridge</b>"]
+    subgraph BRIDGE ["<b>PHASE 2. COMPLEXITY ENGINEERING: The Operational Bridge</b>"]
         direction TB
 
         %% Row 1: Section 2.1 Bullets
