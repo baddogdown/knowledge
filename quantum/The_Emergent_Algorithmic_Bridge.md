@@ -361,7 +361,7 @@ flowchart TB
 
 ---
 
-## Enterprise Governance & Strategic Value Matrix
+## Enterprise Governance & Strategic Value
 
 To ensure operational agility, eliminate vendor lock-in, and establish the MOD as an authoritative "smart customer", the pipeline maintains a clear governance division between sovereign decision rights and commercial compute commodities:
 
@@ -439,6 +439,8 @@ Once the dominant archetype (or recurring OPT blend) is diagnosed, MOD technical
 
 ## Example Models and Formulations
 
+**ARGUABLY THE FOLLOWING IS TOO DETAILED FOR THIS DOCUMENT** *- just included to give a flavour*
+
 ### 1.1 Constrained Combinatorial Allocation & Scheduling (CPA 1)
 *Translating discrete resource-task assignment, packing, and routing constraints into mathematical energy landscapes and constraint systems.*
 
@@ -513,45 +515,113 @@ flowchart TB
     OUTBOUND["<b>UNIFIED MATHEMATICAL FORMULATIONS</b><br/><br/><i>Unified, vendor-neutral mathematical models (QUBO, graphs, tensors, Hamiltonians) ready for complexity engineering.</i>"]
 
     subgraph FORMULATION ["<b>1. PROBLEM FORMULATION: Creation of Mathematical Models</b>"]
-        direction LR
+        direction TB
 
-        %% Column 1: Section 1.1 Bullets
-        subgraph SEC11 ["<b>1.1 Complex Optimisation & Decision Advantage</b>"]
-            direction TB
-            %% Invisible header node to replace line break in title
-            H1["<i>Deciding What to Do</i>"]
-            
-            F1["<b>Graph & Network Topologies</b><br/><br/><i>Maps complex military webs (logistics, C2 networks & sensor-to-shooter chains) as computable nodes and links</i>"]
-            F2["<b>QUBO & Ising Reformulation</b><br/><br/><i>Translates mission rules and constraints into a universal mathematical format any solver engine can process</i>"]
-            
-            H1 ~~~ F1 ~~~ F2
+        %% Row 1: Decision Advantage & Perception
+        subgraph ROW1 [" "]
+            direction LR
+
+            %% Group 1: Deciding What To Do
+            subgraph G1 ["<b>Deciding What To Do</b>"]
+                direction TB
+
+                subgraph CPA1_SG ["<b>1.1 Constrained Combinatorial Allocation & Scheduling</b>"]
+                    direction TB
+                    H1["<i>Deciding what to do under hard constraints across horizons</i>"]
+                    M1_1["Mixed-Integer Linear & Non-Linear Programs<br/>(MILP / MINLP)"]
+                    M1_2["QUBO & Spin Glass (Ising) Encodings"]
+                    M1_3["HUBO-to-QUBO Degree Reduction"]
+                    H1 ~~~ M1_1 ~~~ M1_2 ~~~ M1_3
+                end
+
+                subgraph CPA2_SG ["<b>1.2 Sequential Stochastic Decision-Making Under Uncertainty</b>"]
+                    direction TB
+                    H2["<i>Deciding what to do looking into an uncertain future ('fog of war')</i>"]
+                    M2_1["Markov Decision Processes & POMDPs"]
+                    M2_2["Multi-Stage Stochastic Programming"]
+                    M2_3["Robust & Distributionally Robust Optimisation<br/>(DRO)"]
+                    H2 ~~~ M2_1 ~~~ M2_2 ~~~ M2_3
+                end
+
+                CPA1_SG ~~~ CPA2_SG
+            end
+
+            %% Group 2: Understanding What Is Happening
+            subgraph G2 ["<b>Understanding What Is Happening</b>"]
+                direction TB
+
+                subgraph CPA3_SG ["<b>1.3 Graph Inference & Search</b>"]
+                    direction TB
+                    H3["<i>Understanding what is happening across connected network systems</i>"]
+                    M3_1["Spectral Graph & Laplacian Matrices"]
+                    M3_2["Extremal Graph Substructures"]
+                    M3_3["Topological Data Analysis (TDA)<br/>& Persistent Homology"]
+                    H3 ~~~ M3_1 ~~~ M3_2 ~~~ M3_3
+                end
+
+                subgraph CPA4_SG ["<b>1.4 High-Dimensional Statistical Inference</b>"]
+                    direction TB
+                    H4["<i>Understanding what is happening buried within complex, noisy data</i>"]
+                    M4_1["Geometric Vector Embeddings & Metric Spaces"]
+                    M4_2["Tensor Network Factorizations (MPS / TT)"]
+                    M4_3["Gaussian Mixture & Deep Generative Latent Spaces"]
+                    H4 ~~~ M4_1 ~~~ M4_2 ~~~ M4_3
+                end
+
+                CPA3_SG ~~~ CPA4_SG
+            end
+
+            G1 ~~~ G2
         end
 
-        %% Column 2: Section 1.2 Bullets
-        subgraph SEC12 ["<b>1.2 Perception & Pattern Recognition</b>"]
-            direction TB
-            %% Invisible header node
-            H2["<i>Understanding What Is Happening</i>"]
-            
-            P1["<b>High-Dimensional Embeddings</b><br/><br/><i>Fuses disparate sensor feeds into a unified picture to rapidly identify adversary patterns and anomalies</i>"]
-            P2["<b>Tensor Network Encodings</b><br/><br/><i>Compresses massive multi-channel sensor data to detect faint, hidden signals without heavy power or compute</i>"]
-            
-            H2 ~~~ P1 ~~~ P2
+        %% Row 2: Simulation & Cryptography
+        subgraph ROW2 [" "]
+            direction LR
+
+            %% Group 3: Simulation & Predicting
+            subgraph G3 ["<b>Simulation & Predicting</b>"]
+                direction TB
+
+                subgraph CPA5_SG ["<b>1.5 Electronic Structure & Quantum Dynamics</b>"]
+                    direction TB
+                    H5["<i>Predicting what could happen at microscopic material scale</i>"]
+                    M5_1["Second-Quantized Electronic Hamiltonians"]
+                    M5_2["Fermion-to-Qubit Isomorphisms"]
+                    M5_3["Open Quantum Systems & Sensor Dynamics"]
+                    H5 ~~~ M5_1 ~~~ M5_2 ~~~ M5_3
+                end
+
+                subgraph CPA6_SG ["<b>1.6 Physics-Based Simulation</b>"]
+                    direction TB
+                    H6["<i>Predicting what could happen in continuous environments</i>"]
+                    M6_1["Discretised Partial Differential Equations (PDEs)"]
+                    M6_2["Sparse Linear Systems (A x = b)"]
+                    M6_3["Particle & Hydrodynamic State-Spaces"]
+                    M6_4["High-Fidelity Adjudication & Digital Twin Kinematics"]
+                    H6 ~~~ M6_1 ~~~ M6_2 ~~~ M6_3 ~~~ M6_4
+                end
+
+                CPA5_SG ~~~ CPA6_SG
+            end
+
+            %% Group 4: Cryptographic Assurance & Exploitation
+            subgraph G4 ["<b>Cryptographic Assurance & Exploitation</b>"]
+                direction TB
+
+                subgraph CPA7_SG ["<b>1.7 Cryptanalytic Number-Theoretic Computation</b>"]
+                    direction TB
+                    H7["<i>Securing and auditing sovereign cryptographic trust</i>"]
+                    M7_1["Euclidean Lattice Geometries"]
+                    M7_2["Non-Linear Boolean Polynomial Systems"]
+                    M7_3["Algebraic Number Fields & Factorization Relations"]
+                    H7 ~~~ M7_1 ~~~ M7_2 ~~~ M7_3
+                end
+            end
+
+            G3 ~~~ G4
         end
 
-        %% Column 3: Section 1.3 Bullets
-        subgraph SEC13 ["<b>1.3 Simulation & Synthetic Environments</b>"]
-            direction TB
-            %% Invisible header node
-            H3["<i>Predicting What Could Happen</i>"]
-            
-            S1["<b>Hamiltonians & Physical State-Spaces</b><br/><br/><i>Simulates fundamental physical interactions for quantum sensors, stealth signatures, and advanced materials</i>"]
-            S2["<b>Probabilistic Transition & Belief Graphs</b><br/><br/><i>Models the fog of war, enemy unpredictability, and cascading battlefield uncertainties for wargaming</i>"]
-            
-            H3 ~~~ S1 ~~~ S2
-        end
-
-        SEC11 ~~~ SEC12 ~~~ SEC13
+        ROW1 ~~~ ROW2
     end
 
     INBOUND --> FORMULATION
@@ -562,23 +632,54 @@ flowchart TB
     style OUTBOUND fill:#f8fafc,stroke:#16a34a,stroke-width:2px,color:#0f172a
 
     style FORMULATION fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0369a1
-    style SEC11 fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#334155
-    style SEC12 fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#334155
-    style SEC13 fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 5 5,color:#334155
+    style ROW1 fill:none,stroke:none
+    style ROW2 fill:none,stroke:none
 
-    %% Invisible header styling (no background, no border, text color matched)
-    style H1 fill:none,stroke:none,color:#334155
-    style H2 fill:none,stroke:none,color:#334155
-    style H3 fill:none,stroke:none,color:#334155
+    style G1 fill:#f8fafc,stroke:#94a3b8,stroke-width:1.5px,color:#0f172a
+    style G2 fill:#f8fafc,stroke:#94a3b8,stroke-width:1.5px,color:#0f172a
+    style G3 fill:#f8fafc,stroke:#94a3b8,stroke-width:1.5px,color:#0f172a
+    style G4 fill:#f8fafc,stroke:#94a3b8,stroke-width:1.5px,color:#0f172a
 
-    style F1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style F2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style CPA1_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA2_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA3_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA4_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA5_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA6_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
+    style CPA7_SG fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,stroke-dasharray: 4 4,color:#1e293b
 
-    style P1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style P2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    %% Invisible header styling
+    style H1 fill:none,stroke:none,color:#475569
+    style H2 fill:none,stroke:none,color:#475569
+    style H3 fill:none,stroke:none,color:#475569
+    style H4 fill:none,stroke:none,color:#475569
+    style H5 fill:none,stroke:none,color:#475569
+    style H6 fill:none,stroke:none,color:#475569
+    style H7 fill:none,stroke:none,color:#475569
 
-    style S1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style S2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    %% Node styling
+    style M1_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M1_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M1_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M2_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M2_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M2_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M3_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M3_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M3_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M4_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M4_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M4_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M5_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M5_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M5_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M6_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M6_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M6_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M6_4 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M7_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M7_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style M7_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
 ```
 
 ---
