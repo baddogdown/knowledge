@@ -645,8 +645,16 @@ flowchart TB
         ROW1 ~~~ ROW2
     end
 
+    subgraph KEY_D3 ["<b>KEY: Mathematical Formulation Type</b>"]
+        direction LR
+        K_OPP["<b>High Emergent Compute Opportunity</b><br/><i>Physics, Annealing, Neuromorphic, Tensor & Quantum Encodings</i>"]
+        K_STD["<b>Standard Mathematical Formulation</b><br/><i>Established Classical Baselines (MILP, MDP, PDEs, Graph Matrices)</i>"]
+        K_OPP ~~~ K_STD
+    end
+
     INBOUND --> FORMULATION
     FORMULATION --> OUTBOUND
+    OUTBOUND ~~~ KEY_D3
 
     %% Styling
     style INBOUND fill:#f8fafc,stroke:#64748b,stroke-width:2px,color:#0f172a
@@ -678,29 +686,14 @@ flowchart TB
     style H6 fill:none,stroke:none,color:#475569
     style H7 fill:none,stroke:none,color:#475569
 
-    %% Node styling
-    style M1_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M1_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M1_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M2_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M2_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M2_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M3_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M3_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M3_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M4_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M4_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M4_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M5_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M5_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M5_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M6_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M6_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M6_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M6_4 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M7_1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M7_2 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style M7_3 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style KEY_D3 fill:#ffffff,stroke:#cbd5e1,stroke-width:1.5px,stroke-dasharray: 4 4,color:#334155
+
+    %% Formulation Opportunity Classes
+    classDef emergent fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+    classDef standard fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+
+    class M1_2,M3_3,M4_2,M5_1,M5_2,M5_3,M7_1,M7_3,K_OPP emergent
+    class M1_1,M1_3,M2_1,M2_2,M2_3,M3_1,M3_2,M4_1,M4_3,M6_1,M6_2,M6_3,M6_4,M7_2,K_STD standard
 ```
 
 ---
@@ -804,6 +797,16 @@ flowchart TB
     DEMAND --> BRIDGE
     BRIDGE --> OUTCOME
 
+    subgraph KEY_D4 ["<b>KEY: Compute Substrate Maturity (Section 2.3)</b>"]
+        direction LR
+        K1["<b>Established</b><br/><i>HPC / Cloud / Embedded ARM</i>"]
+        K2["<b>Early / Growing</b><br/><i>Physics / Annealers / Neuromorphic</i>"]
+        K3["<b>Future</b><br/><i>Long-Horizon R&D / Gate QPUs</i>"]
+        K1 ~~~ K2 ~~~ K3
+    end
+
+    OUTCOME ~~~ KEY_D4
+
     %% Styling
     style DEMAND fill:#f8fafc,stroke:#64748b,stroke-width:2px,color:#0f172a
     style OUTCOME fill:#f8fafc,stroke:#16a34a,stroke-width:2px,color:#0f172a
@@ -821,10 +824,16 @@ flowchart TB
     style M2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
     style M3 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
 
-    style H0 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style H1 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style H2 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
-    style H3 fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#0f172a
+    style KEY_D4 fill:#ffffff,stroke:#cbd5e1,stroke-width:1.5px,stroke-dasharray: 4 4,color:#334155
+
+    %% Substrate Maturity Classes (matching Diagram 1)
+    classDef matureStrong fill:#e9d5ff,stroke:#7e22ce,stroke-width:2px,color:#581c87
+    classDef matureMedium fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#7e22ce
+    classDef matureWeak fill:#faf5ff,stroke:#d8b4fe,stroke-width:2px,color:#9333ea
+
+    class H0,K1 matureStrong
+    class H1,H3,K2 matureMedium
+    class H2,K3 matureWeak
 ```
 
 ---
