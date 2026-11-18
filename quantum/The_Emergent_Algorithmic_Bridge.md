@@ -531,7 +531,10 @@ flowchart TB
                     M1_1["Mixed-Integer Linear & Non-Linear Programs<br/>(MILP / MINLP)"]
                     M1_2["QUBO & Spin Glass (Ising) Encodings"]
                     M1_3["HUBO-to-QUBO Degree Reduction"]
-                    H1 ~~~ M1_1 ~~~ M1_2 ~~~ M1_3
+                    H1 ~~~ M1_1
+                    H1 ~~~ M1_2
+                    M1_1 ~~~ M1_3
+                    M1_2 ~~~ M1_3
                 end
 
                 subgraph CPA2_SG ["<b>1.2 Sequential Stochastic Decision-Making Under Uncertainty</b>"]
@@ -540,7 +543,10 @@ flowchart TB
                     M2_1["Markov Decision Processes & POMDPs"]
                     M2_2["Multi-Stage Stochastic Programming"]
                     M2_3["Robust & Distributionally Robust Optimisation<br/>(DRO)"]
-                    H2 ~~~ M2_1 ~~~ M2_2 ~~~ M2_3
+                    H2 ~~~ M2_1
+                    H2 ~~~ M2_2
+                    M2_1 ~~~ M2_3
+                    M2_2 ~~~ M2_3
                 end
 
                 CPA1_SG ~~~ CPA2_SG
@@ -556,7 +562,10 @@ flowchart TB
                     M3_1["Spectral Graph & Laplacian Matrices"]
                     M3_2["Extremal Graph Substructures"]
                     M3_3["Topological Data Analysis (TDA)<br/>& Persistent Homology"]
-                    H3 ~~~ M3_1 ~~~ M3_2 ~~~ M3_3
+                    H3 ~~~ M3_1
+                    H3 ~~~ M3_2
+                    M3_1 ~~~ M3_3
+                    M3_2 ~~~ M3_3
                 end
 
                 subgraph CPA4_SG ["<b>1.4 High-Dimensional Statistical Inference</b>"]
@@ -565,7 +574,10 @@ flowchart TB
                     M4_1["Geometric Vector Embeddings & Metric Spaces"]
                     M4_2["Tensor Network Factorizations (MPS / TT)"]
                     M4_3["Gaussian Mixture & Deep Generative Latent Spaces"]
-                    H4 ~~~ M4_1 ~~~ M4_2 ~~~ M4_3
+                    H4 ~~~ M4_1
+                    H4 ~~~ M4_2
+                    M4_1 ~~~ M4_3
+                    M4_2 ~~~ M4_3
                 end
 
                 CPA3_SG ~~~ CPA4_SG
@@ -588,7 +600,10 @@ flowchart TB
                     M5_1["Second-Quantized Electronic Hamiltonians"]
                     M5_2["Fermion-to-Qubit Isomorphisms"]
                     M5_3["Open Quantum Systems & Sensor Dynamics"]
-                    H5 ~~~ M5_1 ~~~ M5_2 ~~~ M5_3
+                    H5 ~~~ M5_1
+                    H5 ~~~ M5_2
+                    M5_1 ~~~ M5_3
+                    M5_2 ~~~ M5_3
                 end
 
                 subgraph CPA6_SG ["<b>1.6 Physics-Based Simulation</b>"]
@@ -598,7 +613,10 @@ flowchart TB
                     M6_2["Sparse Linear Systems (A x = b)"]
                     M6_3["Particle & Hydrodynamic State-Spaces"]
                     M6_4["High-Fidelity Adjudication & Digital Twin Kinematics"]
-                    H6 ~~~ M6_1 ~~~ M6_2 ~~~ M6_3 ~~~ M6_4
+                    H6 ~~~ M6_1
+                    H6 ~~~ M6_2
+                    M6_1 ~~~ M6_3
+                    M6_2 ~~~ M6_4
                 end
 
                 CPA5_SG ~~~ CPA6_SG
@@ -614,7 +632,10 @@ flowchart TB
                     M7_1["Euclidean Lattice Geometries"]
                     M7_2["Non-Linear Boolean Polynomial Systems"]
                     M7_3["Algebraic Number Fields & Factorization Relations"]
-                    H7 ~~~ M7_1 ~~~ M7_2 ~~~ M7_3
+                    H7 ~~~ M7_1
+                    H7 ~~~ M7_2
+                    M7_1 ~~~ M7_3
+                    M7_2 ~~~ M7_3
                 end
             end
 
