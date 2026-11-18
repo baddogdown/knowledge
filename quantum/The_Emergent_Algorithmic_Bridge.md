@@ -20,7 +20,7 @@ Hardware is a commercial commodity and the compute landscape will remain too vol
 ## How to Read This Document:
 *A strategic guide for leadership & operational planners showing how alogrithms can be a critical soverign bridge from military and civil business teams to technical teams and the contestable but optimal exploitation of all compute.*
 
-* **Computational Problem Archetypes (CPAs):**Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
+* **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Algorithmic Pipeline:** Sets out the lifecycle (*Problem Formulation* $\rightarrow$ *Complexity Engineering* $\rightarrow$ *Execution & Delivery*), establishing an Enterprise Governance Matrix that delineates sovereign MOD custody from contestable commercial compute.
 * **Phase 1 — Problem Formulation:** Guides operational commanders from real-world battlefield friction to CPA bottleneck diagnosis, followed by example mathematical representations, defence utility, and candidate solver targets.
 * **Phase 2 — Complexity Engineering:** Details how problems & workloads can be unzipped and sliced into composite decoupled sub-problems,  scaled up or down and the selection of optimal hybrid execution patterns.
