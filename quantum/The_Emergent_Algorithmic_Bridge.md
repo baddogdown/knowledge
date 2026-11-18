@@ -12,13 +12,16 @@ This is a non-technical draft notion of what might be involved in increasing ski
 ## Strategic Posit
 **Algorithmic competence, not raw hardware ownership, is the decisive sovereign capability.**
 
-Hardware is a commercial commodity and the compute landscape will remain too volatile for a dumb customer to exploit.  Becoming a smart customer requires sovcerign & independent mathematical problem formulation and complexity engineering. By mastering a unified 3-phase algorithmic framework, the MOD can:
-1. **Bridge today to tomorrow:** Seamlessly understand advantage from existing classical (CPU, GPU), HPC and edge devices through to emerging quantum, annealing, and probabilistic hardware without rewriting underlying mission definitions.
+Hardware is a commercial commodity and the compute landscape will remain too volatile for a dumb customer to exploit.
+
+Becoming a smart customer able to recognise the relative merit of emergent compute opurtunity requires a sovcerign & independent navigation of the volatile compute landscape through engaging in mathematical problem formulation and complexity engineering. By mastering a unified 3-phase algorithmic framework, the MOD can:
+
+1. **Bridge today to tomorrow:** Seamlessly understand advantage from existing classical (CPU, GPU), HPC and edge devices through to emerging quantum, annealing, and probabilistic hardware without rewriting underlying mission definitions or needing to beleive the hype.
 2. **Operate efficiently across echelons:** Understand the tennsion between fidelity & urgency and scale mission workloads dynamically from permanent cloud data centres during deliberate campaign planning down to constrained, disconnected tactical edge units in high-tempo combat.
 3. **Act as an authoritative "Smart Customer":** Prevent proprietary vendor or solution lock-in by retaining custody of problem models while fostering a contestable commercial marketplace for execution.
 
 ## How to Read This Document:
-*A strategic guide for leadership & operational planners showing how alogrithms can be a critical soverign bridge from military and civil business teams to technical teams and the contestable but optimal exploitation of all compute.*
+*A strategic guide for leadership & operational planners showing how alogrithms can be a critical soverign bridge from military and civil business teams to technical teams and the contestable and optimal enterprise exploitation of all compute.*
 
 * **Computational Problem Archetypes (CPAs):** Categorises defence computational challenges into seven archetypes as useful to understanding the blend of compute challanges to any problem or use case.
 * **The 3-Phase Algorithmic Pipeline:** Sets out the lifecycle (*Problem Formulation* $\rightarrow$ *Complexity Engineering* $\rightarrow$ *Execution & Delivery*), establishing an Enterprise Governance Matrix that delineates sovereign MOD custody from contestable commercial compute.
