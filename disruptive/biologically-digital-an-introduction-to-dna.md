@@ -37,9 +37,11 @@ Painting a picture of a possible **composable** **logical** technical blueprint(
 
 ---
 
-# Key problems
+## Key problems
 
 ## *How to destroy the existing silos & barriers ?*
+
+![How to destroy the existing silos & barriers](./media/dna-destroy-silos.png)
 
 - Across technology and services
 - Across classifications, organisations & locations
@@ -50,9 +52,11 @@ Painting a picture of a possible **composable** **logical** technical blueprint(
 Massive overheads and risk from debt; business fragmentation & technology obsolescence
 
 
-## *How to prevent future silos & barriers ? *
+## *How to prevent future silos & barriers ?*
 
-*Typical **strategic** technology adoption.  *From back to front line,  enterprise to tactical edge.
+*Typical **strategic** technology adoption: from back to front line, enterprise to tactical edge.*
+
+![Traditional enterprise knows best](./media/dna-tradditional-enterprise-knows-best.png)
 
 Our instinct is to reach for big programmes,  contracts,  partners.  We try to prescribe architectures out from London towards the edge.
 
@@ -62,7 +66,7 @@ Critical path & overly prescribed delivery = broken resilience ?  Fragmentation 
 
 ---
 
-# Inspiration
+## Inspiration
 
 ### *Turn it on its head,  celebrate pockets*
 
@@ -70,43 +74,38 @@ Q:  **What is a resilience utopia ?  **
 
 A:  **Decentralised agency to progress & innovate technology ?**
 
-|  |  |  |
-| --- | --- | --- |
-| Where have we seen this before ? |  | Genes & DNA contain the design blueprint critical to the formation of cells, organs and organisms **all** "*in the image*" of the DNA.Mutations are a good thing.Don't start with the big things,  start with the smallest things\*\* |
-|  |  | *\*\* perhaps excluding quantum :P* |
+| Where have we seen this before? | ![DNA](./media/dna-dna.png) |
+| :--- | :--- |
+| **Inspiration from Biology** | **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br><br>Mutations are a good thing. Don't start with the big things, start with the smallest things.<br><br>*\* perhaps excluding quantum :P* |
 
 ---
 
-# What if ?  *how can "digital" learn from biological DNA ?*
+## What if ? *how can "digital" learn from biological DNA ?*
 
-Everything is a **Digital Node**
+> [!NOTE]
+> ### Everything is a **Digital Node**
+> *… it's all made of ~~stars~~ **Digital Nodes***
+> 
+> SDR, Digital Backbone, and Data Fabric are requirements for all nodes to share the same **Digital DNA**.
 
-*… its all made of ~~stars ~~Digital Nodes*
+<div align="center">
 
+![A Digital Node](./media/dna-a-node.png)
 
-SDR, Digital Backbone, Data Fabric is a requirement for all nodes to share the same **Digital DNA**
+</div>
 
+> [!TIP]
+> **Q: What are the genes in a digital world?**  
+> **A:** **Strategy**
 
+> [!WARNING]
+> - ❌ **Starting with enterprise systems is an anti-pattern**
+> - ❌ **Massive critical path programmes are an anti-pattern**
 
+> [!NOTE]
+> ✅ **Stand on the shoulders of data:** **DCA, DCSI**
 
-Q: What are the genes in a digital world ?
-
-A: **strategy**
-
-Starting with enterprise systems is an anti-pattern
-
-
-Massive critical path programmes are an anti-pattern
-
-
-Stand on the shoulders of data: 
-
-**DCA, DCSI**
-
-
----
-
-# What if ?  *is mobilisation realistic ?*
+## What if ? *is mobilisation realistic ?*
 
 **What is a resilience utopia ?**  *Decentralised agency to progress & innovate technology ?*
 
@@ -120,9 +119,11 @@ The DNA shapes all nodes which in turn shape all systems & the enterprise
 
 ---
 
-# Where this is resonating ?
+## Where this is resonating ?
 
 ### *Turning the arrows on their heads ~ edge shaping core*
+
+![Enterprise shaped by FLCs](./media/dna-enterprise-shaed-by-flcs.png)
 
 |  |
 | --- |
@@ -159,7 +160,7 @@ The DNA shapes all nodes which in turn shape all systems & the enterprise
 
 ## DNA: Composable genes, DNA + Nodes
 
-![DNA: Composable genes, DNA + Nodes](./media/dna-composable-genes-nodes.png)
+![DNA: Composable genes, DNA + Nodes](./media/dna-composable-genes-dna-nodes.png)
 
 
 
