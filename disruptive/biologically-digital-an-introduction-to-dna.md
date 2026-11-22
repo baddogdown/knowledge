@@ -57,6 +57,7 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 *Typical **strategic** technology adoption: from back to front line, enterprise to tactical edge.*
 > [!CAUTION]
 > Our instinct is to reach for big programmes,  contracts,  partners.  We try to prescribe architectures out from London towards the edge.
+
 ![Traditional enterprise knows best](./media/dna-tradditional-enterprise-knows-best.png)
 > [!WARNING]
 > Critical path & overly prescribed delivery = broken resilience ?  Fragmentation in practise ?
