@@ -46,22 +46,45 @@ This model represents a **paradigm shift in how military capability is developed
 > **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes.
 > **Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:**
 
-## 1. **Data Sharing and Intelligence Fusion** - **Problem**: Data silos and lack of incentives for sharing. - **Solution**: Units earn credits for contributing high-quality, tagged, and reusable data to shared repositories.  Earn more credits when another programme actually uses the data ? - **Impact**: Promotes a culture of collaboration and data stewardship. - **Risks and Mitigations**:     - Risk: Poor data quality or metadata pollution.     - Mitigation: Introduce automated quality scoring, peer reviews, and feedback loops for data consumers.
+### 1. Data Sharing and Intelligence Fusion
+- **Problem**: Data silos and lack of incentives for sharing.
+- **Solution**: Units earn credits for contributing high-quality, tagged, and reusable data to shared repositories.  Earn more credits when another programme actually uses the data ?
+- **Impact**: Promotes a culture of collaboration and data stewardship.
+- **Risks and Mitigations**:
+  - **Risk**: Poor data quality or metadata pollution.
+  - **Mitigation**: Introduce automated quality scoring, peer reviews, and feedback loops for data consumers.
 
-## 2. **Increasing the enterprise Digital Backbone & Data Fabric maturity**
-
+### 2. Increasing the enterprise Digital Backbone & Data Fabric maturity
 - **Problem**: Technology & programme silos with a lack of incentives for interoperability and becoming data centric.
 - **Solution**: Units earn credits for the percentage of their Digital Nodes that reach maturity targets for DCSI & ZT.  
 - **Impact**: Promotes a gradual uptick in culture & recognition of architectural value.  Eventually will make strategic goals of a data fabric & digital backbone more easily achievable.
 - **Risks and Mitigations**:
-    - Risk: (A) Pockets of independent eco systems within FLCs. (B) Overly prescriptive from the centre outwards repeats same failure track record.
-    - Mitigation: (A) Centrally govern a logical blueprint for a "Digital Node".  (B) Governance actively manages the tension between strategic intent & tactical urgency,
+  - **Risk**: (A) Pockets of independent eco systems within FLCs. (B) Overly prescriptive from the centre outwards repeats same failure track record.
+  - **Mitigation**: (A) Centrally govern a logical blueprint for a "Digital Node".  (B) Governance actively manages the tension between strategic intent & tactical urgency,
 
-## 3. **Architectural Simplification & Reuse** - **Problem**:  Individual programmes are inadequately incentivised to produce architectural building blocks that other programmes want to consume,  thus not reducing enterprise wide Obsolescence or Cyber risk. - **Solution**: Programmes or vendors earn minor “architecture catalogue contributor credits” when contributing conformant building blocks or patterns to the repository.  They earn major "architecture catalogue reuse credits" when these are used by other programmes. - **Impact**: Disseminates contribution of knowledge, patterns & building blocks that will be reused.  . - **Risks and Mitigations**:     - Risk: Programmes game a quantity driven credit allocation by unhelpful fine granularity in building blocks.     - Mitigation: Enterprise governance of "conformant" and assessment of quantity & quality of contribution.
+### 3. Architectural Simplification & Reuse
+- **Problem**:  Individual programmes are inadequately incentivised to produce architectural building blocks that other programmes want to consume,  thus not reducing enterprise wide Obsolescence or Cyber risk.
+- **Solution**: Programmes or vendors earn minor “architecture catalogue contributor credits” when contributing conformant building blocks or patterns to the repository.  They earn major "architecture catalogue reuse credits" when these are used by other programmes.
+- **Impact**: Disseminates contribution of knowledge, patterns & building blocks that will be reused.  .
+- **Risks and Mitigations**:
+  - **Risk**: Programmes game a quantity driven credit allocation by unhelpful fine granularity in building blocks.
+  - **Mitigation**: Enterprise governance of "conformant" and assessment of quantity & quality of contribution.
 
-## 4. **Digital Service Consumption Across the Enterprise** - **Problem**: Users face friction accessing digital tools and services. - **Solution**: A “Digital Armoury” marketplace where users earn credits (via usage, feedback, or mission impact) to unlock tools, licenses, or compute resources. - **Impact**: Drives adoption, surfaces high-value tools, and creates a feedback loop for continuous improvement. - **Risks and Mitigations**:     - Risk: Misuse or gaming of the system to acquire resources without real impact.     - Mitigation: Implement audit trails, peer validation, and automated impact scoring based on telemetry and mission data.
+### 4. Digital Service Consumption Across the Enterprise
+- **Problem**: Users face friction accessing digital tools and services.
+- **Solution**: A “Digital Armoury” marketplace where users earn credits (via usage, feedback, or mission impact) to unlock tools, licenses, or compute resources.
+- **Impact**: Drives adoption, surfaces high-value tools, and creates a feedback loop for continuous improvement.
+- **Risks and Mitigations**:
+  - **Risk**: Misuse or gaming of the system to acquire resources without real impact.
+  - **Mitigation**: Implement audit trails, peer validation, and automated impact scoring based on telemetry and mission data.
 
-## 5. **Cyber and Electronic Warfare Readiness** - **Problem**: Rapidly evolving threats require agile tooling and training. - **Solution**: Gamified cyber ranges or EW labs where teams earn access to advanced tools or red-team scenarios based on performance. - **Impact**: Builds capability through competition and continuous learning. - **Risks and Mitigations**:     - Risk: Overemphasis on gamification could lead to superficial engagement.     - Mitigation: Tie rewards to validated skill development and real-world mission readiness metrics.
+### 5. Cyber and Electronic Warfare Readiness
+- **Problem**: Rapidly evolving threats require agile tooling and training.
+- **Solution**: Gamified cyber ranges or EW labs where teams earn access to advanced tools or red-team scenarios based on performance.
+- **Impact**: Builds capability through competition and continuous learning.
+- **Risks and Mitigations**:
+  - **Risk**: Overemphasis on gamification could lead to superficial engagement.
+  - **Mitigation**: Tie rewards to validated skill development and real-world mission readiness metrics.
 
 ### 6. Digital Twin and Simulation Environments
 - **Problem**: Limited access to high-fidelity simulations for planning and training.
