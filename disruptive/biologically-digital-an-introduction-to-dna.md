@@ -42,32 +42,24 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 ---
 
-## Key problems
+# Key problems
 
 ## *How to destroy the existing silos & barriers ?*
-
-![How to destroy the existing silos & barriers](./media/dna-destroy-silos.png)
-
 - Across technology and services
 - Across classifications, organisations & locations
 - Between enterprise scale and frontline specific contexts
 - Between difficult strategic mobilisation and urgent tactical response.
-
-
-Massive overheads and risk from debt; business fragmentation & technology obsolescence
-
+![How to destroy the existing silos & barriers](./media/dna-destroy-silos.png)
+> [!WARNING]
+> Massive overheads and risk from debt; business fragmentation & technology obsolescence
 
 ## *How to prevent future silos & barriers ?*
-
 *Typical **strategic** technology adoption: from back to front line, enterprise to tactical edge.*
-
+> [!CAUTION]
+> Our instinct is to reach for big programmes,  contracts,  partners.  We try to prescribe architectures out from London towards the edge.
 ![Traditional enterprise knows best](./media/dna-tradditional-enterprise-knows-best.png)
-
-Our instinct is to reach for big programmes,  contracts,  partners.  We try to prescribe architectures out from London towards the edge.
-
-
-
-Critical path & overly prescribed delivery = broken resilience ?  Fragmentation in practise ?
+> [!WARNING]
+> Critical path & overly prescribed delivery = broken resilience ?  Fragmentation in practise ?
 
 ---
 
@@ -75,7 +67,7 @@ Critical path & overly prescribed delivery = broken resilience ?  Fragmentation 
 
 ### *Turn it on its head,  celebrate pockets*
 
-Q:  **What is a resilience utopia ?  **
+Q:  **What is a resilience utopia ?**
 
 A:  **Decentralised agency to progress & innovate technology ?**
 
