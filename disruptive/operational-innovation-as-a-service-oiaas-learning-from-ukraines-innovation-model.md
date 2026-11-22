@@ -35,6 +35,7 @@ This model represents a **paradigm shift in how military capability is developed
 
 # Operational Innovation-as-a-Service (OIaaS)
 > [!WARNING]
+> *JUST BECAUSE YOU BUILD IT DOES NOT MEAN THEY WILL COME*
 > **This is born out of** ...thinking about the currently failing feedback loops involved in the XXX XXX desire to promote reuse of architecture patterns and policy.
 > Specifically where the resource constraints & disconnect exists across teams who could make patterns attractive for reuse versus the teams that should want to consume them. 
 > This is discussed more elsewhere: 
@@ -43,7 +44,7 @@ This model represents a **paradigm shift in how military capability is developed
 
 
 > [!NOTE]
-> **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes.
+> **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that **applies the principles of Ukraine’s frontline innovation model to a defence enterprise context**. It envisions a system where not just operational units but any team or programme are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem — one that continuously adapts based on real-world outcomes.
 > **Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:**
 
 ### 1. Data Sharing and Intelligence Fusion
@@ -65,7 +66,7 @@ This model represents a **paradigm shift in how military capability is developed
 ### 3. Architectural Simplification & Reuse
 - **Problem**:  Individual programmes are inadequately incentivised to produce architectural building blocks that other programmes want to consume,  thus not reducing enterprise wide Obsolescence or Cyber risk.
 - **Solution**: Programmes or vendors earn minor “architecture catalogue contributor credits” when contributing conformant building blocks or patterns to the repository.  They earn major "architecture catalogue reuse credits" when these are used by other programmes.
-- **Impact**: Disseminates contribution of knowledge, patterns & building blocks that will be reused.  .
+- **Impact**: Disseminates contribution of knowledge, patterns & building blocks that will be reused.
 - **Risks and Mitigations**:
   - **Risk**: Programmes game a quantity driven credit allocation by unhelpful fine granularity in building blocks.
   - **Mitigation**: Enterprise governance of "conformant" and assessment of quantity & quality of contribution.
@@ -95,7 +96,7 @@ This model represents a **paradigm shift in how military capability is developed
   - **Mitigation**: Regularly validate models against real-world data and integrate human-in-the-loop feedback.
 
 
-## Strategic Benefits
+# Strategic Benefits
 
 | **Benefit** | **Description** |
 | --- | --- |
@@ -106,7 +107,7 @@ This model represents a **paradigm shift in how military capability is developed
 | **Innovation Culture** | Encourages experimentation and rewards success |
 
 
-## Realising OIaaS: Structure, Governance, and Implementation
+# Realising OIaaS: Structure, Governance, and Implementation
 
 ### Structure
 
