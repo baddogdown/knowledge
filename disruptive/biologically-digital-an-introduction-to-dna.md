@@ -5,8 +5,8 @@
 > The essence of strategic intent as expressed through a DCS&I & military resilience utopian vision. Is now the time to consider this beyond technology into the ramifications on us, our culture and how we nurture & celebrate innovation at the edge?
 > Furthermore, that London and the enterprise learns to become comfortable being shaped by this federated demand, not a master over it.
 
-
-**TLDR**:  skip to the two diagrams at the bottom.  [DNA: starting with the smallest things](#dna-starting-with-the-smallest-things) 
+> [!TIP]
+> **TLDR**:  ✅ skip to the two diagrams at the bottom.  [DNA: starting with the smallest things](#dna-starting-with-the-smallest-things) 
 
 ## This page
 
