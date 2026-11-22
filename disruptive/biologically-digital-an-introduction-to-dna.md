@@ -2,13 +2,16 @@
 
 > [!NOTE]
 > **DNA: Digital Node Architecture** - a thought experiment, starting with the smallest things and letting them shape the difficult things.
-> The essence of strategic intent as expressed through a DCS&I & military resilience utopian vision. Is now the time to consider this beyond technology into the ramifications on us, our culture and how we nurture & celebrate innovation at the edge?
+>
+> The essence of strategic intent as expressed through a DCS&I & military resilience utopian vision.
+>
+> Is now the time to consider this beyond technology into the ramifications on us, our culture and how we nurture & celebrate innovation at the edge?
+> 
 > Furthermore, that London and the enterprise learns to become comfortable being shaped by this federated demand, not a master over it.
+
 
 > [!TIP]
 > **TLDR**:  ✅ skip to the two diagrams at the bottom.  [DNA: starting with the smallest things](#dna-starting-with-the-smallest-things) 
-
-## This page
 
 ---
 
@@ -16,11 +19,11 @@
 
 Challenging every convention for what it means to be & do digital.  This is not a programme or necessarily interested in defining solutions or delivering specific technology.
 
+> [!NOTE]
+> **DNA**: Both business & technical resilience expressed through decentralised agency to innovate & progress digital technology whilst nurturing a productive & positive tension towards enterprise strategic goals.
 
-**DNA**: Both business & technical resilience expressed through decentralised agency to innovate & progress digital technology whilst nurturing a productive & positive tension towards enterprise strategic goals.
-
-
-**Technology mimicking life and biology**,  starting with the smallest autonomous cells, encouraging mutations across a federated landscape and as a consequence, the gradual maturing of a fabric and composition into resultant systems (organs & organisms).
+> [!TIP]
+> **Technology mimicking life and biology**,  starting with the smallest autonomous cells, encouraging mutations across a federated landscape and as a consequence, the gradual maturing of a fabric and composition into resultant systems (organs & organisms).
 
 
 ## The challenge - beyond technology
