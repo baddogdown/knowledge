@@ -8,11 +8,8 @@ This repository contains research, architectural frameworks, strategic analysis,
 | :--- | :--- | :--- |
 | **Disruptive** | [Biologically Digital - an introduction to DNA](disruptive/biologically-digital-an-introduction-to-dna.md) | `disruptive/biologically-digital-an-introduction-to-dna.md` |
 | **Disruptive** | [Operational Innovation as a Service (OIaaS)](disruptive/operational-innovation-as-a-service-oiaas-learning-from-ukraines-innovation-model.md) | `disruptive/operational-innovation-as-a-service-oiaas-learning-from-ukraines-innovation-model.md` |
-| **Quantum** | [Birth of BERTRAND](quantum/birthOf_BERTRAND.md) | `quantum/birthOf_BERTRAND.md` |
 | **Quantum** | [Breaking the Physics of the Plan](quantum/breaking_the_physics_of_the_plan.md) | `quantum/breaking_the_physics_of_the_plan.md` |
 | **Quantum** | [Emergent Compute Org Mindmap](quantum/EMERGENT_COMPUTE_ORG_MINDMAP.md) | `quantum/EMERGENT_COMPUTE_ORG_MINDMAP.md` |
-| **Quantum** | [Emergent Compute Org Mindmap (Admin)](quantum/EMERGENT_COMPUTE_ORG_MINDMAP_ADMIN.md) | `quantum/EMERGENT_COMPUTE_ORG_MINDMAP_ADMIN.md` |
-| **Quantum** | [Introducing Computational Problem Archetypes (CPAs)](quantum/Introducing_Computational_Problem_Archetypes.md) | `quantum/Introducing_Computational_Problem_Archetypes.md` |
 | **Quantum** | [Somme, 1916: Quantum Computing Analogy](quantum/Somme_1916.md) | `quantum/Somme_1916.md` |
 | **Quantum** | [The Emergent Algorithmic Bridge](quantum/The_Emergent_Algorithmic_Bridge.md) | `quantum/The_Emergent_Algorithmic_Bridge.md` |
 
