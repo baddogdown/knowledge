@@ -23,7 +23,7 @@ At the heart of this system is the **Brave 1 Market**, a digital platform descri
 
 |  |  |
 | --- | --- |
-|  | Frontline users are empowered to shape their own operational ecosystem.Developers and suppliers are incentivised to build what works.The system continuously learns and evolves based on operational data and user feedback. |
+| <img src="./media/oiaas-feedback.png" alt="points" width="300" align="left"/> | [!TIP] Frontline users are empowered to shape their own operational ecosystem. [!TIP] Developers and suppliers are incentivised to build what works. [!TIP] The system continuously learns and evolves based on operational data and user feedback. |
 
  
 
