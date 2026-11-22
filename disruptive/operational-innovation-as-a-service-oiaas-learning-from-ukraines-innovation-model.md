@@ -13,7 +13,8 @@ Ukraine has developed a ground-breaking approach to military innovation that ble
 
 At the heart of this system is the **Brave 1 Market**, a digital platform described as an “Amazon for the military.” It allows Ukrainian units to earn points for operational success—such as confirmed drone strikes—and redeem those points for advanced technologies like AI-enabled drones, electronic warfare tools, and surveillance systems.
 
-What makes this model especially powerful is its   **feedback-driven, user-led structure**:
+> [!TIP]
+> What makes this model especially powerful is its   **feedback-driven, user-led structure**:
 
 |  |  |  |  |
 | --- | --- | --- | --- |
