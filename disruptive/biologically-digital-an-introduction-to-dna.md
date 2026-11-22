@@ -30,13 +30,15 @@ Challenging every convention for what it means to be & do digital.  This is not 
 
 How to avoid an allergic reaction / not letting our current selves constrain our thinking ?
 
-This is not about “a solution” or a single prescribed answer.  This is not yet about who.
+> [!CAUTION]
+> This is not about “a solution” or a single prescribed answer.  This is not yet about who.
 
-This is about stepping outside the institutional constrained thinking to imagine technology and a future enabling service portfolio harmonious to every use case from war fighter to core enterprise.  **The celebration of peer to peer autonomy**, the acceptance of **pockets of innovation with technology agency at the edge **and the gradual emergence of a fabric including what this means to governance, operating models and culture.
+This is about stepping outside the institutional constrained thinking to imagine technology and a future enabling service portfolio harmonious to every use case from war fighter to core enterprise.  **The celebration of peer to peer autonomy**, the acceptance of **pockets of innovation with technology agency at the edge** and the gradual emergence of a fabric including what this means to governance, operating models and culture.
 
-The very structure of the current MOD response to digital & to being an enterprise is in many ways a hinderance to allowing a necessary step change in digital maturity.   Achieving the SDR goals requires digital to be part of everything,  not a ring-fenced capability or organisation unit.
+> [!WARNING]
+> The very structure of the current MOD response to digital & to being an enterprise is in many ways a hinderance to allowing a necessary step change in digital maturity.   Achieving the SDR goals requires digital to be part of everything,  not a ring-fenced capability or organisation unit.
 
-Painting a picture of a possible **composable** **logical** technical blueprint(?) will help us stress test this and understand how we need to disrupt and transform ourselves.
+Painting a picture of a possible **composable logical** technical blueprint(?) will help us stress test this and understand how we need to disrupt and transform ourselves.
 
 ---
 
