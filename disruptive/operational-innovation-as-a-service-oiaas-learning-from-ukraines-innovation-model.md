@@ -34,10 +34,16 @@ This model represents a **paradigm shift in how military capability is developed
 
 
 # Operational Innovation-as-a-Service (OIaaS)
+> [!WARNING]
+> **This is born out of** ...thinking about the currently failing feedback loops involved in the XXX XXX desire to promote reuse of architecture patterns and policy.
+> Specifically where the resource constraints & disconnect exists across teams who could make patterns attractive for reuse versus the teams that should want to consume them. 
+> This is discussed more elsewhere: 
+> - *Top-down business decision making: How do we stimulate reuse now?*
+> - *Top-down business decision making: Existing reuse challenges & failures*
 
 |  |  |
 | --- | --- |
-| **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes.**Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:** | **This is born out of **...thinking about the currently failing feedback loops involved in the MOD CTO desire to promote reuse of architecture patterns and policy.Specifically where the resource constraints & disconnect exists across teams who could make patterns attractive for reuse versus the teams that should want to consume them. This is discussed more here: - *Top-down business decision making: How do we stimulate reuse now?* (Confluence reference) - *Top-down business decision making: Existing reuse challenges & failures* (Confluence reference) |
+| **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes.**Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:** |  |
 
 |  |
 | --- |
