@@ -17,7 +17,7 @@ What makes this model especially powerful is its   **feedback-driven, user-led s
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| <img src="./media/oiaas-points.png" alt="points" width="300" align="right"/> | <img src="./media/oiaas-market.png" alt="points" width="300" align="right"/> |  |  |
+| <img src="./media/oiaas-points.png" alt="points" width="200"/> | <img src="./media/oiaas-market.png" alt="points" width="300"/> | <img src="./media/oiaas-vendor-direct.png" alt="points" width="300"/> | <img src="./media/oiaas-rate.png" alt="points" width="300"/> |
 | ✅ **Points are only awarded when kills or strikes are independently confirmed,**ensuring that rewards are tied to real-world impact. This confirmation process generates high-quality operational data that feeds back into R&D, procurement, and battlefield adaptation. | ✅ **Frontline units choose exactly what they need,**based on their mission context and operational experience—not what is prescribed from above. | ✅ **They access technology directly from vendors**through the marketplace, bypassing traditional, top-down procurement pipelines. | ✅ **They rate the performance of the tools they use,**creating a transparent, peer-informed feedback loop that helps others make better decisions and drives continuous improvement among suppliers. |
 
 |  |  |
