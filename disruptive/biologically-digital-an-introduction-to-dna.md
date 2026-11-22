@@ -64,17 +64,22 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 ---
 
-## Inspiration
+# Inspiration
 
-### *Turn it on its head,  celebrate pockets*
-
-Q:  **What is a resilience utopia ?**
-
-A:  **Decentralised agency to progress & innovate technology ?**
+## *Turn it on its head,  celebrate pockets*
+> [!NOTE]
+> Q:  **What is a resilience utopia ?**
+> A:  **Decentralised agency to progress & innovate technology ?**
 
 | Where have we seen this before? | ![DNA](./media/dna-dna.png) |
 | :--- | :--- |
-| **Inspiration from Biology** | **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br><br>Mutations are a good thing. Don't start with the big things, start with the smallest things.<br><br>*\* perhaps excluding quantum :P* |
+| **Inspiration from Biology** | **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br><br>Mutations are a good thing. . |
+
+> [!TIP]
+> **Don't start with the big things, start with the smallest things**
+
+> [!WARNING]
+> * perhaps excluding quantum :P*
 
 ---
 
