@@ -36,6 +36,7 @@ This model represents a **paradigm shift in how military capability is developed
 # Operational Innovation-as-a-Service (OIaaS)
 > [!WARNING]
 > *JUST BECAUSE YOU BUILD IT DOES NOT MEAN THEY WILL COME*
+>
 > **This is born out of** ...thinking about the currently failing feedback loops involved in the XXX XXX desire to promote reuse of architecture patterns and policy.
 > Specifically where the resource constraints & disconnect exists across teams who could make patterns attractive for reuse versus the teams that should want to consume them. 
 > This is discussed more elsewhere: 
