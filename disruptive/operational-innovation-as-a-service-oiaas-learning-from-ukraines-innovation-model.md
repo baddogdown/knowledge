@@ -43,7 +43,7 @@ This model represents a **paradigm shift in how military capability is developed
 
 |  |  |
 | --- | --- |
-| **Operational Innovation-as-a-Service (OIaaS)** is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes.**Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:** |  |
+| [!NOTE] **Operational Innovation-as-a-Service (OIaaS)** </br>is a conceptual framework that applies the principles of Ukraine’s frontline innovation model to a defence enterprise context. It envisions a system where operational units are rewarded for impact, empowered to choose the tools they need, and supported by a dynamic, feedback-rich marketplace of capabilities. OIaaS shifts innovation from a centrally prescribed process to a distributed, performance-driven ecosystem—one that continuously adapts based on real-world outcomes. </br></br>**Here are five example use cases that illustrate how OIaaS could be applied within the UK MOD:** |  |
 
 |  |
 | --- |
