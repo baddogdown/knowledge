@@ -1,14 +1,8 @@
 # Biologically Digital - an introduction to DNA
 
-> [!NOTE]
-> **DNA: Digital Node Architecture** - a thought experiment, starting with the smallest things and letting them shape the difficult things.
->
-> The essence of strategic intent as expressed through a DCS&I & military resilience utopian vision.
->
-> Is now the time to consider this beyond technology into the ramifications on us, our culture and how we nurture & celebrate innovation at the edge?
-> 
-> Furthermore, that London and the enterprise learns to become comfortable being shaped by this federated demand, not a master over it.
 
+**DNA: Digital Node Architecture**
+A thought experiment, starting with the smallest things and letting them shape the difficult things.  The essence of strategic intent as expressed through a DCS&I & military resilience utopian vision.  Is now the time to consider this beyond technology into the ramifications on us, our culture and how we nurture & celebrate innovation at the edge?  Furthermore, that London and the enterprise learns to become comfortable being shaped by this federated demand, not a master over it.
 
 > [!TIP]
 > **TLDR**:  ✅ skip to the two diagrams at the bottom.  [DNA: starting with the smallest things](#dna-starting-with-the-smallest-things) 
@@ -17,7 +11,7 @@
 
 ## Setting the scene - vision
 
-Challenging every convention for what it means to be & do digital.  This is not a programme or necessarily interested in defining solutions or delivering specific technology.
+Challenging every convention for what it means to be & do digital.  This is not a programme or interested in defining solutions or delivering specific technology.
 
 > [!NOTE]
 > **DNA**: Both business & technical resilience expressed through decentralised agency to innovate & progress digital technology whilst nurturing a productive & positive tension towards enterprise strategic goals.
@@ -43,6 +37,9 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 ---
 
 # Key problems
+
+> [!IMPORTANT]
+> **Context**:  This section and acticulation of the problems was originally created using the singular context of how to enable users to become consumers of services and all the related enbabaling services and technology.  However as a concept it **applies to all contexts involving people, process & technology**.
 
 ## *How to destroy the existing silos & barriers ?*
 - Across technology and services
@@ -72,9 +69,9 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 >
 > A:  **Decentralised agency to progress & innovate technology ?**
 
-| Where have we seen this before? | ![DNA](./media/dna-dna.png) |
-| :--- | :--- |
-| **Inspiration from Biology** | **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br><br>Mutations are a good thing. . |
+
+| Where have we seen this before? | <img src="./media/dna-dna.png" alt="DNA" width="600"/> | **Inspiration from Biology** <br/><br/> **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br/><br/>Mutations are a good thing. . |
+| :--- | :--- | :--- |
 
 > [!TIP]
 > ✅ **Don't start with the big things, start with the smallest things**
