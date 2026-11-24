@@ -39,7 +39,7 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 # Key problems
 
 > [!IMPORTANT]
-> **Context**:  This section and acticulation of the problems was originally created using the singular context of how to enable users to become consumers of services and all the related enbabaling services and technology.  However as a concept it **applies to all contexts involving people, process & technology**.
+> **Context**:  This section and acticulation of the problems was originally created using the singular context of *how to enable users to become consumers of services and all the related enbabaling services and technology*.  However as a concept it **applies to all contexts involving people, process & technology**.
 
 ## *How to destroy the existing silos & barriers ?*
 - Across technology and services
@@ -70,7 +70,7 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 > A:  **Decentralised agency to progress & innovate technology ?**
 
 
-| Where have we seen this before? | <img src="./media/dna-dna.png" alt="DNA" width="600"/> | **Inspiration from Biology** <br/><br/> **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br/><br/>Mutations are a good thing. . |
+| Where have we seen this before? | <img src="./media/dna-dna.png" alt="DNA" width="600"/> | **Inspiration from Biology<br/><br/>** **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br/><br/>Mutations are a good thing. . |
 | :--- | :--- | :--- |
 
 > [!TIP]
@@ -83,28 +83,29 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 ## What if ? *how can "digital" learn from biological DNA ?*
 
-> [!NOTE]
-> ### Everything is a **Digital Node**
-> *… it's all made of ~~stars~~ **Digital Nodes***
-> 
-> SDR, Digital Backbone, and Data Fabric are requirements for all nodes to share the same **Digital DNA**.
+✅ Decentralised agency
 
-<div align="center">
+✅ Everything is a **Digital**   ...it's all made of <s>stars</s> **Digital Nodes** 
 
-![A Digital Node](./media/dna-a-node.png)
-
-</div>
-
-> [!TIP]
-> **Q: What are the genes in a digital world?**  
-> **A:** **Strategy**
-
-> [!WARNING]
-> - ❌ **Starting with enterprise systems is an anti-pattern**
-> - ❌ **Massive critical path programmes are an anti-pattern**
 
 > [!NOTE]
-> ✅ **Stand on the shoulders of data:** **DCA, DCSI**
+> - Servers
+> - Devices in the hand
+> - Network routers
+> - Wifi APs 
+> - kit in a tank
+> - a satalite
+> - anything anywhere....
+>
+> - ... that IoT circuit board on the back of the vending machine
+>
+> - ...including anything you dont own *(posture, risk appetite and ability to exploit for our own purposes)*
+
+|  |  |  |
+| :--- | :---: | :--- |
+| Decentralised agency | |  |
+| ✅ SDR, Digital Backbone, and Data Fabric are requirements for all nodes to **share the same Digital DNA**. <br/><br/>✅ Defence Reform & DIP demands a **reset of our relationship with digital across technology, process & people**<br/><br/>✅ Q: **What are the genes in a digital world?**  A:**Strategy** | <img src="./media/dna-a-node.png" alt="Digital Node" width="600"/> | ❌ **Starting with enterprise systems is an anti-pattern**<br/><br/>❌ **Massive critical path programmes are an anti-pattern** |
+| | ✅ Stand on the shoulders of data: DCA <br/><br/> ✅ and progressive cyber thinking: DCSI & ZT uptopian asperations | |
 
 ## What if ? *is mobilisation realistic ?*
 
