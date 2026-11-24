@@ -9,7 +9,7 @@ A thought experiment, starting with the smallest things and letting them shape t
 
 ---
 
-# Setting the scene - vision
+## Setting the scene - vision
 
 Challenging every convention for what it means to be & do digital.  This is not a programme or interested in defining solutions or delivering specific technology.
 
@@ -20,7 +20,7 @@ Challenging every convention for what it means to be & do digital.  This is not 
 > **Technology mimicking life and biology**,  starting with the smallest autonomous cells, encouraging mutations across a federated landscape and as a consequence, the gradual maturing of a fabric and composition into resultant systems (organs & organisms).
 
 
-# The challenge - beyond technology
+## The challenge - beyond technology
 
 How to avoid an allergic reaction / not letting our current selves constrain our thinking ?
 
@@ -36,12 +36,12 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 ---
 
-# Key problems
+## Key problems
 
 > [!IMPORTANT]
-> **Context**:  This section and acticulation of the problems was originally created using the singular context of *how to enable users to become consumers of services and all the related enbabaling services and technology*.  However as a concept it **applies to all contexts involving people, process & technology**.
+> **Context**:  This section and articulation of the problems was originally created using the singular context of *how to enable users to become consumers of services and all the related enabling services and technology*.  However as a concept it **applies to all contexts involving people, process & technology**.
 
-## *How to destroy the existing silos & barriers ?*
+### *How to destroy the existing silos & barriers ?*
 - Across technology and services
 - Across classifications, organisations & locations
 - Between enterprise scale and frontline specific contexts
@@ -50,20 +50,21 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 > [!WARNING]
 > ❌ Massive overheads and risk from debt; business fragmentation & technology obsolescence
 
-## *How to prevent future silos & barriers ?*
+### *How to prevent future silos & barriers ?*
 *Typical **strategic** technology adoption: from back to front line, enterprise to tactical edge.*
 > [!CAUTION]
 > ❌ Our instinct is to reach for big programmes,  contracts,  partners.  We try to prescribe architectures out from London towards the edge.
 
-![Traditional enterprise knows best](./media/dna-tradditional-enterprise-knows-best.png)
+<img src="./media/dna-tradditional-enterprise-knows-best.png" alt="Traditional enterprise knows best" width="900"/>
+
 > [!WARNING]
 > ❌ Critical path & overly prescribed delivery = broken resilience ?  Fragmentation in practise ?
 
 ---
 
-# Inspiration
+## Inspiration
 
-## *Turn it on its head,  celebrate pockets*
+### *Turn it on its head,  celebrate pockets*
 > [!NOTE]
 > Q:  **What is a resilience utopia ?**
 >
@@ -94,17 +95,17 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 > - Network routers
 > - Wifi APs 
 > - kit in a tank
-> - a satalite
+> - a satellite
 > - anything anywhere....
 >
 > - ... that IoT circuit board on the back of the vending machine
 >
-> - ...including anything you dont own *(posture, risk appetite and ability to exploit for our own purposes)*
+> - ...including anything you don't own *(posture, risk appetite and ability to exploit for our own purposes)*
 
 |  |  |  |
 | :--- | :---: | :--- |
-| ✅ SDR, Digital Backbone, and Data Fabric are requirements for all nodes to **share the same Digital DNA**. <br/><br/>✅ Defence Reform & DIP demands a **reset of our relationship with digital across technology, process & people**<br/><br/>✅ Q: **What are the genes in a digital world?**  A:**Strategy** | <img src="./media/dna-a-node.png" alt="Digital Node" width="600"/> | ❌ **Starting with enterprise systems** is an anti-pattern<br/><br/>❌ **Massive critical path programmes** are an anti-pattern<br/><br/>❌ **Massive or monolythic contracts or solutions** are an anti-pattern <br/><br/>❌ Critical path consensus on, or **overly prescribed Reference Architectures** can be an anti-pattern |
-| | ✅ Stand on the shoulders of data: DCA <br/><br/> ✅ and progressive cyber thinking: DCSI & ZT uptopian asperations | |
+| ✅ SDR, Digital Backbone, and Data Fabric are requirements for all nodes to **share the same Digital DNA**. <br/><br/>✅ Defence Reform & DIP demands a **reset of our relationship with digital across technology, process & people**<br/><br/>✅ Q: **What are the genes in a digital world?**  A:**Strategy** | <img src="./media/dna-a-node.png" alt="Digital Node" width="600"/> | ❌ **Starting with enterprise systems** is an anti-pattern<br/><br/>❌ **Massive critical path programmes** are an anti-pattern<br/><br/>❌ **Massive or monolithic contracts or solutions** are an anti-pattern <br/><br/>❌ Critical path consensus on, or **overly prescribed Reference Architectures** can be an anti-pattern |
+| | ✅ Stand on the shoulders of data: DCA <br/><br/> ✅ and progressive cyber thinking: DCSI & ZT utopian aspirations | |
 
 ## What if ? *is mobilisation realistic ?*
 
@@ -112,13 +113,15 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 **What is an enterprise utopia ?**  *...whilst achieving strategic objectives !*
 
-![Enterprise shaped by FLCs](./media/dna-enterprise-shaed-by-flcs.png)
+<img src="./media/dna-enterprise-shaed-by-flcs.png" alt="Enterprise shaped by FLCs" width="800"/>
+
+
 > [!TIP]
 > ✅ The DNA shapes all nodes which in turn shape all systems & the enterprise
 
 ---
 
-# Where this is resonating ?
+## Where this is resonating ?
 
 ### *Turning the arrows on their heads ~ edge shaping core*
 
@@ -127,8 +130,8 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 > Strong parallel between SDR & BRAVE1,  its responding to the same demand.    "*it should not be about full warehouses;  it should be about the (meta) capability to change and evolve.*"
 
 > [!IMPORTANT]
-> **Admiral Sir Tony Radakin KCB (Defense Distrupted):**
-> *We can not do this with long conversations about far out concepts*."
+> **Admiral Sir Tony Radakin KCB (Defense Disrupted):**
+> "*We can not do this with long conversations about far out concepts.*"
 > "*We need to innovate fast now.*"
 
 > [!IMPORTANT]
@@ -148,15 +151,15 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 ---
 
-# DNA: starting with the smallest things
+## DNA: starting with the smallest things
 *Mimic biology. micro shaping macro. DCSI+ZT as the kernel of everything.*
 
-![DNA: Composable genes, DNA + Nodes](./media/dna-composable-genes-dna-nodes.png)
+![DNA: starting with the smallest things](./media/dna-starting-with-the-smallest-things.png)
 
 ---
 
-# DNA: Composable genes, DNA + Nodes
-![DNA: starting with the smallest things](./media/dna-starting-with-the-smallest-things.png)
+## DNA: Composable genes, DNA + Nodes
+![DNA: Composable genes, DNA + Nodes](./media/dna-composable-genes-dna-nodes.png)
 
 
 ## Governance
