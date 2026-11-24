@@ -71,7 +71,7 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 > A:  **Decentralised agency to progress & innovate technology ?**
 
 
-| Where have we seen this before? | <img src="./media/dna-dna.png" alt="DNA" width="600"/> | **Inspiration from Biology<br/><br/>** **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br/><br/>Mutations are a good thing. . |
+| Where have we seen this before? | <img src="./media/dna-dna.png" alt="DNA" width="800"/> | **Inspiration from Biology** <br/><br/> **Genes & DNA** contain the design blueprint critical to the formation of cells, organs, and organisms **all** *"in the image"* of the DNA.<br/><br/> Mutations are a good thing. |
 | :--- | :--- | :--- |
 
 > [!TIP]
