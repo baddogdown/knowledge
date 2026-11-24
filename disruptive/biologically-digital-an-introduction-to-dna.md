@@ -170,7 +170,7 @@ See companion document: [Operational Innovation as a Service (OIaaS) ~ Learning 
 
 ### Policy -vs- Principles
 
-> [!TODO]
+> [!CAUTION]
 > In the absence of a culture that uses **measurable principles**, MOD only ever reaches for policy in order to influence change. The nature of the complex organisation only employing policy leads to a complex policy landscape that mimics and even encourages fragmentation.
 >
 > **Actions:**
