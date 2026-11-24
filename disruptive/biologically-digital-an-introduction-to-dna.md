@@ -9,7 +9,7 @@ A thought experiment, starting with the smallest things and letting them shape t
 
 ---
 
-## Setting the scene - vision
+# Setting the scene - vision
 
 Challenging every convention for what it means to be & do digital.  This is not a programme or interested in defining solutions or delivering specific technology.
 
@@ -20,7 +20,7 @@ Challenging every convention for what it means to be & do digital.  This is not 
 > **Technology mimicking life and biology**,  starting with the smallest autonomous cells, encouraging mutations across a federated landscape and as a consequence, the gradual maturing of a fabric and composition into resultant systems (organs & organisms).
 
 
-## The challenge - beyond technology
+# The challenge - beyond technology
 
 How to avoid an allergic reaction / not letting our current selves constrain our thinking ?
 
@@ -103,8 +103,7 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 |  |  |  |
 | :--- | :---: | :--- |
-| Decentralised agency | |  |
-| ✅ SDR, Digital Backbone, and Data Fabric are requirements for all nodes to **share the same Digital DNA**. <br/><br/>✅ Defence Reform & DIP demands a **reset of our relationship with digital across technology, process & people**<br/><br/>✅ Q: **What are the genes in a digital world?**  A:**Strategy** | <img src="./media/dna-a-node.png" alt="Digital Node" width="600"/> | ❌ **Starting with enterprise systems is an anti-pattern**<br/><br/>❌ **Massive critical path programmes are an anti-pattern** |
+| ✅ SDR, Digital Backbone, and Data Fabric are requirements for all nodes to **share the same Digital DNA**. <br/><br/>✅ Defence Reform & DIP demands a **reset of our relationship with digital across technology, process & people**<br/><br/>✅ Q: **What are the genes in a digital world?**  A:**Strategy** | <img src="./media/dna-a-node.png" alt="Digital Node" width="600"/> | ❌ **Starting with enterprise systems** is an anti-pattern<br/><br/>❌ **Massive critical path programmes** are an anti-pattern<br/><br/>❌ **Massive or monolythic contracts or solutions** are an anti-pattern <br/><br/>❌ Critical path consensus on, or **overly prescribed Reference Architectures** can be an anti-pattern |
 | | ✅ Stand on the shoulders of data: DCA <br/><br/> ✅ and progressive cyber thinking: DCSI & ZT uptopian asperations | |
 
 ## What if ? *is mobilisation realistic ?*
@@ -113,58 +112,51 @@ Painting a picture of a possible **composable logical** technical blueprint(?) w
 
 **What is an enterprise utopia ?**  *...whilst achieving strategic objectives !*
 
-The DNA shapes all nodes which in turn shape all systems & the enterprise
-
-
-
-
+![Enterprise shaped by FLCs](./media/dna-enterprise-shaed-by-flcs.png)
+> [!TIP]
+> ✅ The DNA shapes all nodes which in turn shape all systems & the enterprise
 
 ---
 
-## Where this is resonating ?
+# Where this is resonating ?
 
 ### *Turning the arrows on their heads ~ edge shaping core*
 
-![Enterprise shaped by FLCs](./media/dna-enterprise-shaed-by-flcs.png)
+> [!IMPORTANT]
+> **General Sir Richard Barrons KCB CBE:**
+> Strong parallel between SDR & BRAVE1,  its responding to the same demand.    "*it should not be about full warehouses;  it should be about the (meta) capability to change and evolve.*"
 
-|  |
-| --- |
-| **General Sir Richard Barrons KCB CBE:  S**trong parallel between SDR & BRAVE1,  its responding to the same demand.    "*it should not be about full warehouses;  it should be about the (meta) capability to change and evolve.***"** |
+> [!IMPORTANT]
+> **Admiral Sir Tony Radakin KCB (Defense Distrupted):**
+> *We can not do this with long conversations about far out concepts*."
+> "*We need to innovate fast now.*"
 
-|  |
-| --- |
-| **Admiral Sir Tony Radakin KCB (Defense Distrupted) : **  **"***We can not do this with long conversations about far out concepts*.""*We need to innovate fast now*.**"** |
+> [!IMPORTANT]
+> **RedHat & Lockheed Martin** 
+> prioritising the innovation & delivery of technology at the edge that then shapes the core enterprise.
 
-|  |
-| --- |
-| **RedHat & Lockheed Martin** prioritising the innovation & delivery of technology at the edge that then shapes the core enterprise. |
+> [!IMPORTANT]
+> **CDW/HPE/NVIDIA:**
+> Prioritise the war fighter use cases at the edge including ephemeral pockets and ownership of data & technology that best support relevant AI and later transitions to the core as urgency changes.
 
-
-|  |
-| --- |
-| **CDW/HPE/NVIDIA:**  Prioritise the war fighter use cases at the edge including ephemeral pockets and ownership of data & technology that best support relevant AI and later transitions to the core as urgency changes. |
-
-
-> [!TIP]
-> **UKR >> BRAVE1:** Distributed empowerment of frontline units with direct relationship with technology vendors, not large, slow procurement chains prescribing out from the core. [Operational Innovation as a Service (OIaaS)](./operational-innovation-as-a-service-oiaas-learning-from-ukraines-innovation-model.md).
+> [!IMPORTANT]
+> **UKR >> BRAVE1:**
+> Distributed empowerment of frontline units with direct relationship with technology vendors, not large, slow procurement chains prescribing out from the core. [Operational Innovation as a Service (OIaaS)](./operational-innovation-as-a-service-oiaas-learning-from-ukraines-innovation-model.md).
+> 
 > Almost a philosophy that the capability to tactically change is more important than the reality of any point in time; including the luxury of strategic targets. Becoming comfortable with diverse technologies within a shared strong **logical** goal = resilience.
 
----
-
-## DNA: starting with the smallest things
-
-### *Mimic biology. micro shaping macro. DCSI+ZT as the kernel of everything.*
-
-![DNA: starting with the smallest things](./media/dna-starting-with-the-smallest-things.png)
-
 
 ---
 
-## DNA: Composable genes, DNA + Nodes
+# DNA: starting with the smallest things
+*Mimic biology. micro shaping macro. DCSI+ZT as the kernel of everything.*
 
 ![DNA: Composable genes, DNA + Nodes](./media/dna-composable-genes-dna-nodes.png)
 
+---
 
+# DNA: Composable genes, DNA + Nodes
+![DNA: starting with the smallest things](./media/dna-starting-with-the-smallest-things.png)
 
 
 ## Governance
